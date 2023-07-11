@@ -34,9 +34,64 @@ footer {
 /* Styles for each section 1*/
 
 .site_part1 {
-    
+    background-image: url(../images/main_img.png);
+    background-size:cover;
+    width: 100vw;
+    height:100vh;
 }
 
+.logo_header {
+    width: 100%;
+    height: 87%;
+    text-align: center;
+    padding: 42px 20px 20px;
+}
+
+.logo_vso {
+    width: 106%;
+    height: 15%;
+    text-align: center;
+    display: block;
+}
+
+.title {
+    width: 64%;
+    height: 40%;
+    text-align: center;
+}
+
+.front_nav {
+    color: white;
+    text-align: left;
+    height: 50%;
+    width: 85%;
+    border-radius: 10px;
+    background-color: black;
+    opacity: 0.5;
+}
+
+#img_nav {
+    width: 15%;
+}
+
+.main_nav {
+    text-align: left;
+    padding-left: 20%;
+}
+
+@font-face {
+    font-family: 'raleway';
+    src: url(../fonts/Raleway/Raleway-VariableFont_wght.ttf);
+}
+
+.selectors {
+    font-family: 'raleway', sans-serif;
+    display: inline-block;
+    padding-left: 8%;
+    padding-right: 4.5%;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
 /*
 .your_custom_class {
 
