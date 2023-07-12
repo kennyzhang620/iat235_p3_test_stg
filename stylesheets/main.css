@@ -24,6 +24,10 @@ nav {
 
 }
 
+p {
+
+}
+
 footer {
 
 }
@@ -34,9 +38,63 @@ footer {
 /* Styles for each section 1*/
 
 .site_part1 {
-    
+    background-image: url(../images/main_img.png);
+    background-size:cover;
+    height:100vh;
 }
 
+.logo_header {
+    width: 100%;
+    height: 87%;
+    text-align: center;
+    padding: 42px 20px 20px;
+}
+
+.logo_vso {
+    width: 106%;
+    height: 15%;
+    text-align: center;
+    display: block;
+}
+
+.title {
+    width: 64%;
+    height: 40%;
+    text-align: center;
+}
+
+.front_nav {
+    color: white;
+    text-align: left;
+    height: 50%;
+    width: 85%;
+    border-radius: 10px;
+    background-color: black;
+    opacity: 0.5;
+}
+
+#img_nav {
+    width: 15%;
+}
+
+.main_nav {
+    text-align: left;
+    padding-left: 20%;
+}
+
+@font-face {
+    font-family: 'raleway';
+    src: url(../fonts/Raleway/Raleway-VariableFont_wght.ttf);
+}
+
+.selectors {
+    font-family: 'raleway', sans-serif;
+    display: inline-block;
+    padding-left: 8%;
+    padding-right: 4.5%;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
 /*
 .your_custom_class {
 
@@ -52,7 +110,75 @@ footer {
 
 /* Styles for each section 2*/
 
+.paragraphs {
+    font-size: 11pt;
+    padding: 10px;
+}
+
+.subsection_main {
+    background-color: black;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
 .site_part2 {
+
+}
+
+.pipe_1 {
+    width: 15%;
+    height: 50%;
+}
+
+.subsection {
+    padding: 10%;
+    width: 65%;
+}
+
+.subsection2 {
+    padding-top: 15%;
+}
+
+#header_l {
+    font-size:20pt;
+}
+
+.information_row {
+    display: flex;
+    font-size: 9pt;
+    padding-left: 18px;
+    padding-top: 5px;
+}
+
+.icons {
+    width:10%;
+    height:10%;
+}
+
+.program_info {
+    width: 78%;
+    height: 78%;
+    font-family: 'Times New Roman', 'serif';
+    font-size: 3em;
+    color: white;
+}
+
+.overview_img {
+    width: 100%;
+    height: 100%;
+    display:flex;
+    background-size:cover;
+    border-radius: 10px;
+    background-image: url(../images/overview_img.png);
+}
+#header_p {
+    padding-top: 20px;
+}
+
+.footer_2 {
+    width: 100%;
 }
 
 /* End of section*/
