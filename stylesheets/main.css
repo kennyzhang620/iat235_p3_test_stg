@@ -66,11 +66,12 @@ footer {
 .front_nav {
     color: white;
     text-align: left;
-    height: 50%;
+    height: 39px;
     width: 85%;
     border-radius: 10px;
     background-color: black;
     opacity: 0.5;
+    position: fixed;
 }
 
 #img_nav {
@@ -79,7 +80,7 @@ footer {
 
 .main_nav {
     text-align: left;
-    padding-left: 20%;
+    padding-left: 6%;
 }
 
 @font-face {
