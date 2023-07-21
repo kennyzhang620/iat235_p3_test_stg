@@ -74,9 +74,61 @@
         <section id="site_part4">
         </section>
 
-        <!-- rebeca -->
         <section id="site_part5">
-            <!-- klzvjsdklafd -->
+            <!-- orchestra -->
+            <!-- https://www.w3schools.com/howto/howto_js_tabs.asp -->
+
+            <div class="dissolve-tabs">
+                <button class="tablinks" onclick="openSections(section, 'Maestros')"> Maestros</button>
+                <button class="tablinks" onclick="openSections(section, 'Strings')"> Strings</button>
+                <button class="tablinks" onclick="openSections(section, 'Woodwinds')"> Woodwinds</button>
+                <button class="tablinks" onclick="openSections(section, 'Brass')"> Brass</button>
+                <button class="tablinks" onclick="openSections(section, 'Percussion')"> Percussion</button>
+            </div>
+
+            <div id="Maestros" class="tabcontent">
+                <h2>maeststo</h2>
+                <p>put img here</p>
+            </div>
+
+            <div id="Strings" class="tabcontent">
+                <h2>string</h2>
+                <p>put img here</p>
+            </div>
+
+            <div id="Woodwinds" class="tabcontent">
+                <h2>wood</h2>
+                <p>put img here</p>
+            </div>
+
+            <div id="Brass" class="tabcontent">
+                <h2>barss</h2>
+                <p>put img here</p>
+            </div>
+
+            <div id="Percussion" class="tabcontent">
+                <h2>percussion</h2>
+                <p>put img here</p>
+            </div>
+
+            <!-- this is copy and pasted from the site i linked above -->
+            <script>
+                function openCity(evt, cityName) {
+                  var i, tabcontent, tablinks;
+                  tabcontent = document.getElementsByClassName("tabcontent");
+                  for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                  }
+                  tablinks = document.getElementsByClassName("tablinks");
+                  for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                  }
+                  document.getElementById(cityName).style.display = "block";
+                  evt.currentTarget.className += " active";
+                }
+                </script>
+
+<!-- end of section 5 -->
         </section>
 
         <section id="site_part6">

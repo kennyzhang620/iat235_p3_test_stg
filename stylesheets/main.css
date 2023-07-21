@@ -208,6 +208,25 @@ footer {
 /* Styles for each section 5*/
 
 .site_part5 {
+
+    .dissolve-tabs{
+        overflow: hidden;
+        /* ignore these colours, just using them to see where theyre applied to */
+        border: 1px solid #a55b5b;
+        background-color: aqua;
+    }
+
+    /* button of the tabs */
+    .dissolve-tabs button{
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 1rem;
+    }
 }
 
 /* End of section*/
