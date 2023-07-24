@@ -78,55 +78,90 @@
             <!-- orchestra -->
             <!-- https://www.w3schools.com/howto/howto_js_tabs.asp -->
 
-            <div class="dissolve-tabs">
-                <button class="tablinks" onclick="openSections(section, 'Maestros')"> Maestros</button>
-                <button class="tablinks" onclick="openSections(section, 'Strings')"> Strings</button>
-                <button class="tablinks" onclick="openSections(section, 'Woodwinds')"> Woodwinds</button>
-                <button class="tablinks" onclick="openSections(section, 'Brass')"> Brass</button>
-                <button class="tablinks" onclick="openSections(section, 'Percussion')"> Percussion</button>
-            </div>
+            <!-- pictures -->
+                <!-- <source srcset="images/main-pipes.png"  -->
+                <!-- <img class="orchestra-pipes" src="images/main-orchestra-pipes.png" /> -->
+                <!-- <img class="left-orchestra-pipes" src="images/left-orchestra-pipes.png" /> -->
+    
 
-            <div id="Maestros" class="tabcontent">
-                <h2>maeststo</h2>
-                <p>put img here</p>
-            </div>
+            <main class="subsection_orchestra"> <!--entire orchestra module-->
 
-            <div id="Strings" class="tabcontent">
-                <h2>string</h2>
-                <p>put img here</p>
-            </div>
+                <!-- this is the first flexbox along with the menu of orchestra-info -->
+                <!-- <section class="left-pipe" id="leftpipe"> -->
+                <img class="left-orchestra-pipes" src="images/left-orchestra-pipes.png" />
+                <!-- </section> -->
 
-            <div id="Woodwinds" class="tabcontent">
-                <h2>wood</h2>
-                <p>put img here</p>
-            </div>
+                <!-- this has flexboxes - also is the second flexbox to the left-pipe -->
+                <section class="orchestra-info" id="orch-tabs"> 
+                    <div class="o-header">
+                        <div class="right-orch-pipes">
+                            <img class="orch-remy" src="images/orchestra-remy.png"/>
+                            <div class="o-heading" id="header_orchestra">Orchestra</div>
+                        </div>         
+                    </div>
 
-            <div id="Brass" class="tabcontent">
-                <h2>barss</h2>
-                <p>put img here</p>
-            </div>
+                    <div class="dissolve-tabs">
+                        <img class="oven-knob" src="images/oven-knob.png"/>
+                        <button class="tablinks" onclick="openSections(section, 'Maestros')"> Maestros</button>
+                        <img class="m-line" src="images/orchestra-section-line.png"/>
+                        <img class="oven-knob" src="images/oven-knob.png"/>
+                        <button class="tablinks" onclick="openSections(section, 'Strings')"> Strings</button>
+                        <img class="s-line" src="images/orchestra-section-line.png"/>
+                        <img class="oven-knob" src="images/oven-knob.png"/>
+                        <button class="tablinks" onclick="openSections(section, 'Woodwinds')"> Woodwinds</button>
+                        <img class="w-line" src="images/orchestra-section-line.png"/>
+                        <img class="oven-knob" src="images/oven-knob.png"/>
+                        <button class="tablinks" onclick="openSections(section, 'Brass')"> Brass</button>
+                        <img class="b-line" src="images/orchestra-section-line.png"/>
+                        <img class="oven-knob" src="images/oven-knob.png"/>
+                        <button class="tablinks" onclick="openSections(section, 'Percussion')"> Percussion</button>
+                    </div>
 
-            <div id="Percussion" class="tabcontent">
-                <h2>percussion</h2>
-                <p>put img here</p>
-            </div>
+                    <div id="Maestros" class="tabcontent">
+                        <h2>maeststo</h2>
+                        <p>put img here</p>
+                    </div>
 
-            <!-- this is copy and pasted from the site i linked above -->
-            <script>
-                function openCity(evt, cityName) {
-                  var i, tabcontent, tablinks;
-                  tabcontent = document.getElementsByClassName("tabcontent");
-                  for (i = 0; i < tabcontent.length; i++) {
-                    tabcontent[i].style.display = "none";
-                  }
-                  tablinks = document.getElementsByClassName("tablinks");
-                  for (i = 0; i < tablinks.length; i++) {
-                    tablinks[i].className = tablinks[i].className.replace(" active", "");
-                  }
-                  document.getElementById(cityName).style.display = "block";
-                  evt.currentTarget.className += " active";
-                }
-                </script>
+                    <div id="Strings" class="tabcontent">
+                        <h2>string</h2>
+                        <p>put img here</p>
+                    </div>
+
+                    <div id="Woodwinds" class="tabcontent">
+                        <h2>wood</h2>
+                        <p>put img here</p>
+                    </div>
+
+                    <div id="Brass" class="tabcontent">
+                        <h2>barss</h2>
+                        <p>put img here</p>
+                    </div>
+
+                    <div id="Percussion" class="tabcontent">
+                        <h2>percussion</h2>
+                        <p>put img here</p>
+                    </div>
+
+            
+
+                    <script type="text/javascript">
+                        function openCity(sect, section_name) {
+                        var i, tabcontent, tablinks;
+                        tabcontent = document.getElementsByClassName("tabcontent");
+                        for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                        }
+                        tablinks = document.getElementsByClassName("tablinks");
+                        for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                        }
+                        document.getElementById(section_name).style.display = "block";
+                        sect.currentTarget.className += " active";
+                    }
+                    </script>
+
+                </section> <!-- section class="orchestra-info"-->
+             </main> <!--entire section-->
 
 <!-- end of section 5 -->
         </section>

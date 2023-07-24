@@ -208,26 +208,142 @@ footer {
 /* Styles for each section 5*/
 
 .site_part5 {
+    /* background-color: black;
+    height:100vh; */
+}
+
+    /* .orchestra-pipes{
+        width: 60%;
+        height: auto;
+    } */
+
+    .subsection_orchestra{
+        background-color: black;
+        /* width: 100%;
+        height: 100%; */
+        display: flex;
+        flex: 1 1 auto;
+        width: 100%;
+        align-items: center;
+        padding-left: 6rem;
+    }
+
+    /* .o-subsection{
+        padding: 10%;
+        width: 50%;
+    }
+
+    .o-subsection2{
+        padding-top: 10%;
+    } */
+
+    /* .left-orchestra-pipes{
+        height: 10%;
+        width: 10%;
+    } */
+
+    .left-pipe{
+        display: inline-block;
+	    flex: 1 1 auto;
+    }
+
+    .right-orchestra-pipes{
+        width: 60%;
+        height: auto;
+        /* float: right; */
+    }
+
+    .orchestra-info{
+        display: inline-block;
+	    flex: 1 1 auto;
+        color: white;
+        padding-left: 10rem;
+        padding-bottom: 75%;
+    }
+
+    .orch-remy{
+        /* padding-top: 8em; */
+        margin-top: 5%;
+    }
+
+    .o-header{
+        /* padding-bottom: 75%; */
+    }
+
+    .right-orch-pipes{
+        background-image: url(../images/main-orchestra-pipes.png);
+        background-size: cover;
+        height: 100%;
+        padding-bottom: 1rem;
+        margin-bottom: 3em;
+        margin-left: 10em;
+    }
+
+    .o-heading{
+        /* padding-top: 2em; */
+        padding-left: 4em;
+    }
+
+    #header_orchestra{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 3em;
+    }
 
     .dissolve-tabs{
+        /* padding-top: 10em; */
         overflow: hidden;
-        /* ignore these colours, just using them to see where theyre applied to */
-        border: 1px solid #a55b5b;
-        background-color: aqua;
+        background-color: black;
+        color: white;
     }
 
-    /* button of the tabs */
     .dissolve-tabs button{
-        background-color: inherit;
+        background-color: inherit; /*from .dissolve-tabs*/
         float: left;
+        /* border-left-style: solid;
+        border-left-color: coral; */
         border: none;
-        outline: none;
-        cursor: pointer;
-        padding: 14px 16px;
+        /* outline: none; */
+        padding-left: 2em;
+        padding-right: 2em;
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
         transition: 0.3s;
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
-}
+
+    .dissolve-tabs button.active{
+        /* the colour wont be this colour, just using ti to test */
+        background-color: #E7B96A;
+        /* and the oven knob will rotate */
+    }
+
+    .dissolve-tabs button:hover{
+        /* the colour change is temporary, just using to to test  */
+        color: #E7B96A;
+    }
+
+    .tabcontent {
+        /* display: none; */
+        display: none;
+        padding: 6px 12px;
+        border: 1px solid #ccc;
+        border-top: none;
+      }
+
+      .m-line, .s-line, .w-line, .b-line{
+        height: 3em;
+        width: auto;
+        padding-top: 1em;
+      }
+
+      .oven-knob{
+        height: 2em;
+        width: auto;
+        /* padding-top: 0.5em; */
+      }
+
+
+
 
 /* End of section*/
 
