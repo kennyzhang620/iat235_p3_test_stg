@@ -37,6 +37,54 @@ footer {
 
 /* Styles for each section 1*/
 
+
+/* Ticket Module (Section 1)*/
+
+.ticket_main{
+
+    display:flex;
+    flex-direction: row;
+    text-align:left;
+
+    width:500px;
+    height:200px;
+    background-color:aqua;
+
+    margin-left:20%;
+    margin-top:50px;
+}
+
+.ticket_subsection{
+
+    display:flex;
+    flex-direction: column;
+    text-align:left;
+
+    width:auto;
+    height:auto;
+    background-color: yellowgreen;
+}
+
+.button_ticket {
+    text-align:center;
+    border: 5;
+
+    margin-right:auto;
+    margin-left:auto;
+    margin-top:10px;
+}
+
+.ticket_main div {
+    margin-top:auto;
+    margin-bottom:auto;
+
+    text-align:center;
+    width: 100px;
+    height: 100px;
+  }
+
+/**/
+
 .site_part1 {
     background-image: url(../images/main_img.png);
     background-size:cover;
