@@ -87,9 +87,9 @@
             <main class="subsection_orchestra"> <!--entire orchestra module-->
 
                 <!-- this is the first flexbox along with the menu of orchestra-info -->
-                <!-- <section class="left-pipe" id="leftpipe"> -->
-                <img class="left-orchestra-pipes" src="images/left-orchestra-pipes.png" />
-                <!-- </section> -->
+                <section class="left-pipe" id="leftpipe">
+                    <img class="left-orchestra-pipes" src="images/left-orchestra-pipes.png" />
+                </section>
 
                 <!-- this has flexboxes - also is the second flexbox to the left-pipe -->
                 <section class="orchestra-info" id="orch-tabs"> 
@@ -97,70 +97,151 @@
                         <div class="right-orch-pipes">
                             <img class="orch-remy" src="images/orchestra-remy.png"/>
                             <div class="o-heading" id="header_orchestra">Orchestra</div>
-                        </div>         
+                            <!-- <div id="header_orchestra">Orchestra</div> -->
+                        </div>
+                    <!-- </div> -->
+
+                        <div class="dissolve-tabs">
+                            <button class="tablinks" onclick="openSections(section, 'Maestros')"> 
+                                <img class="oven-knob" src="images/oven-knob.png"/>
+                                <!-- <div class="tab-names">Maestros</div> -->
+                                Maestros
+                                <img class="lines" src="images/orchestra-section-line.png"/>
+                            </button>
+
+                            <button class="tablinks" onclick="openSections(section, 'Strings')"> 
+                                <img class="oven-knob" src="images/oven-knob.png"/>
+                                <!-- <div class="tab-names">Strings</div> -->
+                                Strings
+                                <img class="lines" src="images/orchestra-section-line.png"/>
+                            </button>
+                            
+                            <button class="tablinks" onclick="openSections(section, 'Woodwinds')"> 
+                                <img class="oven-knob" src="images/oven-knob.png"/>
+                                <!-- <div class="tab-names">Woodwinds</div> -->
+                                Woodwinds
+                                <img class="lines" src="images/orchestra-section-line.png"/>
+                            </button>
+                            
+                            <button class="tablinks" onclick="openSections(section, 'Brass')"> 
+                                <img class="oven-knob" src="images/oven-knob.png"/>
+                                <!-- <div class="tab-names">Brass</div> -->
+                                Brass
+                                <img class="lines" src="images/orchestra-section-line.png"/>
+                            </button>
+                            
+                            <button class="tablinks" onclick="openSections(section, 'Percussion')"> 
+                                <img class="oven-knob" src="images/oven-knob.png"/>
+                                <!-- <div class="tab-names">Percussion</div> -->
+                                Percussion
+                                <img class="lines" src="images/line-perc.png"/>
+                            </button>
+                        </div>
                     </div>
 
-                    <div class="dissolve-tabs">
-                        <img class="oven-knob" src="images/oven-knob.png"/>
-                        <button class="tablinks" onclick="openSections(section, 'Maestros')"> Maestros</button>
-                        <img class="m-line" src="images/orchestra-section-line.png"/>
-                        <img class="oven-knob" src="images/oven-knob.png"/>
-                        <button class="tablinks" onclick="openSections(section, 'Strings')"> Strings</button>
-                        <img class="s-line" src="images/orchestra-section-line.png"/>
-                        <img class="oven-knob" src="images/oven-knob.png"/>
-                        <button class="tablinks" onclick="openSections(section, 'Woodwinds')"> Woodwinds</button>
-                        <img class="w-line" src="images/orchestra-section-line.png"/>
-                        <img class="oven-knob" src="images/oven-knob.png"/>
-                        <button class="tablinks" onclick="openSections(section, 'Brass')"> Brass</button>
-                        <img class="b-line" src="images/orchestra-section-line.png"/>
-                        <img class="oven-knob" src="images/oven-knob.png"/>
-                        <button class="tablinks" onclick="openSections(section, 'Percussion')"> Percussion</button>
-                    </div>
+                    <!-- <section class="orchestra-profiles" id="orch-profiles"> -->
+                    <section class="orchestra-profiles">
 
-                    <div id="Maestros" class="tabcontent">
-                        <h2>maeststo</h2>
-                        <p>put img here</p>
-                    </div>
+                        <div id="Maestros" class="tabcontent">
+                            <h2>maeststo</h2>
+                            <p>put img here</p>
+                        </div>
 
-                    <div id="Strings" class="tabcontent">
-                        <h2>string</h2>
-                        <p>put img here</p>
-                    </div>
+                        <div id="Strings" class="tabcontent">
+                            <h2>string</h2>
+                            <p>put img here</p>
+                        </div>
 
-                    <div id="Woodwinds" class="tabcontent">
-                        <h2>wood</h2>
-                        <p>put img here</p>
-                    </div>
+                        <!-- THIS TAB IS INTERACTABLE -->
+                        <div id="Woodwinds" class="tabcontent">
+                            <div class="woodwind-grid">
+                            <div class="profiles">
+                                <img class="profile-pics" id="christie-reside" src="images/christie-reside.png">
+                                <div class="profile-names">Christie Reside</div>
+                                <div class="profile-instrument-names">Flute</div>
+                            </div>
 
-                    <div id="Brass" class="tabcontent">
-                        <h2>barss</h2>
-                        <p>put img here</p>
-                    </div>
+                            <div class="profiles">
+                                <img class="profile-pics" id="dakota-martin" src="images/dakota-martin.png">
+                                <div class="profile-names">Dakota Martin</div>
+                                <div class="profile-instrument-names">Flute</div>
+                            </div>
 
-                    <div id="Percussion" class="tabcontent">
-                        <h2>percussion</h2>
-                        <p>put img here</p>
-                    </div>
+                            <div class="profiles">
+                                <img class="profile-pics" id="karin-walsh" src="images/karin-walsh.png">
+                                <div class="profile-names">Karin Walsh</div>
+                                <div class="profile-instrument-names">Oboe</div>
+                            </div>
 
-            
+                            <div class="profiles">
+                                <img class="profile-pics" id="jeanette-jonquil" src="images/jeanette-jonquil.png">
+                                <div class="profile-names">Jeanette Jonquil</div>
+                                <div class="profile-instrument-names">Clarinet</div>
+                            </div>
 
-                    <script type="text/javascript">
-                        function openCity(sect, section_name) {
-                        var i, tabcontent, tablinks;
-                        tabcontent = document.getElementsByClassName("tabcontent");
-                        for (i = 0; i < tabcontent.length; i++) {
-                        tabcontent[i].style.display = "none";
+                            <div class="profiles">
+                                <img class="profile-pics" id="michelle-goddard" src="images/michelle-goddard.png">
+                                <div class="profile-names">Michelle Goddard</div>
+                                <div class="profile-instrument-names">Clarinet</div>
+                            </div>
+
+                            <div class="profiles">
+                                <img class="profile-pics" id="rosanne-wieringa" src="images/rosanne-wieringa.png">
+                                <div class="profile-names">Rosanne Wieringa</div>
+                                <div class="profile-instrument-names">Flute</div>
+                            </div>
+
+                            <div class="profiles">
+                                <img class="profile-pics" id="aiden-wong" src="images/aiden-wong.png">
+                                <div class="profile-names">Aiden Wong</div>
+                                <div class="profile-instrument-names">Bass Clarinet</div>
+                            </div>
+
+                            <div class="profiles">
+                                <img class="profile-pics" id="julia-lockhart" src="images/julia-lockhart.png">
+                                <div class="profile-names">Julia Mockhart</div>
+                                <div class="profile-instrument-names">Bassoon</div>
+                            </div>
+
+                            <div class="profiles">
+                                <img class="profile-pics" id="sophia-dansereau" src="images/sophia-dansereau.png">
+                                <div class="profile-names">Sophie Dansearu</div>
+                                <div class="profile-instrument-names">Contrabassoon</div>
+                            </div>
+
+
+                            </div> <!--woodwind-grid-->
+                        </div> <!--tabcontent-->
+
+                        <div id="Brass" class="tabcontent">
+                            <h2>barss</h2>
+                            <p>put img here</p>
+                        </div>
+
+                        <div id="Percussion" class="tabcontent">
+                            <h2>percussion</h2>
+                            <p>put img here</p>
+                        </div>
+
+                
+                        <!-- js stuff -->
+                        <script type="text/javascript">
+                            function openCity(sect, section_name) {
+                            var i, tabcontent, tablinks;
+                            tabcontent = document.getElementsByClassName("tabcontent");
+                            for (i = 0; i < tabcontent.length; i++) {
+                            tabcontent[i].style.display = "none";
+                            }
+                            tablinks = document.getElementsByClassName("tablinks");
+                            for (i = 0; i < tablinks.length; i++) {
+                            tablinks[i].className = tablinks[i].className.replace(" active", "");
+                            }
+                            document.getElementById(section_name).style.display = "block";
+                            sect.currentTarget.className += " active";
                         }
-                        tablinks = document.getElementsByClassName("tablinks");
-                        for (i = 0; i < tablinks.length; i++) {
-                        tablinks[i].className = tablinks[i].className.replace(" active", "");
-                        }
-                        document.getElementById(section_name).style.display = "block";
-                        sect.currentTarget.className += " active";
-                    }
-                    </script>
-
-                </section> <!-- section class="orchestra-info"-->
+                        </script>
+                    </section>
+                </section> <!--end of orchestra-info section (second)-->
              </main> <!--entire section-->
 
 <!-- end of section 5 -->
