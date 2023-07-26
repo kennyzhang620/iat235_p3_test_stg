@@ -1,0 +1,63 @@
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 100%; /* You can change this value based on your needs */
+  padding: 2rem 50px; /* This should match the width of your SVG */
+}
+
+.top-1of3 {
+  order: 2; /* was 1 */
+  flex: 1;
+  text-align: center;
+}
+
+.top-2of3 {
+  order: 1; /* was 2 */
+  width: 50px;
+}
+
+.top-2of3 svg {
+  width: 50px;
+  height: 50px;
+}
+
+.top-3of3 {
+  order: 3;
+  width: 65px;
+}
+
+#fixed-width{
+	width: 50px;
+}
+
+#fixed-width svg {
+	width: 50px;
+	height: 50px;
+}
+
+#empty-space{
+  background: transparent;
+}
+
+
+#flexible-width{
+	flex: 1;
+}
+
+#background-image{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh; /* Full height of the viewport */
+	width: 100vw; /* Full width of the viewport */
+}
+
+
+
+/*--------------------------- Media Querires ---------------------------*/
+
+/*@media screen and (max-width:60rem){
+
+}*/

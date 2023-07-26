@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ratatouille in Concert|Vancouver Symphony Orchestra</title>
+
+	<link rel="stylesheet" type="text/css" href="stylesheets/timer.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/ticket.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/ticket_grid.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+	<script src="scripts/fading.js"></script>
+	<script src="scripts/timer.js"></script>
+
+</head>
+
+<body>
+	<header class="top">
+			<h1 class="top-1of3" id="flexible-width">Ratatouille in Concert<br>
+				UNDER ORPHEUM VANCOUVER, BC<br>
+	 			Jul 19, 2023</h1>
+		<div class="top-2of3 base-timer" id="fixed-width">
+		  <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+		    <g class="base-timer__circle">
+		      <circle class="base-timer__path-elapsed" cx="50" cy="50" r="45"></circle>
+		      <path
+		        id="base-timer-path-remaining"
+		        stroke-dasharray="283"
+		        class="base-timer__path-remaining ${remainingPathColor}"
+		        d="
+		          M 50, 50
+		          m -45, 0
+		          a 45,45 0 1,0 90,0
+		          a 45,45 0 1,0 -90,0
+		        "
+		      ></path>
+		    </g>
+		  </svg>
+		  <span id="base-timer-label" class="base-timer__label">${formatTime(
+		    timeLeft
+		  )}</span>
+		</div><!-- End of timer -->
+		<div class="top-3of3" id="empty-space"></div>
+	</header>
+
+	<div class="main_container">
+		<div class="redirecting_exit">
+			<section id="redirecting">
+				<h2 id="addon-info">Additional Series Performances</h2>
+				<a href="ticket_section_18.html"><ul><li>July 18.2023 7:30PM</li></ul></a>
+
+				<a href="index.html"><h3>Return to Homepage</h3></a>
+			</section>
+		</div><!-- End of redirecting_exit -->
+
+		<nav class="seat_sections">
+			<a id="backBalcony" href="#">Back Balcony<br></a>
+			<a id="frontBalcony" href="#">Front Balcony<br></a>
+			<a id="backOrchestra" href="#">Back Orchestra<br></a>
+			<a id="frontOrchestra" href="#">Front Orchestra<br></a>
+		</nav> <!-- End of seat_sections -->
+
+		<!-- return to the seat section selections -->
+		<!-- <a id="returnLink" href="#">Return</a> -->
+
+		<div class="seat_sections_img" id="background-image">
+			<img id="baseImage" src="images/ticket/new/empty.png" alt="displaying the back orchestra seating with spotlight" width="1920" height="1080">			
+			<img id="seatingImage" src="images/ticket/new/empty.png" alt="displaying the back orchestra seating with spotlight" width="1920" height="1080">
+
+		</div> <!-- End of seat_sections_img -->
+
+	</div> <!-- End of main_container -->
+
+	<script src="scripts/interactivable_seat_sections.js"></script>
+</body>
+</html>

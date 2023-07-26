@@ -1,0 +1,110 @@
+*{
+	box-sizing: border-box;
+}
+
+h1{
+/*	text-align: center;*/
+	text-decoration: none;
+	font-size: 12pt;
+
+	margin: 0;
+	border: 0;
+}
+
+header{
+	background-color: #212343;
+	color: white;
+	padding: 2rem;
+
+	width: 100%;
+/*	align-items: center;*/
+	z-index: 0;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	z-index: 1; /* Added this */
+}
+
+img{
+  position: absolute; /* Added this */
+  top: 49%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); /* Added this */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Added this */
+
+}
+
+h2{
+	color: #DE4040;
+	font-size: 12pt;
+}
+
+h3{
+	color: #DE4040;
+	font-size: 12pt;
+	font-weight: bold;
+}
+
+ul{
+	color: #DE4040;
+}
+
+#addon-info{
+	color: white;
+}
+
+a{
+	text-decoration: none;
+}
+
+.main_container {
+	position: relative;
+	/* Add these if .main_container isn't already taking up the full viewport size */
+	width: 100%;
+	height: 100%;
+}
+
+.seat_sections {
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	text-align: center;
+	/* Set the z-index to a value higher than the background image to ensure that it appears on top */
+
+}
+
+.redirecting_exit {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 1rem 1.5rem;
+	/* Set the z-index to a value higher than the background image to ensure that it appears on top */
+
+}
+
+.seat_sections a{
+	display: block;
+	text-decoration: none;
+	margin-bottom: 12rem;
+
+	font-weight: bold;
+	font-size: 32pt;
+    color: grey;
+    transition: all 0.3s ease-in-out; /* this will animate the color and transform properties */
+}
+
+.seat_sections a:hover{
+	color: white;
+    transform: scale(1.2); /* this will make the anchor 20% larger when hovered */
+}
+
+
+
