@@ -221,31 +221,31 @@ footer {
 
 .faq_container {
     text-align:center;
-
+    padding-top:10%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 
     background-color: black;
-    height:500px;
-    width:100%;
+    height: 100vh;
+    width: 100%;
   
     /* Rat Image */
-    background-position: 25% 0;
-    background-size: 25%; 
+    background-position: top;
+    background-size: 50%;
     background-repeat: no-repeat;
     background-image: url(../images/faq_rat.png);
 } 
-  
+
+/* Style for the FAQ */
 details {    
-    border: 1px solid #aaa;
-    width:50%;
-    margin-left: 46%;
+    width:30%;
     margin-top:25px;
     text-align:left;
     border-radius: 4px;
     padding: 0.5em 0.5em 0;
+
+    color: #B38C4A; 
 }
 
 summary {
@@ -254,12 +254,26 @@ summary {
     padding: 0.5em;
 }
 
+/* hide html style by default */
+summary {list-style: none}
+summary::-webkit-details-marker {display: none; }
+
+/* This is for the little "twisty" before the question */
+details summary::before { 
+    content:"> "; 
+    color: #B38C4A; 
+  }
+  
+  details[open] summary::before { 
+    content:"∨ "; 
+  }
+  
+/* What happens to the text when its opened */
 details[open] {
     padding: 0.5em;
 }
 
 details[open] summary {
-    border-bottom: 1px solid #aaa;
     margin-bottom: 0.5em;
 }
 
