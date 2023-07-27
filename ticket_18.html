@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Ratatouille in Concert|Vancouver Symphony Orchestra</title>
+	<title>Ratatouille in Concert|Vancouver Symphony Orchestra| Seat Map</title>
 
 	<link rel="stylesheet" type="text/css" href="stylesheets/timer.css">
 	<link rel="stylesheet" type="text/css" href="stylesheets/ticket.css">
@@ -20,7 +20,7 @@
 	<header class="top">
 			<h1 class="top-1of3" id="flexible-width">Ratatouille in Concert<br>
 				UNDER ORPHEUM VANCOUVER, BC<br>
-	 			Jul 19, 2023</h1>
+	 			Jul 18, 2023</h1>
 		<div class="top-2of3 base-timer" id="fixed-width">
 		  <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
 		    <g class="base-timer__circle">
@@ -45,34 +45,39 @@
 		<div class="top-3of3" id="empty-space"></div>
 	</header>
 
-	<div class="main_container">
-		<div class="redirecting_exit">
-			<section id="redirecting">
-				<h2 id="addon-info">Additional Series Performances</h2>
-				<a href="ticket_section_18.html"><ul><li>July 18.2023 7:30PM</li></ul></a>
+	<div class="main_map_container">
+		<div class="left_col">
+			<div class="redirecting_map_exit">
+				<section id="redirecting">
+					<h2 id="addon-info">Additional Series Performances</h2>
+					<a href="ticket_section_19.html"><ul><li>July 19.2023 7:30PM</li></ul></a>
+					<a href="index.html"><h3>Return to Homepage</h3></a>
+				</section>
+			</div><!-- End of redirecting_exit -->
+			<nav class="seat_map">
+				<a id="map_backBalcony" href="#">Back Balcony<br>$43.81-$82.38<br></a>
+				<a id="map_frontBalcony" href="#">Front Balcony<br>$56.81-$125.24<br></a>
+				<a id="map_backOrchestra" href="#">Back Orchestra<br>$43.81-$101.43<br></a>
+				<a id="map_frontOrchestra" href="#">Front Orchestra<br>$43.81-$101.43<br></a>
+			</nav> <!-- End of seat_sections -->
+		</div> <!-- End of lef_col -->
 
-				<a href="index.html"><h3>Return to Homepage</h3></a>
-			</section>
-		</div><!-- End of redirecting_exit -->
-
-		<nav class="seat_sections">
-			<a id="backBalcony" href="#">Back Balcony<br></a>
-			<a id="frontBalcony" href="#">Front Balcony<br></a>
-			<a id="backOrchestra" href="#">Back Orchestra<br></a>
-			<a id="frontOrchestra" href="#">Front Orchestra<br></a>
-		</nav> <!-- End of seat_sections -->
-
-		<!-- return to the seat section selections -->
-		<!-- <a id="returnLink" href="#">Return</a> -->
-
-		<div class="seat_sections_img" id="background-image">
-			<img id="baseImage" src="images/ticket/new/empty.png" alt="displaying the back orchestra seating with spotlight" width="1920" height="1080">			
-			<img id="seatingImage" src="images/ticket/new/empty.png" alt="displaying the back orchestra seating with spotlight" width="1920" height="1080">
-
+		<div class="seat_map_img" id="background_map_image">
+			<img id="seatingMapImage" src="images/ticket/Hall_seating_backBalcony.png" alt="displaying the back orchestra seating with spotlight" width="1698" height="1312">
 		</div> <!-- End of seat_sections_img -->
 
+		<div class="cart_summary">
+			<h3>CART SUMMARY</h3>
+			<p>YOUR TICKETS<br></p>
+			<p>SECTION<br>-<br></p>
+			<p>ROW<br>-<br></p>
+			<p>SEAT<br>-<br></p>
+			<p>PRICE<br>-<br></p>
+			<p>Total-No Ticket</p>
+			<p>Need Help? 1-604-123-1234</p>
+		</div> <!-- End of cart_summary -->
 	</div> <!-- End of main_container -->
+	<script src="scripts/vfx_ticket_map.js"></script>
 
-	<script src="scripts/vfx_ticket_section.js"></script>
 </body>
 </html>

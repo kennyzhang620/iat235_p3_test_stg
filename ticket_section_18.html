@@ -11,7 +11,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
-	<script src="scripts/fading.js"></script>
+	<script src="scripts/jQuery.js"></script>
 	<script src="scripts/timer.js"></script>
 
 </head>
@@ -56,23 +56,46 @@
 		</div><!-- End of redirecting_exit -->
 
 		<nav class="seat_sections">
-			<a id="backBalcony" href="#">Back Balcony<br></a>
-			<a id="frontBalcony" href="#">Front Balcony<br></a>
-			<a id="backOrchestra" href="#">Back Orchestra<br></a>
-			<a id="frontOrchestra" href="#">Front Orchestra<br></a>
-		</nav> <!-- End of seat_sections -->
-
+		    <a id="backBalcony" href="ticket_18.html?section=backBalcony">
+		        <div class="text-container">
+		            Back Balcony<br>
+		            <span class="underline"></span>
+		        </div>
+		        <span class="section-price">$43.81-$82.38</span>
+		    </a>
+		    <a id="frontBalcony" href="ticket_18.html?section=frontBalcony">
+		        <div class="text-container">
+		            Front Balcony<br>
+		            <span class="underline"></span>
+		        </div>
+		        <span class="section-price">$56.81-$125.24</span>
+		    </a>
+		    <a id="backOrchestra" href="ticket_18.html?section=backOrchestra">
+		        <div class="text-container">
+		            Back Orchestra<br>
+		            <span class="underline"></span>
+		        </div>
+		        <span class="section-price">$43.81-$101.43</span>
+		    </a>
+		    <a id="frontOrchestra" href="ticket_18.html?section=frontOrchestra">
+		        <div class="text-container">
+		            Front Orchestra<br>
+		            <span class="underline"></span>
+		        </div>
+		        <span class="section-price">$$43.81-$101.43</span>
+		    </a>
+		</nav>
 		<!-- return to the seat section selections -->
 		<!-- <a id="returnLink" href="#">Return</a> -->
 
 		<div class="seat_sections_img" id="background-image">
-			<img id="baseImage" src="images/ticket/new/empty.png" alt="displaying the back orchestra seating with spotlight" width="1920" height="1080">			
-			<img id="seatingImage" src="images/ticket/new/empty.png" alt="displaying the back orchestra seating with spotlight" width="1920" height="1080">
+			<img id="baseImage" src="images/ticket/new/Empty.png" alt="displaying the back orchestra seating with spotlight" width="1920" height="1080">			
+			<img id="seatingImage" src="images/ticket/new/Empty.png" alt="displaying the back orchestra seating with spotlight" width="1920" height="1080">
 
 		</div> <!-- End of seat_sections_img -->
 
 	</div> <!-- End of main_container -->
 
-	<script src="scripts/interactivable_seat_sections.js"></script>
+	<script src="scripts/vfx_ticket_section.js"></script>
 </body>
 </html>

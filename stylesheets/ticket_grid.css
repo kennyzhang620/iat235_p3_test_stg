@@ -1,3 +1,4 @@
+/*------------------------------seat section site-----------------------------*/
 .top {
   display: flex;
   justify-content: space-between;
@@ -8,13 +9,13 @@
 }
 
 .top-1of3 {
-  order: 2; /* was 1 */
+  order: 2; 
   flex: 1;
   text-align: center;
 }
 
 .top-2of3 {
-  order: 1; /* was 2 */
+  order: 1; 
   width: 50px;
 }
 
@@ -54,6 +55,41 @@
 	width: 100vw; /* Full width of the viewport */
 }
 
+/*------------------------------seat map site-----------------------------*/
+
+.main_map_container {
+  display: grid;
+  grid-template-columns: 20% 60% 20%; /* Here we define the width percentages for each column */
+  grid-template-rows: auto; /* Here we let the row height be determined by the content */
+}
+
+/* Apply style to all direct children of the grid container */
+/*.main_map_container > * {
+  position: relative; 
+}*/
+
+/* Pseudo elements to represent the grid */
+/*.main_map_container > *::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 1px dashed red; 
+}
+*/
+.left_col {
+  grid-column: 1; /* Position both redirecting_map_exit and seat_map on the first column */
+}
+
+.seat_map_img {
+  grid-column: 2; /* Position seat_map_img on the second column */
+}
+
+.cart_summary {
+  grid-column: 3; /* Position cart_summary on the third column */
+}
 
 
 /*--------------------------- Media Querires ---------------------------*/
@@ -84,13 +120,16 @@
 		list-style: none;
 		position: relative;
 		right: 6vw;
-		text-align: center;
 		font-size: 3vw;
 		font-weight: bold;
 	}
 
 	img{
-		top: 35%; 
+		top: -18%; 
+	}
+
+	html,body{
+		text-align: center;margin: 0; height: 100%; overflow: hidden
 	}
 
 	.redirecting_exit{
