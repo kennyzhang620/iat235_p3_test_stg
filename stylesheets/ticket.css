@@ -5,7 +5,7 @@
 h1{
 /*	text-align: center;*/
 	text-decoration: none;
-	font-size: 1rem;
+	font-size: 1vw;
 
 	margin: 0;
 	border: 0;
@@ -14,7 +14,7 @@ h1{
 header{
 	background-color: #212343;
 	color: white;
-	padding: 2rem;
+	padding: 2vw;
 
 	width: 100%;
 /*	align-items: center;*/
@@ -31,18 +31,19 @@ body{
 
 h2{
 	color: #DE4040;
-	font-size: 1rem;
+	font-size: 1vw;
 }
 
 h3{
 	color: #DE4040;
-	font-size: 1rem;
+	font-size: 1vw;
 	font-weight: bold;
 	margin-left: 1vw;
 }
 
 ul{
 	color: #DE4040;
+  font-size: 0.75vw;
 }
 
 #addon-info{
@@ -52,6 +53,8 @@ ul{
 a{
 	text-decoration: none;
 }
+
+
 
 /*------------------------------------Ticket section site---------------------------------------*/
 
@@ -78,12 +81,12 @@ a{
 	position: absolute;
 	top: 0;
 	left: 0;
-	margin: 2.5rem 3rem;
+	margin: 2.5vh 3vw;
 }
 	/* Set the z-index to a value higher than the background image to ensure that it appears on top */
 
 #redirecting{
-	padding: 1rem 2rem;
+	padding: 1vh 2vw;
 }
 
 .seat_sections {
@@ -101,16 +104,16 @@ a{
   text-decoration: none;
   margin-bottom: 6vw;
   font-weight: bold;
-  font-size: 2.5rem;
+  font-size: 2.5vw;
   color: grey;
   transition: color 0.5s ease-in-out, transform 0.5s ease-in-out;
-  padding: 1rem; /* Add padding to expand clickable/hoverable area */
+  padding: 1vw; /* Add padding to expand clickable/hoverable area */
   box-sizing: border-box; /* To include padding in element's total width and height */
 }
 
 .seat_sections a:hover {
   color: white;
-  transform: scale(1.2) translateY(-0.5rem); /* enlarge and move up */
+  transform: scale(1.2) translateY(-0.5vh); /* enlarge and move up */
 }
 
 .seat_sections a:before {
@@ -126,9 +129,9 @@ a{
 
 .seat_sections a .section-price {
   position: absolute; 
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   color: #c8c8c8;
-  bottom: -2rem; /* Start the price below the anchor */
+  bottom: -3vh; /* Start the price below the anchor */
   left: 0;
   right: 0;
   transform: translateY(-100%);
@@ -151,7 +154,7 @@ a{
 
 .seat_sections a .underline {
   display: block;
-  height: 0.25rem;
+  height: 0.15vw;
   background-color: white;
   transform: scaleX(0);
   transition: transform 0.5s ease-in-out;
@@ -161,7 +164,7 @@ a{
   margin-left: auto;
   margin-right: auto;
   width: 70%; /* adjust this to set the length of the line */
-  bottom: -0.5rem; /* place the underline 0.5rem lower */
+  bottom: -0.5vw; /* place the underline 0.5rem lower */
 }
 
 
@@ -210,9 +213,9 @@ a{
   background-color: #A17C3F; /* initial background color */
   color: white; /* initial text color */
   text-decoration: none;
-  font-size: 1.75rem;
+  font-size: 1.25vw;
   text-align: center;
-  padding: 1.5vh 2vw; 
+  padding: 1.5vh 2.5vw; 
   margin: 0.75vh 0; 
   transition: background-color 0.1s, color 0.1s; /* smooth color transition */
 }
@@ -235,7 +238,7 @@ a{
 
 #redirecting_map{
 	background-color: white;
-	padding: 0.5vh 1vw;
+	padding: 0.5vh 0.75vw;
 }
 
 #map-addon-info{
@@ -254,16 +257,16 @@ a{
 }
 
 .cart{
-  padding: 1rem 2rem;
+  padding: 1vh 2vw;
   position: relative; /* Create a new context for absolute positioning */
   z-index: 1; /* Increase the z-index to bring this above the pseudo-element */
 }
 
 #cart_summary{
 	font-weight: bold;
-	font-size: 1.25rem;
+	font-size: 1.25vw;
 	text-align: center;
-	margin-bottom: 2.5rem;
+	margin-bottom: 2.5vh;
 }
 
 .cart_container{
@@ -273,16 +276,17 @@ a{
 
 #your_tickets{
 	font-weight: bolder;
-	font-size: 1rem;
+	font-size: 1vw;
 }
 
 .cart_container{
 	border-bottom: 1px solid #eaeaea; 
+  font-size: 0.5vw;
 }
 
 #cart_total_price{
 	font-weight: bolder;
-	font-size: 1.5rem;
+	font-size: 1vw;
 }
 
 .price_container{
@@ -291,5 +295,5 @@ a{
 
 #cart_assistant{
 	font-weight: lighter;
-	font-size: 0.75rem;
+	font-size: 0.75vw;
 }

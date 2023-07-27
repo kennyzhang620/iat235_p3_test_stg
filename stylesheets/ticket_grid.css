@@ -83,10 +83,12 @@
 */
 .left_col {
   grid-column: 1; /* Position both redirecting_map_exit and seat_map on the first column */
+  z-index: 2;
 }
 
 .seat_map_img {
   grid-column: 2; /* Position seat_map_img on the second column */
+  z-index: -1;
 }
 
 .cart_wrapper {
@@ -194,5 +196,11 @@
 	.seat_sections a{
 		font-size: 2vw;
 		margin: 2vw;
+	}
+}
+
+@media(max-height:120 rem){
+	.cart{
+		font-size: 50%;
 	}
 }
