@@ -82,9 +82,9 @@ document.getElementById("frontOrchestra").addEventListener("click", function(eve
   enableHover = false;
 });
 
-document.getElementById("returnLink").addEventListener("click", function(event){
-  event.preventDefault();
-  enableHover = true;
-  document.getElementById("seatingImage").src = "images/ticket/BackBalcony.png";
-});
+// document.getElementById("returnLink").addEventListener("click", function(event){
+//   event.preventDefault();
+//   enableHover = true;
+//   document.getElementById("seatingImage").src = "images/ticket/BackBalcony.png";
+// });
 // -------------------------------------------------------------------------------

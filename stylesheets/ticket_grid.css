@@ -61,3 +61,65 @@
 /*@media screen and (max-width:60rem){
 
 }*/
+
+@media(max-width:60rem){
+	.seat_sections{
+		top: 41%;
+	}
+
+	.seat_sections a{
+		font-size: 5vw;
+		margin-bottom: 11vh;
+	}
+
+	h1, h2, h3{
+		font-size: 2.5vw;
+	}
+
+	h2, h3{
+		text-align: center;
+	}
+
+	ul{
+		list-style: none;
+		position: relative;
+		right: 6vw;
+		text-align: center;
+		font-size: 3vw;
+		font-weight: bold;
+	}
+
+	img{
+		top: 35%; 
+	}
+
+	.redirecting_exit{
+		position: absolute;
+		top: 80%;
+		left: 0;
+		margin: 0;
+		padding: 0.5vh;
+		font-size: 2vw;
+
+		width: 100%;
+		height: 100%;
+		background-color: #212343;
+		/* Set the z-index to a value higher than the background image to ensure that it appears on top */
+
+	}
+
+	.base-timer__label, .base-timer{
+		font-size: 3vw;
+	}
+
+	.top{
+		padding: 2vw;
+	}
+}
+
+@media(max-height:30rem){
+	.seat_sections a{
+		font-size: 2vw;
+		margin: 2vw;
+	}
+}
