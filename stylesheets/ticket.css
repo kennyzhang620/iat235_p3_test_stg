@@ -5,7 +5,7 @@
 h1{
 /*	text-align: center;*/
 	text-decoration: none;
-	font-size: 12pt;
+	font-size: 1rem;
 
 	margin: 0;
 	border: 0;
@@ -26,17 +26,19 @@ body{
 	padding: 0;
 /*	overflow: hidden;*/
 	z-index: 1; 
+	background-color: #F0F0F0;
 }
 
 h2{
 	color: #DE4040;
-	font-size: 12pt;
+	font-size: 1rem;
 }
 
 h3{
 	color: #DE4040;
-	font-size: 12pt;
+	font-size: 1rem;
 	font-weight: bold;
+	margin-left: 1vw;
 }
 
 ul{
@@ -76,14 +78,17 @@ a{
 	position: absolute;
 	top: 0;
 	left: 0;
-	margin: 1rem 1.5rem;
+	margin: 2.5rem 3rem;
+}
 	/* Set the z-index to a value higher than the background image to ensure that it appears on top */
 
+#redirecting{
+	padding: 1rem 2rem;
 }
 
 .seat_sections {
   position: absolute;
-  top: 55%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -96,7 +101,7 @@ a{
   text-decoration: none;
   margin-bottom: 6vw;
   font-weight: bold;
-  font-size: 28pt;
+  font-size: 2.5rem;
   color: grey;
   transition: color 0.5s ease-in-out, transform 0.5s ease-in-out;
   padding: 1rem; /* Add padding to expand clickable/hoverable area */
@@ -121,7 +126,7 @@ a{
 
 .seat_sections a .section-price {
   position: absolute; 
-  font-size: 18pt;
+  font-size: 1.5rem;
   color: #c8c8c8;
   bottom: -2rem; /* Start the price below the anchor */
   left: 0;
@@ -146,7 +151,7 @@ a{
 
 .seat_sections a .underline {
   display: block;
-  height: 4px;
+  height: 0.25rem;
   background-color: white;
   transform: scaleX(0);
   transition: transform 0.5s ease-in-out;
@@ -165,7 +170,6 @@ a{
 }
 
 
-
 /*-----------------------------------Ticket seat map site------------------------------------------*/
 
 
@@ -179,8 +183,18 @@ a{
   width: 100%;
   height: 100%;
   object-fit: contain;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
   opacity: 0;
+}
+
+.left_col_map {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  margin-left: 2vw; 
+  margin-top: 2vh;
 }
 
 
@@ -189,15 +203,18 @@ a{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 2vh;
 }
 
 .seat_map a {
   background-color: #A17C3F; /* initial background color */
   color: white; /* initial text color */
   text-decoration: none;
-  padding: 10px 20px; /* space around text */
-  margin: 2vh 0; /* space between elements */
-  transition: background-color 0.3s, color 0.3s; /* smooth color transition */
+  font-size: 1.75rem;
+  text-align: center;
+  padding: 1.5vh 2vw; 
+  margin: 0.75vh 0; 
+  transition: background-color 0.1s, color 0.1s; /* smooth color transition */
 }
 
 .seat_map a:hover {
@@ -209,7 +226,70 @@ a{
   background-color: #594030; /* background color when clicked */
 }
 
+.seat_map .price {
+  display: block;
+  border-top: 1px solid white; /* color of the line */
+  padding-top: 0.5vh; /* space between the line and the price */
+  margin-top: 0.5vw; /* space between the line and the section */
+}
 
+#redirecting_map{
+	background-color: white;
+	padding: 0.5vh 1vw;
+}
 
+#map-addon-info{
+	color: black;
+}
 
+.cart_wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  z-index: -1; /* Place this below the .cart_wrapper content */
+}
 
+.cart{
+  padding: 1rem 2rem;
+  position: relative; /* Create a new context for absolute positioning */
+  z-index: 1; /* Increase the z-index to bring this above the pseudo-element */
+}
+
+#cart_summary{
+	font-weight: bold;
+	font-size: 1.25rem;
+	text-align: center;
+	margin-bottom: 2.5rem;
+}
+
+.cart_container{
+	border-top: 1px solid #eaeaea; 
+	text-align: center;
+}
+
+#your_tickets{
+	font-weight: bolder;
+	font-size: 1rem;
+}
+
+.cart_container{
+	border-bottom: 1px solid #eaeaea; 
+}
+
+#cart_total_price{
+	font-weight: bolder;
+	font-size: 1.5rem;
+}
+
+.price_container{
+	border-bottom: 1px solid #eaeaea;
+}
+
+#cart_assistant{
+	font-weight: lighter;
+	font-size: 0.75rem;
+}
