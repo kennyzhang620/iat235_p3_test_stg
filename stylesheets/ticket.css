@@ -5,7 +5,7 @@
 h1{
 /*	text-align: center;*/
 	text-decoration: none;
-	font-size: 1vw;
+	font-size: 0.75vw;
 
 	margin: 0;
 	border: 0;
@@ -31,14 +31,14 @@ body{
 
 h2{
 	color: #DE4040;
-	font-size: 1vw;
+	font-size: 0.75vw;
 }
 
 h3{
 	color: #DE4040;
-	font-size: 1vw;
+	font-size: 0.75vw;
 	font-weight: bold;
-	margin-left: 1vw;
+	margin-left: 0.5vw;
 }
 
 ul{
@@ -86,7 +86,7 @@ a{
 	/* Set the z-index to a value higher than the background image to ensure that it appears on top */
 
 #redirecting{
-	padding: 1vh 2vw;
+	padding: 1vh 1vw;
 }
 
 .seat_sections {
@@ -104,7 +104,7 @@ a{
   text-decoration: none;
   margin-bottom: 6vw;
   font-weight: bold;
-  font-size: 2.5vw;
+  font-size: 1.5vw;
   color: grey;
   transition: color 0.5s ease-in-out, transform 0.5s ease-in-out;
   padding: 1vw; /* Add padding to expand clickable/hoverable area */
@@ -129,9 +129,9 @@ a{
 
 .seat_sections a .section-price {
   position: absolute; 
-  font-size: 1.5vw;
+  font-size: 0.75vw;
   color: #c8c8c8;
-  bottom: -3vh; /* Start the price below the anchor */
+  bottom: -1.5vh; /* Start the price below the anchor */
   left: 0;
   right: 0;
   transform: translateY(-100%);
