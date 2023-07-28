@@ -355,7 +355,333 @@ footer {
 /* Styles for each section 5*/
 
 .site_part5 {
+    /* background-color: black;
+    height:100vh; */
 }
+
+    /* .orchestra-pipes{
+        width: 60%;
+        height: auto;
+    } */
+
+    .subsection_orchestra{
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        /* flex: 1 1 auto; */
+        /* align-items: center; */
+        padding-left: 6rem;
+
+        overflow: visible;
+    }
+
+    .left-pipe{
+        display: inline-block;
+    }
+
+    .left-orchestra-pipes{
+        /* width: 50%; */
+        width: 80%;
+        height: auto;
+    }
+
+    .orchestra-info{
+        display: inline-block;
+	    /* flex: 7 7 auto; */
+        color: white;
+        padding-left: 10rem;
+        padding-bottom: 100%;
+        /* padding-bottom: 100px; */
+
+        /* overflow: visible; */
+    }
+
+    .orch-remy{
+        /* OPTION 1 */
+        margin-top: 7%;
+        width: 21%;
+        height: auto;
+
+        /* OPTION 2 */
+        /* width: 25%; */
+        /* height: auto; */
+    }
+
+    .o-heading{
+        /* OPTION 1 */
+        /* //// */
+
+        /* OPTION 2 */
+        /* margin-top: -10%; */
+    }
+
+    .right-orch-pipes{
+        background-image: url(../images/main-orchestra-pipes.png);
+        background-position: right;
+        /* background-size: cover; */
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        overflow: visible;
+    }
+    #header_orchestra{
+        padding-left: 5em;
+    }
+
+    #header_orchestra{
+        font-family: 'Times New Roman', Times, serif;
+        /* font-size: 3em; */
+        font-size: 4vw;
+    }
+
+    .dissolve-tabs{
+        display: flex;
+
+
+        /* display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+
+        /* margin-top: 100px; */
+        padding-top: 4%;
+        padding-right: 5%;
+
+        /* overflow: hidden; */
+        background-color: black; 
+        color: white;
+    }
+
+    .dissolve-tabs button{
+        background-color: inherit;
+        float: left;
+        border: none;
+
+        /* padding-left: 2em;
+        padding-right: 2em;
+        padding-top: 1.5em;
+        padding-bottom: 1.5em; */
+
+        padding-right: 3%;
+
+        transition: 0.3s;
+        font-size: 1.5rem;
+    }
+
+    .dissolve-tabs button.active{
+        /* the colour wont be this colour, just using ti to test */
+        background-color: #E7B96A;
+        .oven-knob{
+            transform: rotate(90deg);
+            margin-top: 5%;
+        }
+    }
+
+    .dissolve-tabs button:hover{
+        /* the colour change is temporary, just using to to test  */
+        /* color: #E7B96A; */
+        .oven-knob{
+        transform: rotate(90deg);
+        /* margin-top: 0.5em; */
+        margin-top: 5%;
+        }
+    }
+
+      .oven-knob{
+        /* height: 2em; */
+        height: 1.5em;
+        width: auto;
+        padding-right: 1em;
+      }
+
+      /* .oven-knob:hover{
+        transform: rotate(90deg);
+        margin-top: 0.5em; */
+        /* margin-right: 0.5em; */
+      /* } */
+
+      .lines{
+        /* padding-left: 3em; */
+        padding-left: 1.5em;
+        height: 2em;
+      }
+
+      #perc{
+        padding-top: 2.7em;
+      }
+
+
+
+      /* orchestra profiles */
+
+
+
+      .orchestra-profiles{
+        padding-top: 10%;
+        /* padding-right: 5%; */
+        margin-right: 5%;
+
+
+        /* clear: both;
+        position: relative;
+        max-width: 650px;
+        margin: 0 auto; */
+      }
+
+      .tablinks{
+        /* margin-right: 20px;
+        position: relative;
+        top: 0;
+        cursor: pointer;
+        color: #333;
+        text-transform: uppercase; */
+      }
+
+      /* .tablinks [type=radio] { display: none; }
+      [type=radio]:checked ~ label {
+        border-bottom: 2px solid #1d1d1d;
+        color: #1d1d1d;
+        z-index: 2;
+      }
+
+      [type=radio]:checked ~ .tablinks ~ .profiles-grid{
+        z-index: 1;
+        opacity: 1;
+      } */
+
+      .tab-names{
+        font-family: 'raleway', sans-serif;
+        /* font-size: 10pt; */
+        font-size: 10vw;
+        font-weight: bold;
+      }
+
+      .tabcontent {
+        /* uncomment later */
+        /* display: none; */
+        
+        /* padding-right: 5% */
+
+
+        /* trying the css crossfade method */
+        /* clear: both;
+        position: relative;*/
+      } 
+
+      .tabcontent{
+        /* clear: both;
+        position: relative; */
+
+        float: left;
+
+      }
+
+      .profiles-grid{
+        display: grid;
+        /* 6 profiles on each column!! */
+        /* grid-template-columns: 0.85fr 0.85fr 0.85fr 0.85fr 0.85fr 0.85fr; */
+
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+        /* position: absolute;
+        transition: opacity .2s cubic-bezier(.42, 0, .34, 1.01);
+        opacity: 0; */
+      }
+
+      .profiles{
+        text-align: left;
+        /* padding-bottom: 5em; */
+        margin-bottom: 35%;
+
+        /* float: left; */
+
+        /* position: absolute;
+        transition: opacity .2s cubic-bezier(.42, 0, .34, 1.01);
+        opacity: 0; */
+      }
+
+      .profile-pics{
+        /* width: 150px;
+        height: auto; */
+        width: 80%;
+      }
+
+      .profile-names{
+        font-family: 'PT Serif', 'serif';
+        /* font-size: 2rem; */
+        /* font-size: 13pt; */
+        font-size: 1.2vw;
+        padding-top: 1rem;
+      }
+
+      .profile-instrument-names{
+        font-family: 'raleway', sans-serif;
+        /* font-size: 1.5rem; */
+        margin-top: 1%;
+        /* font-size: 10pt; */
+        font-size: 1vw;
+        font-weight: bold;
+      }
+
+/* ----------------------------------MEDIA QUERIES---------------------------------- */
+
+    @media screen and (max-width: 60rem){
+        .profiles-grid{
+            /* grid-column: auto / span 3; */
+            /* grid-column: 1 / span 3; */
+            /* grid-template-columns: auto; */
+
+            /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
+            overflow: auto;
+            white-space: nowrap;
+
+            /* grid-row: 1 / span 2; */
+        }
+
+        /* .profiles-grid a{
+            display: inline-block;
+            color: black;
+            text-decoration: none;
+        } */
+
+        .profiles{
+            grid-row: 1 / span 2;
+            border-radius: 12px;
+            padding: 6px;
+            margin-right: 5px;
+
+            /* gradient */
+            background: rgb(141,143,175);
+            /* background: linear-gradient(rgba(141,143,175,1) 0%, rgba(34,33,35,1) 100%); */
+            background: linear-gradient(rgba(141,143,175,1) 0%, rgba(34,33,35,1) 80%);
+        }
+
+        .profile-pics{
+            /* make the profile pictures smaller */
+            width: 50px;
+            /* with the %, the profile pictures arent the same size, but the px makes them all consistant */
+            /* width: 90%; */
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .profile-names{
+            font-family: 'PT Serif', 'serif';
+            /* font-size: 2rem; */
+            font-size: 6pt;
+            padding-top: 1rem;
+        }
+
+        .profile-instrument-names{
+            font-family: 'raleway', sans-serif;
+            /* font-size: 1.5rem; */
+            margin-top: 1%;
+            font-size: 7pt;
+            font-weight: bold;
+          }
+    }
+
+
+
 
 /* End of section*/
 
