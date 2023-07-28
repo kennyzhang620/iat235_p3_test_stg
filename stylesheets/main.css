@@ -184,9 +184,16 @@ footer {
 
 /* Styles for each section 2*/
 
+@font-face {
+    font-family: 'playfair_display';
+    src: url(../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
 .paragraphs {
     font-size: 11pt;
+    font-weight:300;
     padding: 10px;
+    font-family: 'raleway', 'sans-serif';
 }
 
 .subsection_main {
@@ -220,8 +227,10 @@ footer {
 }
 
 .information_row {
+    font-family: 'raleway', 'sans-serif';
     display: flex;
     font-size: 9pt;
+    font-weight: 600;
     padding-left: 18px;
     padding-top: 5px;
 }
@@ -234,8 +243,9 @@ footer {
 .program_info {
     width: 78%;
     height: 78%;
-    font-family: 'Times New Roman', 'serif';
+    font-family: 'playfair_display', 'serif';
     font-size: 3em;
+    font-weight:600;
     color: white;
 }
 
