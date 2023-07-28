@@ -64,3 +64,9 @@ console.log("Hello world!\n");
 //   </script>
 
 // End of Section
+
+// Script Section 6
+
+
+
+//End of Section
