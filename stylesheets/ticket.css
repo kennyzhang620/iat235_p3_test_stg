@@ -1,0 +1,303 @@
+*{
+	box-sizing: border-box;
+}
+
+h1{
+/*	text-align: center;*/
+	text-decoration: none;
+	font-size: 0.75vw;
+
+	margin: 0;
+	border: 0;
+}
+
+header{
+	background-color: #212343;
+	color: white;
+	padding: 2vw;
+
+	width: 100%;
+/*	align-items: center;*/
+	z-index: 0;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+/*	overflow: hidden;*/
+	z-index: 1; 
+	background-color: #F0F0F0;
+}
+
+h2{
+	color: #DE4040;
+	font-size: 0.75vw;
+}
+
+h3{
+	color: #DE4040;
+	font-size: 0.75vw;
+	font-weight: bold;
+	margin-left: 0.5vw;
+}
+
+ul{
+	color: #DE4040;
+  font-size: 0.75vw;
+}
+
+#addon-info{
+	color: white;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+
+/*------------------------------------Ticket section site---------------------------------------*/
+
+#seatingImage, #baseImage {
+  position: absolute;
+  width: 105%;
+  height: 105%;
+  object-fit: cover;
+  left: -2.5%; /* centers the image again after enlargement */
+  top: -2.5%; /* centers the image again after enlargement */
+ 	z-index: -1; 	
+
+ 	transition: transform 0.1s ease;
+}
+
+.main_container {
+	position: relative;
+	/* Add these if .main_container isn't already taking up the full viewport size */
+	width: 100%;
+	height: 100%;
+}
+
+.redirecting_exit {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 2.5vh 3vw;
+}
+	/* Set the z-index to a value higher than the background image to ensure that it appears on top */
+
+#redirecting{
+	padding: 1vh 1vw;
+}
+
+.seat_sections {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  transition: transform 0.1s ease;
+}
+
+.seat_sections a {
+  position: relative; 
+  display: block;
+  text-decoration: none;
+  margin-bottom: 4.5vw;
+  font-weight: bold;
+  font-size: 1.5vw;
+  color: grey;
+  transition: color 0.5s ease-in-out, transform 0.5s ease-in-out;
+  padding: 1vw; /* Add padding to expand clickable/hoverable area */
+  box-sizing: border-box; /* To include padding in element's total width and height */
+}
+
+.seat_sections a:hover {
+  color: white;
+  transform: scale(1.2) translateY(-0.5vh); /* enlarge and move up */
+}
+
+.seat_sections a:before {
+  content: "";
+  position: absolute;
+  top: -3vh; /* viewport height */
+  bottom: -3vh; 
+  left: -3vw; /* viewport width */
+  right: -3vw; 
+  z-index: -1;
+}
+
+
+.seat_sections a .section-price {
+  position: absolute; 
+  font-size: 0.75vw;
+  color: #c8c8c8;
+  bottom: -1.5vh; /* Start the price below the anchor */
+  left: 0;
+  right: 0;
+  transform: translateY(-100%);
+  transition: transform 0.5s ease-in-out 0.2s, opacity 0.7s ease-in-out 0.2s; /* Added 0.2s delay */
+  opacity: 0;
+  text-align: center;
+}
+
+
+.seat_sections a:hover .section-price {
+    transform: translateY(0); /* NEW: Move it to its original position when the anchor is hovered */
+    opacity: 1;
+}
+
+.seat_sections a .text-container {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.seat_sections a .underline {
+  display: block;
+  height: 0.15vw;
+  background-color: white;
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%; /* adjust this to set the length of the line */
+  bottom: -0.5vw; /* place the underline 0.5rem lower */
+}
+
+
+.seat_sections a:hover .underline {
+  transform: scaleX(1);
+}
+
+
+/*-----------------------------------Ticket seat map site------------------------------------------*/
+
+
+.seat_map_img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* This will ensure that the contents of the div don't spill over */
+}
+
+#seatingMapImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: opacity 0.4s ease-in-out;
+  opacity: 0;
+}
+
+.left_col_map {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  margin-left: 2vw; 
+  margin-top: 2vh;
+}
+
+
+.seat_map {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vh;
+}
+
+.seat_map a {
+  background-color: #A17C3F; /* initial background color */
+  color: white; /* initial text color */
+  text-decoration: none;
+  font-size: 1.25vw;
+  text-align: center;
+  padding: 1.5vh 2.5vw; 
+  margin: 0.75vh 0; 
+  transition: background-color 0.1s, color 0.1s; /* smooth color transition */
+}
+
+.seat_map a:hover {
+  background-color: #CFA765; /* background color when hovered */
+  color: white; /* text color when hovered */
+}
+
+.seat_map a:active {
+  background-color: #594030; /* background color when clicked */
+}
+
+.seat_map .price {
+  display: block;
+  border-top: 1px solid white; /* color of the line */
+  padding-top: 0.5vh; /* space between the line and the price */
+  margin-top: 0.5vw; /* space between the line and the section */
+}
+
+#redirecting_map{
+	background-color: white;
+	padding: 0.5vh 0.75vw;
+}
+
+#map-addon-info{
+	color: black;
+}
+
+.cart_wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  z-index: -1; /* Place this below the .cart_wrapper content */
+}
+
+.cart{
+  padding: 1vh 2vw;
+  position: relative; /* Create a new context for absolute positioning */
+  z-index: 1; /* Increase the z-index to bring this above the pseudo-element */
+}
+
+#cart_summary{
+	font-weight: bold;
+	font-size: 1.25vw;
+	text-align: center;
+	margin-bottom: 2.5vh;
+}
+
+.cart_container{
+	border-top: 1px solid #eaeaea; 
+	text-align: center;
+}
+
+#your_tickets{
+	font-weight: bolder;
+	font-size: 1vw;
+}
+
+.cart_container{
+	border-bottom: 1px solid #eaeaea; 
+  font-size: 0.5vw;
+}
+
+#cart_total_price{
+	font-weight: bolder;
+	font-size: 1vw;
+}
+
+#cart_total{
+    font-size: 0.75vw;
+}
+
+.price_container{
+	border-bottom: 1px solid #eaeaea;
+}
+
+#cart_assistant{
+	font-weight: lighter;
+	font-size: 0.5vw;
+}

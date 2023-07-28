@@ -1,0 +1,206 @@
+/*------------------------------seat section site-----------------------------*/
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 100%; /* You can change this value based on your needs */
+  padding: 2rem 50px; /* This should match the width of your SVG */
+}
+
+.top-1of3 {
+  order: 2; 
+  flex: 1;
+  text-align: center;
+}
+
+.top-2of3 {
+  order: 1; 
+  width: 50px;
+}
+
+.top-2of3 svg {
+  width: 50px;
+  height: 50px;
+}
+
+.top-3of3 {
+  order: 3;
+  width: 65px;
+}
+
+#fixed-width{
+	width: 50px;
+}
+
+#fixed-width svg {
+	width: 50px;
+	height: 50px;
+}
+
+#empty-space{
+  background: transparent;
+}
+
+
+#flexible-width{
+	flex: 1;
+}
+
+#background-image{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh; /* Full height of the viewport */
+	width: 100vw; /* Full width of the viewport */
+}
+
+/*------------------------------seat map site-----------------------------*/
+
+.main_map_container {
+  display: grid;
+  grid-template-columns: 15% 65% 20%; 
+  grid-template-rows: auto;
+  align-items: start; /* This line aligns grid items to the start of the grid cell */
+}
+
+
+/* Apply style to all direct children of the grid container */
+/*.main_map_container > * {
+  position: relative; 
+}*/
+
+/* Pseudo elements to represent the grid */
+/*.main_map_container > *::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 1px dashed red; 
+}
+*/
+.left_col {
+  grid-column: 1; /* Position both redirecting_map_exit and seat_map on the first column */
+  z-index: 2;
+}
+
+.seat_map_img {
+  grid-column: 2; /* Position seat_map_img on the second column */
+  z-index: -1;
+}
+
+.cart_wrapper {
+  grid-column: 3; /* Position cart_summary on the third column */
+  position: relative; /* Create a new context for absolute positioning */
+  z-index: 1; /* Increase the z-index to bring this above the pseudo-element */
+}
+
+.cart_container{
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%; /* Here we define the width percentages for each column */
+  grid-template-rows: auto; /* Here we let the row height be determined by the content */
+}
+
+#cart_empty{
+	grid-column: 1;
+}
+
+#cart_section{
+	grid-column: 2;
+}
+
+#cart_row{
+	grid-column: 3;
+}
+
+#cart_seat{
+	grid-column: 4;
+}
+
+#cart_price{
+	grid-column: 5;
+}
+
+.price_container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*--------------------------- Media Querires ---------------------------*/
+
+/*@media screen and (max-width:60rem){
+
+}*/
+
+@media(max-width:60rem){
+	.seat_sections{
+		top: 41%;
+	}
+
+	.seat_sections a{
+		font-size: 5vw;
+		margin-bottom: 11vh;
+	}
+
+	h1, h2, h3{
+		font-size: 2.5vw;
+	}
+
+	h2, h3{
+		text-align: center;
+	}
+
+	ul{
+		list-style: none;
+		position: relative;
+		right: 6vw;
+		font-size: 3vw;
+		font-weight: bold;
+	}
+
+	img{
+		top: -18%; 
+	}
+
+	html,body{
+		text-align: center;margin: 0; height: 100%; overflow: hidden
+	}
+
+	.redirecting_exit{
+		position: absolute;
+		top: 80%;
+		left: 0;
+		margin: 0;
+		padding: 0.5vh;
+		font-size: 2vw;
+
+		width: 100%;
+		height: 100%;
+		background-color: #212343;
+		/* Set the z-index to a value higher than the background image to ensure that it appears on top */
+
+	}
+
+	.base-timer__label, .base-timer{
+		font-size: 3vw;
+	}
+
+	.top{
+		padding: 2vw;
+	}
+}
+
+@media(max-height:30rem){
+	.seat_sections a{
+		font-size: 2vw;
+		margin: 2vw;
+	}
+}
+
+@media(max-height:120 rem){
+	.cart{
+		font-size: 50%;
+	}
+}
