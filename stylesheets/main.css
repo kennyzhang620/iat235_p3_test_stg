@@ -8,7 +8,7 @@ header {
 }
 
 body {
-
+ background-color: black;
 }
 
 h1 {
@@ -36,6 +36,79 @@ footer {
 /* Also make custom class names/tag/ids unique. */
 
 /* Styles for each section 1*/
+
+
+/* Ticket Module (Section 1)*/
+
+.ticket_main{
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align:center;
+
+    width:500px;
+    height:200px;
+    background-color:rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+
+    margin-left:20%;
+    margin-top:1%;
+}
+
+.ticket_subsection{
+
+    display:flex;
+    flex-direction: column;
+
+    width:70%;
+    height:50%;
+}
+
+.button_ticket{
+    background-color: #A17C3F; 
+    border: none;
+    color: white;
+    border-radius: 10px;
+    
+    padding: 4% 30%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+}
+
+.button_ticket:hover{
+    background-color: #b1986e; 
+
+}
+
+.ticket_main h2{
+
+    color: white;
+    font-size:11pt;
+}
+
+.ticket_main h1{
+
+    color: white;
+    margin: 50% 0;
+    
+    text-align:center;
+    }
+
+.button_ticket {
+    text-align:center;
+    border: 5;
+
+    margin-right:auto;
+    margin-left:auto;
+    margin-top:10px;
+}
+
+/**/
 
 .site_part1 {
     background-image: url(../images/main_img.png);
@@ -66,11 +139,12 @@ footer {
 .front_nav {
     color: white;
     text-align: left;
-    height: 50%;
+    height: 39px;
     width: 85%;
     border-radius: 10px;
     background-color: black;
     opacity: 0.5;
+    position: fixed;
 }
 
 #img_nav {
@@ -79,7 +153,7 @@ footer {
 
 .main_nav {
     text-align: left;
-    padding-left: 20%;
+    padding-left: 6%;
 }
 
 @font-face {
@@ -110,9 +184,16 @@ footer {
 
 /* Styles for each section 2*/
 
+@font-face {
+    font-family: 'playfair_display';
+    src: url(../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
 .paragraphs {
     font-size: 11pt;
+    font-weight:300;
     padding: 10px;
+    font-family: 'raleway', 'sans-serif';
 }
 
 .subsection_main {
@@ -146,8 +227,10 @@ footer {
 }
 
 .information_row {
+    font-family: 'raleway', 'sans-serif';
     display: flex;
     font-size: 9pt;
+    font-weight: 600;
     padding-left: 18px;
     padding-top: 5px;
 }
@@ -160,8 +243,9 @@ footer {
 .program_info {
     width: 78%;
     height: 78%;
-    font-family: 'Times New Roman', 'serif';
+    font-family: 'playfair_display', 'serif';
     font-size: 3em;
+    font-weight:600;
     color: white;
 }
 
@@ -199,8 +283,71 @@ footer {
 /* Styles for each section 4*/
 
 .site_part4 {
+    color: white;
+    margin-left: 100px;
 }
-
+.mainBackground{
+    background-image:url("../images/outer box for tracks.png");
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+.musicTrack{
+    margin-left: 20px;
+    font-family: "Raleway";
+    font-size: 22px;
+    column-width: 100px;
+}
+.musicH1{
+    font-style: bold;
+    font-size: 75px;
+}
+.musicH2{
+    margin-left: 20px;
+    font-style: normal;
+    font-size: 36px;
+}
+.musicName{
+    font-family: "Raleway";
+    font-size: 30px;
+    font-style: bold;
+    margin-left: 50px;
+}
+.musicTime{
+    margin-left: 600px;
+    font-size: 30px;
+}
+.musicAuthor{
+    font-size: 25px;
+    color: #B38C4A;
+    margin-left: 50px;
+}
+.musicDisplay{
+    display: flex;
+    flex-wrap: wrap;
+}
+.musicDisplayInfo{
+    background: rgba(0, 0, 0, 0.9);
+    margin-top: 20px;
+    margin-left: 30px;
+    height: 150px;
+    width: 50%;
+    border-radius: 20px;
+}
+.musicControl{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-color: #A17C3F;
+    margin-left: 100px;
+    margin-top: 70px;
+    border-radius: 20px;
+    height: 50px;
+}
+.musicControl i{
+    width: 80px;
+    transition: all 0.4s;
+    cursor: pointer;
+}
 /* End of section*/
 
 
@@ -208,7 +355,333 @@ footer {
 /* Styles for each section 5*/
 
 .site_part5 {
+    /* background-color: black;
+    height:100vh; */
 }
+
+    /* .orchestra-pipes{
+        width: 60%;
+        height: auto;
+    } */
+
+    .subsection_orchestra{
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        /* flex: 1 1 auto; */
+        /* align-items: center; */
+        padding-left: 6rem;
+
+        overflow: visible;
+    }
+
+    .left-pipe{
+        display: inline-block;
+    }
+
+    .left-orchestra-pipes{
+        /* width: 50%; */
+        width: 80%;
+        height: auto;
+    }
+
+    .orchestra-info{
+        display: inline-block;
+	    /* flex: 7 7 auto; */
+        color: white;
+        padding-left: 10rem;
+        padding-bottom: 100%;
+        /* padding-bottom: 100px; */
+
+        /* overflow: visible; */
+    }
+
+    .orch-remy{
+        /* OPTION 1 */
+        margin-top: 7%;
+        width: 21%;
+        height: auto;
+
+        /* OPTION 2 */
+        /* width: 25%; */
+        /* height: auto; */
+    }
+
+    .o-heading{
+        /* OPTION 1 */
+        /* //// */
+
+        /* OPTION 2 */
+        /* margin-top: -10%; */
+    }
+
+    .right-orch-pipes{
+        background-image: url(../images/main-orchestra-pipes.png);
+        background-position: right;
+        /* background-size: cover; */
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        overflow: visible;
+    }
+    #header_orchestra{
+        padding-left: 5em;
+    }
+
+    #header_orchestra{
+        font-family: 'Times New Roman', Times, serif;
+        /* font-size: 3em; */
+        font-size: 4vw;
+    }
+
+    .dissolve-tabs{
+        display: flex;
+
+
+        /* display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+
+        /* margin-top: 100px; */
+        padding-top: 4%;
+        padding-right: 5%;
+
+        /* overflow: hidden; */
+        background-color: black; 
+        color: white;
+    }
+
+    .dissolve-tabs button{
+        background-color: inherit;
+        float: left;
+        border: none;
+
+        /* padding-left: 2em;
+        padding-right: 2em;
+        padding-top: 1.5em;
+        padding-bottom: 1.5em; */
+
+        padding-right: 3%;
+
+        transition: 0.3s;
+        font-size: 1.5rem;
+    }
+
+    .dissolve-tabs button.active{
+        /* the colour wont be this colour, just using ti to test */
+        background-color: #E7B96A;
+        .oven-knob{
+            transform: rotate(90deg);
+            margin-top: 5%;
+        }
+    }
+
+    .dissolve-tabs button:hover{
+        /* the colour change is temporary, just using to to test  */
+        /* color: #E7B96A; */
+        .oven-knob{
+        transform: rotate(90deg);
+        /* margin-top: 0.5em; */
+        margin-top: 5%;
+        }
+    }
+
+      .oven-knob{
+        /* height: 2em; */
+        height: 1.5em;
+        width: auto;
+        padding-right: 1em;
+      }
+
+      /* .oven-knob:hover{
+        transform: rotate(90deg);
+        margin-top: 0.5em; */
+        /* margin-right: 0.5em; */
+      /* } */
+
+      .lines{
+        /* padding-left: 3em; */
+        padding-left: 1.5em;
+        height: 2em;
+      }
+
+      #perc{
+        padding-top: 2.7em;
+      }
+
+
+
+      /* orchestra profiles */
+
+
+
+      .orchestra-profiles{
+        padding-top: 10%;
+        /* padding-right: 5%; */
+        margin-right: 5%;
+
+
+        /* clear: both;
+        position: relative;
+        max-width: 650px;
+        margin: 0 auto; */
+      }
+
+      .tablinks{
+        /* margin-right: 20px;
+        position: relative;
+        top: 0;
+        cursor: pointer;
+        color: #333;
+        text-transform: uppercase; */
+      }
+
+      /* .tablinks [type=radio] { display: none; }
+      [type=radio]:checked ~ label {
+        border-bottom: 2px solid #1d1d1d;
+        color: #1d1d1d;
+        z-index: 2;
+      }
+
+      [type=radio]:checked ~ .tablinks ~ .profiles-grid{
+        z-index: 1;
+        opacity: 1;
+      } */
+
+      .tab-names{
+        font-family: 'raleway', sans-serif;
+        /* font-size: 10pt; */
+        font-size: 10vw;
+        font-weight: bold;
+      }
+
+      .tabcontent {
+        /* uncomment later */
+        /* display: none; */
+        
+        /* padding-right: 5% */
+
+
+        /* trying the css crossfade method */
+        /* clear: both;
+        position: relative;*/
+      } 
+
+      .tabcontent{
+        /* clear: both;
+        position: relative; */
+
+        float: left;
+
+      }
+
+      .profiles-grid{
+        display: grid;
+        /* 6 profiles on each column!! */
+        /* grid-template-columns: 0.85fr 0.85fr 0.85fr 0.85fr 0.85fr 0.85fr; */
+
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+        /* position: absolute;
+        transition: opacity .2s cubic-bezier(.42, 0, .34, 1.01);
+        opacity: 0; */
+      }
+
+      .profiles{
+        text-align: left;
+        /* padding-bottom: 5em; */
+        margin-bottom: 35%;
+
+        /* float: left; */
+
+        /* position: absolute;
+        transition: opacity .2s cubic-bezier(.42, 0, .34, 1.01);
+        opacity: 0; */
+      }
+
+      .profile-pics{
+        /* width: 150px;
+        height: auto; */
+        width: 80%;
+      }
+
+      .profile-names{
+        font-family: 'PT Serif', 'serif';
+        /* font-size: 2rem; */
+        /* font-size: 13pt; */
+        font-size: 1.2vw;
+        padding-top: 1rem;
+      }
+
+      .profile-instrument-names{
+        font-family: 'raleway', sans-serif;
+        /* font-size: 1.5rem; */
+        margin-top: 1%;
+        /* font-size: 10pt; */
+        font-size: 1vw;
+        font-weight: bold;
+      }
+
+/* ----------------------------------MEDIA QUERIES---------------------------------- */
+
+    @media screen and (max-width: 60rem){
+        .profiles-grid{
+            /* grid-column: auto / span 3; */
+            /* grid-column: 1 / span 3; */
+            /* grid-template-columns: auto; */
+
+            /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
+            overflow: auto;
+            white-space: nowrap;
+
+            /* grid-row: 1 / span 2; */
+        }
+
+        /* .profiles-grid a{
+            display: inline-block;
+            color: black;
+            text-decoration: none;
+        } */
+
+        .profiles{
+            grid-row: 1 / span 2;
+            border-radius: 12px;
+            padding: 6px;
+            margin-right: 5px;
+
+            /* gradient */
+            background: rgb(141,143,175);
+            /* background: linear-gradient(rgba(141,143,175,1) 0%, rgba(34,33,35,1) 100%); */
+            background: linear-gradient(rgba(141,143,175,1) 0%, rgba(34,33,35,1) 80%);
+        }
+
+        .profile-pics{
+            /* make the profile pictures smaller */
+            width: 50px;
+            /* with the %, the profile pictures arent the same size, but the px makes them all consistant */
+            /* width: 90%; */
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .profile-names{
+            font-family: 'PT Serif', 'serif';
+            /* font-size: 2rem; */
+            font-size: 6pt;
+            padding-top: 1rem;
+        }
+
+        .profile-instrument-names{
+            font-family: 'raleway', sans-serif;
+            /* font-size: 1.5rem; */
+            margin-top: 1%;
+            font-size: 7pt;
+            font-weight: bold;
+          }
+    }
+
+
+
 
 /* End of section*/
 
@@ -217,6 +690,64 @@ footer {
 /* Styles for each section 6*/
 
 .site_part6 {
+}
+
+.faq_container {
+    text-align:center;
+    padding-top:10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+  
+    /* Rat Image */
+    background-position: top;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-image: url(../images/faq_rat.png);
+} 
+
+/* Style for the FAQ */
+details {    
+    width:30%;
+    margin-top:25px;
+    text-align:left;
+    border-radius: 4px;
+    padding: 0.5em 0.5em 0;
+
+    color: #B38C4A; 
+}
+
+summary {
+    font-weight: bold;
+    margin: -0.5em -0.5em 0;
+    padding: 0.5em;
+}
+
+/* hide html style by default */
+summary {list-style: none}
+summary::-webkit-details-marker {display: none; }
+
+/* This is for the little "twisty" before the question */
+details summary::before { 
+    content:"> "; 
+    color: #B38C4A; 
+  }
+  
+  details[open] summary::before { 
+    content:"∨ "; 
+  }
+  
+/* What happens to the text when its opened */
+details[open] {
+    padding: 0.5em;
+}
+
+details[open] summary {
+    margin-bottom: 0.5em;
 }
 
 /* End of section*/
