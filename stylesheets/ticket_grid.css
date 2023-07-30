@@ -128,6 +128,11 @@
   justify-content: space-between;
   align-items: center;
 }
+
+#cart_assistant{
+	display: flex;
+  align-items: center;
+}
 /*--------------------------- Media Querires ---------------------------*/
 
 /*@media screen and (max-width:60rem){
@@ -144,15 +149,15 @@
 		margin-bottom: 11vh;
 	}
 
-	h1, h2, h3{
+	.main_container h1,.main_container h2,.main_container h3{
 		font-size: 2.5vw;
 	}
 
-	h2, h3{
+	.main_containerh2, .main_containerh3{
 		text-align: center;
 	}
 
-	ul{
+	.main_container ul{
 		list-style: none;
 		position: relative;
 		right: 6vw;
@@ -192,15 +197,15 @@
 	}
 }
 
-@media(max-height:30rem){
+/*@media(max-height:30rem){
 	.seat_sections a{
 		font-size: 2vw;
 		margin: 2vw;
 	}
-}
+}*/
 
-@media(max-height:120 rem){
+/*@media(max-height:120 rem){
 	.cart{
 		font-size: 50%;
 	}
-}
+}*/

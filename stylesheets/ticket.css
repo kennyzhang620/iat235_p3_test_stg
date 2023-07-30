@@ -1,3 +1,13 @@
+
+/*100: Thin (Hairline)
+200: Extra Light (Ultra Light)
+300: Light
+400: Normal
+500: Medium
+600: Semi Bold (Demi Bold)
+700: Bold
+800: Extra Bold (Ultra Bold)
+900: Black (Heavy)*/
 *{
 	box-sizing: border-box;
 }
@@ -6,6 +16,9 @@ h1{
 /*	text-align: center;*/
 	text-decoration: none;
 	font-size: 0.75vw;
+/*  font-family: 'raleway', 'sans-serif';*/
+  font-family: 'playfair_display', 'serif';
+  font-weight: normal;
 
 	margin: 0;
 	border: 0;
@@ -35,26 +48,26 @@ h2{
 }
 
 h3{
-	color: #DE4040;
-	font-size: 0.75vw;
-	font-weight: bold;
-	margin-left: 0.5vw;
 }
 
 ul{
 	color: #DE4040;
   font-size: 0.75vw;
-}
-
-#addon-info{
-	color: white;
+  font-family: 'raleway', 'sans-serif';
+  font-weight: bold;
 }
 
 a{
-	text-decoration: none;
+  text-decoration: none;
 }
 
+@font-face {
+    font-family: 'raleway';
+    src: url(../fonts/Raleway/Raleway-VariableFont_wght.ttf);
 
+    font-family: 'playfair_display';
+    src: url(../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
+}
 
 /*------------------------------------Ticket section site---------------------------------------*/
 
@@ -173,14 +186,29 @@ a{
 }
 
 
+#addon-info{
+  color: white;
+  font-family: 'playfair_display', 'serif';
+}
+
+.return_home{
+
+  font-family: 'raleway', 'sans-serif';
+  color: #DE4040;
+  font-size: 0.75vw;
+  font-weight: 900;
+  margin-left: 0.5vw;
+}
+
 /*-----------------------------------Ticket seat map site------------------------------------------*/
 
 
-.seat_map_img {
+/*.seat_map_img {
+  position: relative;
   width: 100%;
   height: 100%;
-  overflow: hidden; /* This will ensure that the contents of the div don't spill over */
-}
+  overflow: hidden;
+}*/
 
 #seatingMapImage {
   width: 100%;
@@ -189,6 +217,16 @@ a{
   transition: opacity 0.4s ease-in-out;
   opacity: 0;
 }
+
+#seatMapIcon {
+  position: absolute;
+  top: 3%; 
+  right: -4%; 
+  width: 10vw; 
+  height: 10vh; 
+  z-index: 3;
+}
+
 
 .left_col_map {
   display: flex;
@@ -200,7 +238,6 @@ a{
   margin-top: 2vh;
 }
 
-
 .seat_map {
   display: flex;
   flex-direction: column;
@@ -210,12 +247,21 @@ a{
 }
 
 .seat_map a {
+  font-family: 'playfair_display', 'serif';
+  font-size: 1vw; /* adjust as needed */
+  font-weight: bold;
+
   background-color: #A17C3F; /* initial background color */
   color: white; /* initial text color */
-  text-decoration: none;
-  font-size: 1.25vw;
+
+  display: flex; /* Flex will ensure contents are centered */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+
   text-align: center;
-  padding: 1.5vh 2.5vw; 
+  width: 12.5vw; /* Set fixed width, adjust as per your design */
+  height: 10vh; /* Set fixed height, adjust as per your design */
   margin: 0.75vh 0; 
   transition: background-color 0.1s, color 0.1s; /* smooth color transition */
 }
@@ -257,14 +303,15 @@ a{
 }
 
 .cart{
+  font-family: 'raleway', 'sans-serif';
+  font-weight: bold;
   padding: 1vh 2vw;
   position: relative; /* Create a new context for absolute positioning */
   z-index: 1; /* Increase the z-index to bring this above the pseudo-element */
 }
 
 #cart_summary{
-	font-weight: bold;
-	font-size: 1.25vw;
+	font-size: 0.75vw;
 	text-align: center;
 	margin-bottom: 2.5vh;
 }
@@ -275,13 +322,14 @@ a{
 }
 
 #your_tickets{
-	font-weight: bolder;
-	font-size: 1vw;
+	font-weight: 900;
+	font-size: 0.5vw;
 }
 
 .cart_container{
 	border-bottom: 1px solid #eaeaea; 
-  font-size: 0.5vw;
+  font-size: 0.45vw;
+  line-height: 3; 
 }
 
 #cart_total_price{
@@ -290,7 +338,9 @@ a{
 }
 
 #cart_total{
-    font-size: 0.75vw;
+  font-size: 0.5vw;
+  margin-left: 0.75vw;
+  padding-top: 0.25vw;
 }
 
 .price_container{
@@ -298,6 +348,35 @@ a{
 }
 
 #cart_assistant{
+  font-family: 'playfair_display', 'serif';
 	font-weight: lighter;
 	font-size: 0.5vw;
 }
+
+#phoneIcon {
+  width: 1vw; 
+  height: 1vh; 
+  margin: 0.35vw;
+}
+
+#map-addon-info{
+  font-family: 'playfair_display', 'serif';
+  font-weight: bolder;
+}
+
+/*--------------------pop up window----------------------*/
+
+#popup {
+  position: absolute;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid #000;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+  transition: all 0.3s ease;
+  transform-origin: top right;
+}
+
+
+
+

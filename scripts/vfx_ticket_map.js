@@ -9,12 +9,9 @@ function changeImage(src) {
 }
 
 window.onload = function() {
-  document.getElementById("map_backBalcony").style.backgroundColor = '#594030';
-  changeImage("images/ticket/Hall_seating_backBalcony.png");
-};
+    document.getElementById("map_backBalcony").style.backgroundColor = '#594030';
+    changeImage("images/ticket/Hall_seating_backBalcony.png");
 
-// URL
-window.onload = function() {
     const urlParams = new URLSearchParams(window.location.search);
     const section = urlParams.get('section');
 
@@ -23,6 +20,7 @@ window.onload = function() {
         changeImage("images/ticket/Hall_seating_" + section + ".png");
     }
 };
+
 
 
 document.getElementById("map_backBalcony").addEventListener("click", function(e){
@@ -59,4 +57,26 @@ function resetColors(){
     document.getElementById(ids[i]).style.backgroundColor = ''; // Reset color
   }
 }
+// -----------------------------pop up----------------------------------------
+
+document.body.addEventListener('click', function(event) {
+  const popup = document.getElementById('popup');
+
+  popup.style.left = event.clientX + 'px';
+  popup.style.top = event.clientY + 'px';
+  popup.style.transform = 'scale(1)'; // Animate popup to its normal size
+  popup.style.display = 'block'; // Show the popup
+});
+
+popup.addEventListener('click', function(event) {
+  event.stopPropagation();
+});
+
+
+
+
+
+
+
+
 

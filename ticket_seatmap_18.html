@@ -50,9 +50,9 @@
 			<div class="redirecting_map_exit">
 				<section id="redirecting_map">
 					<h2 id="map-addon-info">Additional Series Performances</h2>
-					<a href="ticket_section_19.html"><ul><li>July 19.2023 7:30PM</li></ul></a>
+					<a href="#"><ul><li>July 19.2023 7:30PM</li></ul></a>
 				</section>
-				<a href="index.html"><h3>Return to Homepage</h3></a>
+				<a href="index.html"><h3 class="return_home">Return to Homepage</h3></a>
 			</div><!-- End of redirecting_exit -->
 
 			<nav class="seat_map">
@@ -77,8 +77,11 @@
 		</div> <!-- End of lef_col -->
 
 		<div class="seat_map_img" id="background_map_image">
-			<img id="seatingMapImage" src="images/ticket/Hall_seating_backBalcony.png" alt="displaying the back orchestra seating with spotlight" width="1920" height="1080">
+		    <img id="seatingMapImage" src="images/ticket/Hall_seating_backBalcony.png" alt="displaying the back orchestra seating with spotlight" width="1920" height="1080">
+
+		    <img id="seatMapIcon" src="icons/seat_map_icon.svg" alt="seat map icon"> 
 		</div> <!-- End of seat_sections_img -->
+
 
 		<div class="cart_wrapper">
 			<div class="cart">
@@ -96,9 +99,17 @@
 						<p id="cart_total">Total-No Ticket</p>
 						<p id="cart_total_price">$0.00</p>
 					</div>
-				<p id="cart_assistant">Need Help? 1-604-123-1234</p>
+
+					<p id="cart_assistant">
+						<img id="phoneIcon" src="icons/icon_phone.svg" alt="Phone icon">
+						Need Help? 1-604-123-1234
+					</p>
 			</div> <!-- End of cart -->
 		</div> <!-- End of cart_wrapper -->
+
+		<div id="popup" style="display: none;">
+			<p>This is a popup!</p>
+		</div>
 	</div> <!-- End of main_container -->
 	<script src="scripts/vfx_ticket_map.js"></script>
 
