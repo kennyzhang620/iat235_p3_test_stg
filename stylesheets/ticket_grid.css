@@ -61,7 +61,7 @@
   display: grid;
   grid-template-columns: 15% 65% 20%; 
   grid-template-rows: auto;
-  align-items: start; /* This line aligns grid items to the start of the grid cell */
+  align-items: start; 
 }
 
 
@@ -133,6 +133,53 @@
 	display: flex;
   align-items: center;
 }
+
+/*--------------------------- Popup window -----------------------------*/
+
+.popup_seat_type{
+	display: grid;
+	grid-template-columns: 50% 25% 25%;
+	grid-template-rows: auto;
+	align-items: start;
+}
+
+#popup_section{
+	grid-column: 1;
+}
+
+#popup_row{
+	grid-column: 2;
+}
+
+#popup_seat{
+	grid-column: 3;
+}
+
+.popup_seat_selection{
+	display: grid;
+	grid-template-columns: 50% 25% 25%;
+	grid-template-rows: auto;
+	align-items: start;
+}
+
+#popup_section_selecting{
+	grid-column: 1;
+}
+
+#popup_row_selecting{
+	grid-column: 2;
+}
+
+#popup_seat_selecting{
+	grid-column: 3;
+}
+
+.popup_button{
+	display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /*--------------------------- Media Querires ---------------------------*/
 
 /*@media screen and (max-width:60rem){

@@ -78,10 +78,15 @@ a{
   object-fit: cover;
   left: -2.5%; /* centers the image again after enlargement */
   top: -2.5%; /* centers the image again after enlargement */
- 	z-index: -1; 	
-
- 	transition: transform 0.1s ease;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 1s ease;
 }
+
+#baseImage {
+  opacity: 1;
+}
+
 
 .main_container {
 	position: relative;
@@ -132,10 +137,10 @@ a{
 .seat_sections a:before {
   content: "";
   position: absolute;
-  top: -3vh; /* viewport height */
-  bottom: -3vh; 
-  left: -3vw; /* viewport width */
-  right: -3vw; 
+  top: -4vh; /* viewport height */
+  bottom: -4vh; 
+  left: -8vw; /* viewport width */
+  right: -8vw; 
   z-index: -1;
 }
 
@@ -317,7 +322,7 @@ a{
 }
 
 .cart_container{
-	border-top: 1px solid #eaeaea; 
+	border-top: 0.01vh solid #eaeaea; 
 	text-align: center;
 }
 
@@ -327,7 +332,7 @@ a{
 }
 
 .cart_container{
-	border-bottom: 1px solid #eaeaea; 
+	border-bottom: 0.01vh solid #eaeaea; 
   font-size: 0.45vw;
   line-height: 3; 
 }
@@ -335,6 +340,7 @@ a{
 #cart_total_price{
 	font-weight: bolder;
 	font-size: 1vw;
+  margin: 1vh 0 1vh 0;
 }
 
 #cart_total{
@@ -343,25 +349,57 @@ a{
   padding-top: 0.25vw;
 }
 
-.price_container{
-	border-bottom: 1px solid #eaeaea;
-}
+/*.price_container{
+	border-bottom: 0.01vh solid #eaeaea;
+}*/
 
 #cart_assistant{
-  font-family: 'playfair_display', 'serif';
-	font-weight: lighter;
+  font-family: 'raleway', 'sans-serif';
+	font-weight: 700;
 	font-size: 0.5vw;
+  color: #888888;
+
+  border-top: 0.01vh solid #eaeaea;  
 }
 
 #phoneIcon {
-  width: 1vw; 
-  height: 1vh; 
+  height: 1.5vh; 
   margin: 0.35vw;
 }
 
 #map-addon-info{
   font-family: 'playfair_display', 'serif';
   font-weight: bolder;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+#nextButton {
+  animation: fadeIn 1s ease-in-out;
+
+  border: none;
+  border-radius: 5px;
+  background-color: #B38C4A;
+  text-align: center;
+  font-weight: 900;
+  display: none; /* Initially hidden */
+
+  width: 100%;
+  margin-top: 1vh;
+  padding: 1vh 0 1vh 0;
+  transition: background-color 0.1s, color 0.1s; /* smooth color transition */
+
+}
+
+#nextButton:hover{
+  background-color: #CFA765; /* background color when hovered */
+}
+
+#nextButton:active{
+  background-color: #594030; /* background color when clicked */
 }
 
 /*--------------------pop up window----------------------*/
@@ -381,13 +419,14 @@ a{
 
 }
 
-.popup-button {
+.popup_button {
   width: 100%; 
-  margin-bottom: 5px; 
-  padding: 10px;
+  margin-bottom: 0.75vh; 
+  padding: 0.75vw;
   text-align: left;
   outline: none;
   border: none;
+  font-size: 1vw;
 
   background-color: #A17C3F; /* initial background color */
   color: white; /* initial text color */
@@ -395,25 +434,188 @@ a{
   transition: background-color 0.1s, color 0.1s; /* smooth color transition */
 }
 
-.popup-button:hover {
+.popup_button:hover {
   background-color: #CFA765; /* background color when hovered */
 }
 
-.popup-button:active {
+.popup_button:active {
   background-color: #594030; /* background color when clicked */
 }
 
 #choose_ticket_type{
   font-family: 'playfair_display', 'serif';
   font-weight: bolder;
-  font-size: 2vw;
+  font-size: 1.5vw;
   margin-bottom: 1vh;
+}
+
+/*---top section---*/
+
+#popup_section_container{
+  background-color: #f9f9f9;
+  margin: -10px;
+  padding: 15px;
+
+  border-bottom: 0.1vh solid #eaeaea; /* Add a border at the bottom */
+  padding-bottom: 10px; /* Give some space below the content before the border */  
+}
+
+.popup_seat_type{
+  font-family: 'raleway', 'sans-serif';
+  font-weight: 400;
+  font-size: 0.85vw;
+  color: #757575;
+  margin-top: 1vh;
+  border-bottom: 0.01vh solid #eaeaea;   
+}
+
+.popup_seat_selection{
+  font-family: 'raleway', 'sans-serif';
+  font-weight: 500;
+  font-size: 1vw;
+
+  border-bottom: 0.01vh solid #eaeaea;   
+}
+
+.popup_price {
+  margin-left: 10vw; /* Add left margin to create more space */
+}
+
+#crossIcon {
+  position: absolute;
+  top: 1vh; /* Adjust as needed */
+  right: 0.75vw; /* Adjust as needed */
+
+  height: 2vh;
+}
+
+/*--------------------------------payment page----------------------------*/
+
+.payment-container {
+  width: 90vw;
+  max-width: 600px;
+  margin: 5vh auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+.card-information-container,
+.personal-information-container {
+  padding: 2vw;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.25);
+  border-radius: 5px;
+}
+
+.input-group {
+  margin-bottom: 1vh;
+}
+
+.input-group label {
+  display: block;
+}
+
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 2vw;
+
+}
+
+.input-row > div {
+  flex-grow: 1;
+}
+
+#payment-form label,
+#personal-info-form label {
+  display: block;
+  margin-bottom: 0.25vh;
+}
+
+#payment-form input,
+#personal-info-form input {
+  width: 100%;
+  padding: 1vh 0;
+  margin: 1vh 0 2vh 0;
+
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.submit-payment-btn {
+  align-self: center;
+  cursor: pointer;
+  padding: 2vh 4vw;
+  border: none;
+  border-radius: 5px;
+  background-color: #B38C4A;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.submit-payment-btn:hover {
+  background-color: #A17C3F;
 }
 
 
 
+/*--------------------------------timer-----------------------------------*/
 
 
+.base-timer {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
 
+.base-timer__svg {
+  transform: scaleX(-1);
+}
+
+.base-timer__circle {
+  fill: none;
+  stroke: none;
+}
+
+.base-timer__path-elapsed {
+  stroke-width: 7px;
+  stroke: rgb(214, 214, 214);
+}
+
+.base-timer__path-remaining {
+  stroke-width: 7px;
+  stroke-linecap: round;
+  transform: rotate(90deg);
+  transform-origin: center;
+  transition: 1s linear all;
+  fill-rule: nonzero;
+  stroke: currentColor;
+}
+
+.base-timer__path-remaining.green {
+  color: rgb(65, 184, 131);
+}
+
+.base-timer__path-remaining.orange {
+  color: orange;
+}
+
+.base-timer__path-remaining.red {
+  color: red;
+}
+
+.base-timer__label {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 16px;
+}
 
 

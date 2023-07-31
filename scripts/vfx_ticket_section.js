@@ -1,9 +1,18 @@
 var enableHover = true;
 
 function updateImage(src) {
-    if (enableHover) {
-        document.getElementById("seatingImage").src = src;
-    }
+  if (enableHover) {
+    var seatingImage = document.getElementById("seatingImage");
+    seatingImage.src = src;
+    seatingImage.style.opacity = 1;
+  }
+}
+
+function resetImage() {
+  if (enableHover) {
+    var seatingImage = document.getElementById("seatingImage");
+    seatingImage.style.opacity = 0;
+  }
 }
 
 // ---------------------------------------Mouse over--------------------------------
@@ -26,35 +35,30 @@ document.getElementById("frontOrchestra").addEventListener("mouseover", function
   event.preventDefault();
   updateImage("images/ticket/new/Front_Orchestra.png");
 });
-// ---------------------------------------Mouse out-------------------------------------
 
+// ---------------------------------------Mouse out-------------------------------------
 document.getElementById("backBalcony").addEventListener("mouseout", function(event){
   event.preventDefault();
-  if (enableHover) {
-    document.getElementById("seatingImage").src = "images/ticket/new/empty.png";
-  }
+  resetImage();
 });
 
 document.getElementById("frontBalcony").addEventListener("mouseout", function(event){
   event.preventDefault();
-  if (enableHover) {
-    document.getElementById("seatingImage").src = "images/ticket/new/empty.png";
-  }
+  resetImage();
 });
 
 document.getElementById("backOrchestra").addEventListener("mouseout", function(event){
   event.preventDefault();
-  if (enableHover) {
-    document.getElementById("seatingImage").src = "images/ticket/new/empty.png";
-  }
+  resetImage();
 });
 
 document.getElementById("frontOrchestra").addEventListener("mouseout", function(event){
   event.preventDefault();
-  if (enableHover) {
-    document.getElementById("seatingImage").src = "images/ticket/new/empty.png";
-  }
+  resetImage();
 });
+
+
+
 
 // -------------------------------------Click---------------------------------------
 
@@ -109,12 +113,3 @@ document.addEventListener('mousemove', function(event) {
 
 
 
-
-
-
-// document.getElementById("returnLink").addEventListener("click", function(event){
-//   event.preventDefault();
-//   enableHover = true;
-//   document.getElementById("seatingImage").src = "images/ticket/BackBalcony.png";
-// });
-// -------------------------------------------------------------------------------

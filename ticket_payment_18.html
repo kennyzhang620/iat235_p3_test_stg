@@ -4,28 +4,61 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ticket Payment Page</title>
-  <link rel="stylesheet" href="ticket.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/ticket.css">
 </head>
+
 <body>
-  <div class="payment_container">
-    <h5>Ticket Payment</h5>
-    <form action="#" method="post">
-      <label for="name">Name on Card:</label>
-      <input type="text" id="name" name="name" required>
+  <div class="payment-container">
 
-      <label for="card-number">Card Number:</label>
-      <input type="text" id="card-number" name="card-number" required>
+    <div class="card-information-container">
+      <h4>Card Information</h4>
+      <form id="payment-form">
+        <div class="input-group">
+          <label for="card-holder-name">Cardholder's Name</label>
+          <input type="text" id="card-holder-name">
+        </div>
+        
+        <div class="input-group">
+          <label for="card-number">Card Number</label>
+          <input type="text" id="card-number">
+        </div>
+        
+        <div class="input-row">
+          <div class="input-group">
+            <label for="expiry-date">Expiry Date</label>
+            <input type="text" id="expiry-date">
+          </div>
+          
+          <div class="input-group">
+            <label for="cvc">CVC</label>
+            <input type="text" id="cvc">
+          </div>
+        </div>
+      </form>
+    </div>
 
-      <div class="expiration-cvv">
-        <label for="expiration">Expiration Date:</label>
-        <input type="text" id="expiration" name="expiration" placeholder="MM/YY" required>
+    <div class="personal-information-container">
+      <h4>Personal Information</h4>
+      <form id="personal-info-form">
+        <div class="input-row">
+          <div class="input-group">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name">
+          </div>
 
-        <label for="cvv">CVV:</label>
-        <input type="text" id="cvv" name="cvv" maxlength="3" required>
-      </div>
+          <div class="input-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name">
+          </div>
+        </div>
 
-      <button type="submit">Pay Now</button>
-    </form>
+        <!-- more fields for personal information as you need -->
+
+      </form>
+    </div>
+
+    <button class="submit-payment-btn">Submit Payment</button>
   </div>
+  
 </body>
 </html>

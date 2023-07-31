@@ -9,8 +9,8 @@ function changeImage(src) {
 }
 
 window.onload = function() {
-    document.getElementById("map_backBalcony").style.backgroundColor = '#594030';
-    changeImage("images/ticket/Hall_seating_backBalcony.png");
+    // document.getElementById("map_backBalcony").style.backgroundColor = '#594030';
+    // changeImage("images/ticket/Hall_seating_backBalcony.png");
 
     const urlParams = new URLSearchParams(window.location.search);
     const section = urlParams.get('section');
@@ -87,6 +87,15 @@ document.addEventListener('click', function(e) {
   }
 }, false);
 
+document.getElementById("crossIcon").addEventListener("click", function(e){
+  e.stopPropagation();  // prevent the event from bubbling up to parent elements
+  var popup = document.getElementById("popup");
+  if (popup) {
+    popup.style.display = 'none';
+  }
+});
+
+
 document.getElementById("button1").addEventListener("click", function(){
   // Your code here
 });
@@ -103,10 +112,36 @@ document.getElementById("button4").addEventListener("click", function(){
   // Your code here
 });
 
+// -----------------------------popup buttons--------------------------
+
+function resetPopupColors() {
+  var ids = ["button1", "button2", "button3", "button4"];
+  for (var i = 0; i < ids.length; i++) {
+    document.getElementById(ids[i]).style.backgroundColor = ''; // Reset color
+  }
+}
+
+var buttonIds = ["button1", "button2", "button3", "button4"];
+for (var i = 0; i < buttonIds.length; i++) {
+  document.getElementById(buttonIds[i]).addEventListener("click", function(e){
+    e.preventDefault();
+    resetPopupColors();
+    this.style.backgroundColor = '#594030';
+
+    var nextButton = document.getElementById("nextButton");
+    nextButton.style.display = 'block'; // Show "Next" button
+  });
+}
+
+// --------------------------payment button---------------------------
+// document.getElementById("nextButton").style.opacity = '1';
+// document.getElementById("nextButton").style.visibility = 'visible';
 
 
-
-
+document.getElementById("nextButton").addEventListener("click", function(e){
+  e.preventDefault();
+  window.location.href = "ticket_payment_18.html";
+});
 
 
 
