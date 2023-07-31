@@ -59,18 +59,51 @@ function resetColors(){
 }
 // -----------------------------pop up----------------------------------------
 
-document.body.addEventListener('click', function(event) {
-  const popup = document.getElementById('popup');
+document.getElementById("seatingMapImage").addEventListener("click", function(e){
+  var popup = document.getElementById("popup");
 
-  popup.style.left = event.clientX + 'px';
-  popup.style.top = event.clientY + 'px';
-  popup.style.transform = 'scale(1)'; // Animate popup to its normal size
-  popup.style.display = 'block'; // Show the popup
+  if (popup.style.display !== "block") {
+    popup.style.left = `${e.pageX}px`;
+    popup.style.top = `${e.pageY}px`;
+    popup.style.display = "block";
+  }
 });
 
-popup.addEventListener('click', function(event) {
-  event.stopPropagation();
+document.addEventListener('click', function(e) {
+  var popup = document.getElementById("popup");
+
+  if (popup) {
+    var rect = popup.getBoundingClientRect();
+    var dx = e.clientX - (rect.left + rect.width / 2);  // horizontal distance from center
+    var dy = e.clientY - (rect.top + rect.height / 2); // vertical distance from center
+    var dist = Math.sqrt(dx * dx + dy * dy); // calculate distance using Pythagorean theorem
+
+    var maxDist = 1.002 * Math.sqrt(rect.width * rect.width + rect.height * rect.height) / 2; // calculate 1.5 times the diagonal of the popup
+
+    // If the click is outside the threshold distance, hide the popup
+    if (dist > maxDist) {
+      popup.style.display = 'none';
+    }
+  }
+}, false);
+
+document.getElementById("button1").addEventListener("click", function(){
+  // Your code here
 });
+
+document.getElementById("button2").addEventListener("click", function(){
+  // Your code here
+});
+
+document.getElementById("button3").addEventListener("click", function(){
+  // Your code here
+});
+
+document.getElementById("button4").addEventListener("click", function(){
+  // Your code here
+});
+
+
 
 
 
