@@ -112,7 +112,7 @@ footer {
     
     [class*="ticket_main"] {
         width: 50%;
-        margin: 1% auto;
+        margin: 1.5% auto;
         flex-direction: column;
       }
 
