@@ -38,7 +38,7 @@ footer {
 /* Styles for each section 1*/
 
 
-/* Ticket Module (Section 1)*/
+/* Ticket Module (Section 1 - Stin)*/
 
 .ticket_main{
 
@@ -86,7 +86,6 @@ footer {
 }
 
 .ticket_main h2{
-
     color: white;
     font-size:11pt;
 }
@@ -108,7 +107,37 @@ footer {
     margin-top:10px;
 }
 
-/**/
+/* Media Queries */
+@media screen and (max-width: 60rem){
+    
+    [class*="ticket_main"] {
+        width: 50%;
+        margin: 1% auto;
+        flex-direction: column;
+      }
+
+      .ticket_main h1{
+        margin: 10% 0;
+        text-align:center;
+        }
+
+        .ticket_main h2{
+            margin:4%;
+        }
+
+        .ticket_subsection{
+            height:60%;
+        }
+
+        .button_ticket{
+            padding: 4% 0%;    
+            white-space: nowrap;
+            margin: 1% 0;
+        }
+        
+    }
+
+/* End of Stin S1 */
 
 .site_part1 {
     background-image: url(../images/main_img.png);
