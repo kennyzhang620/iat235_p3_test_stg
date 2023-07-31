@@ -693,30 +693,31 @@ footer {
 }
 
 .faq_container {
-    text-align:center;
-    padding-top:10%;
+    text-align:left;
+    padding: 0 0 0 40%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
 
     background-color: black;
     height: 100vh;
     width: 100%;
   
     /* Rat Image */
-    background-position: top;
-    background-size: 50%;
+    background-position: left;
+    background-size: 40%;
     background-repeat: no-repeat;
     background-image: url(../images/faq_rat.png);
 } 
 
 /* Style for the FAQ */
 details {    
-    width:30%;
+    width:80%;
     margin-top:25px;
     text-align:left;
     border-radius: 4px;
-    padding: 0.5em 0.5em 0;
+    padding: 0.5em 0;
+    
 
     color: #B38C4A; 
 }
@@ -750,4 +751,33 @@ details[open] summary {
     margin-bottom: 0.5em;
 }
 
+/* Media Queries for FAQ */
+@media screen and (max-width: 60rem){
+    summary {
+        margin: 0 0;
+        padding: 0em;
+    }
+
+    details {    
+        width:80%;
+        margin-top:1.5vw;
+        text-align:center;
+        padding: 0 0 0 0;
+    
+        color: #B38C4A; 
+    }
+
+    .faq_container {
+        text-align:center;
+        align-items: center;
+
+        padding-top:0;
+        padding: 0 0 0 0;
+
+        /* Rat Image */
+        background-position: center;
+        background-color:rgba(0, 0, 0, 0.5);
+        background-size: 50%;
+    } 
+}
 /* End of section*/
