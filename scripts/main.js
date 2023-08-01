@@ -39,93 +39,93 @@
 
     const songsList = [
         {
-            title: "Le Festin",
+            title: "01 Le Festin",
             author: "Camille, Michael Giacchion",
-            path: "https://open.spotify.com/track/02JIdsrod3BYucThfUFDUX?si=8ae11bfd8c0b4846",
+            path: "music/Le_Festin.mp3",
             time: "03:25"
         },
         {
-            title: "Welcome to Gusteau's",
+            title: "02 Welcome to Gusteau's",
             author: "Michael Giacchion",
-            path: "https://open.spotify.com/track/5tppih5lpALVyHnWbRnMTo?si=d96fa7b5bf494871",
+            path: "music/Welcome_to_Gusteaus.mp3",
             time: "00:38"
         },
         {
-            title: "This Is Me",
+            title: "03 This Is Me",
             author: "Michael Giacchion",
-            path: "https://open.spotify.com/track/68qRMRZ25zC1C1QlGsVdg0?si=c4f9c980a6584daa",
+            path: "music/This_Is_Me.mp3",
             time: "01:41"
         },
         {
-            title: "Granny Get Your Gun",
+            title: "04 Granny Get Your Gun",
             author: "Michael Giacchion",
-            path: "https://open.spotify.com/track/1quHYUV0FxwiikkUClTsZe?si=12eb51c780134761",
+            path: "music/Granny_Get_Your_Gun.mp3",
             time: "02:01"
         },
         {
-            title: "100 Rat Dash",
+            title: "05 100 Rat Dash",
             author: "Michael Giacchion",
-            path: "https://open.spotify.com/track/1MfC8OLECebDZsBa2Jcnjg?si=11802ef2bd6249da",
+            path: "music/100_Rat_Dash.mp3",
             time: "01:47"
         },
         {
-            title: "Wall Rat",
+            title: "06 Wall Rat",
             author: "Michael Giacchion",
-            path: "https://open.spotify.com/track/0nW8XVX13zTx58XcPvoLWb?si=463c402f6f99437a",
+            path: "music/Wall_Rat.mp3",
             time: "02:41"
         },
         {
-            title: "Cast of Cooks",
+            title: "07 Cast of Cooks",
             author: "Michael Giacchion",
-            path: "https://open.spotify.com/track/7EXDfmnGVSA6tmFHldB6hv?si=f516f260d3b6474a",
+            path: "music/Cast_of_Cooks.mp3",
             time: "01:41"
         },
         {
-            title: "A Real Gourmet Kitchen",
+            title: "08 A Real Gourmet Kitchen",
             author: "Michael Giacchion",
-            path: "https://open.spotify.com/track/6hl3QoeDknHZ1mg5s3Aw2V?si=999e46d1ae9044f5",
+            path: "music/A_Real_Gourmet_Kitchen.mp3",
             time: "04:18"
         },
         {
-            title: "Souped Up",
+            title: "09 Souped Up",
             author: "Michael Giacchion",
-            path: "https://open.spotify.com/track/1ObCM8mvOZ0O1RvNNvcHdI?si=8843cc6dcb034bdc",
+            path: "music/Souped_Up.mp3",
             time: "00:50"
         },
         {
-            title: "Is It Soup Yet?",
+            title: "10 Is It Soup Yet?",
             author: "Michael Giacchion",
-            path: "https://open.spotify.com/track/2bu6DacVuCax3jfAN5Cnh1?si=1e94ebb1e13a45c6",
+            path: "music/Is_It_Soup_Yet.mp3",
             time: "01:16"
         },
         {
-            title: "A New Deal",
+            title: "11 A New Deal",
             author: "Michael Giacchion",
-            path: "https://open.spotify.com/track/6ddWWAGUgZPBmi6Ezakha1?si=e62e8adf57224ff7",
+            path: "music/A_New_Deal.mp3",
             time: "01:56"
         },
         {
-            title: "Remy Drives a Linguini",
+            title: "12 Remy Drives a Linguini",
             author: "Michael Giacchion",
-            path: "https://open.spotify.com/track/0S11HEtyphdIwD6hyqKJ6k?si=65555d3d0aa94f8f",
+            path: "music/Remy_Drives_a_Linguini.mp3",
             time: "02:26"
         },
         {
-            title: "Colette Shows Him Le Ropes",
+            title: "13 Colette Shows Him Le Ropes",
             author: "Michael Giacchion",
-            path: "https://open.spotify.com/track/6p8lCOvTbSI4eijtyw6pW4?si=d5655afd89d44170",
+            path: "music/Colette_Shows_Him_Le_Ropes.mp3",
             time: "02:56"
         }
 
     ];
 
     const audio = doc.querySelector('#audio');
-    const controls = doc.querySelector('#controls');
+    const controls = doc.querySelector('#musicControl');
     const title = doc.querySelector('#musicName');
     const time = doc.querySelector('#musicTime');
     const author = doc.querySelector('#musicAuthor');
-    const playbtn = doc.querySelector('#play');
-    const voicebtn = doc.querySelector('#voice');
+    const playbtn = doc.querySelector('#playSong');
+    const voicebtn = doc.querySelector('#songVoice');
 
     let curSongIndex = 0;
     let isPlay = false; 
@@ -134,10 +134,94 @@
         render(songsList[curSongIndex]);
     }
 
+    controls.addEventListener('click', e => {
+        switch(e.target?.id){
+            case 'songVoice':
+                voiceControl();
+                break;
+            case 'preSong':
+                preSong();
+                break;
+            case 'playSong':
+                btnPlay();
+                break;
+            case 'nextSong':
+                nextSong();
+                break;
+            default:
+                break;
+        }
+    });
+
+
+    function btnPlay(){
+        if(!isPlay){
+            musicPlay();
+        }
+        else{
+            musicPause();
+        }
+    }
+
+
+    function musicPlay(){
+        isPlay = true;
+        playbtn.classList.remove('fa-play');
+        playbtn.classList.add('fa-pause');
+        audio.play();
+    }
+
+    function musicPause(){
+        isPlay = false;
+        playbtn.classList.remove('fa-pause');
+        playbtn.classList.add('fa-play');
+        audio.pause();
+    }
+
+    function preSong(){
+        if(curSongIndex > 0){
+            curSongIndex--;
+            render(songsList[curSongIndex]);
+            musicPlay();
+        }
+    }
+
+    function nextSong(){
+        if(curSongIndex < songsList.length - 1){
+            curSongIndex++;
+            render(songsList[curSongIndex]);
+            musicPlay();
+        }
+    }
+
+    function voiceControl(){
+        if(audio.volume > 0){
+            volumeOff();
+        }
+        else{
+            volumeOn();
+        }
+    }
+
+    function volumeOff(){
+        audio.volume=0;
+        voicebtn.classList.remove('fa-volume-high');
+        voicebtn.classList.add('fa-volume-xmark');
+    }
+
+    function volumeOn(){
+        audio.volume = 0.5;
+        voicebtn.classList.remove('fa-volume-xmark');
+        voicebtn.classList.add('fa-volume-high');
+    }
+
+
     function render(song){
         title.innerHTML = song.title;
         author.innerHTML = song.author;
         time.innerHTML = song.time;
+        audio.volume = 0.5;
+        audio.src = song.path;
     }
 
     init();
