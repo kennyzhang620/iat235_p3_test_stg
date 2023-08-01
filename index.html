@@ -93,24 +93,28 @@
         <section id="site_part3">
         </section>
 
+<!-- section 4 -->
         <section class="site_part4">
+            <section class="audio">
+                <audio id="audio" src=""></audio>
+            </section>
+
             <h class="musicH1">Now Playing</h>
 
             <div class="mainBackground">
                 <section class="musicDisplay">
                     <div class="musicDisplayInfo">
-                        <p class="musicName">01 Le Festin</p>
-                        <p class="musicTime">2:50</p>
-                        <p class="musicAuthor">Camille, Michael Giacchino</p>
+                        <span id="musicName"></span>
+                        <span id="musicTime"></span>
+                        <span id="musicAuthor"></span>
                     </div>
-                    <div class="musicControl">
-                        <i class="fa-solid fa-backward fa-2xl"></i>
-                        <i class="fa-solid fa-play fa-2xl"></i>
-                        <i class="fa-solid fa-forward fa-2xl"></i>
+                    <div id="musicControl" class="musicControl">
+                        <span><i id="pre" class="fa-solid fa-backward fa-2xl"></i></span>
+                        <span><i id="play" class="fa-solid fa-play fa-2xl"></i></span>
+                        <span><i id="next" class="fa-solid fa-forward fa-2xl"></i></span>
+                        <span><i id="voice" class="fa-solid fa-volume-high fa-2xl"></i></span>
                     </div>
-                </section>
-                <div class="control">
-                </div>  
+                </section>  
                 <h class="musicH2">Full Tracklist</h>
                 <table class="musicTrack">
                     <tr>
@@ -139,6 +143,7 @@
                 </table>
             </div>
         </section>
+<!-- end of section 4 -->
 
         <section id="site_part5">
             <!-- orchestra -->
@@ -486,4 +491,6 @@
         </footer>
     </main>
 </body>
+
+<script src="scripts/main.js"></script>
 </html>

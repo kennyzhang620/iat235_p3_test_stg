@@ -306,20 +306,23 @@ footer {
     font-style: normal;
     font-size: 36px;
 }
-.musicName{
+.musicDisplayInfo span{
+    display: flex;
+}
+#musicName{
     font-family: "Raleway";
     font-size: 30px;
     font-style: bold;
     margin-left: 50px;
 }
-.musicTime{
-    margin-left: 600px;
-    font-size: 30px;
-}
-.musicAuthor{
+#musicAuthor{
     font-size: 25px;
     color: #B38C4A;
     margin-left: 50px;
+}
+#musicTime{
+    font-size: 25px;
+    margin-left: 700px;
 }
 .musicDisplay{
     display: flex;
@@ -333,7 +336,7 @@ footer {
     width: 50%;
     border-radius: 20px;
 }
-.musicControl{
+#musicControl{
     display: flex;
     text-align: center;
     align-items: center;
@@ -343,7 +346,7 @@ footer {
     border-radius: 20px;
     height: 50px;
 }
-.musicControl i{
+#musicControl i{
     width: 80px;
     transition: all 0.4s;
     cursor: pointer;
