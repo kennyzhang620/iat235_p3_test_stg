@@ -1,0 +1,10 @@
+CSS Validator test - main.css
+Running tests...
+
+103	.button_ticket	Value Error : border only 0 can be a unit. You must put a unit after your number : 5
+330	.musicH1	Value Error : font-style bold is not a font-style value : bold
+341	.musicName	Value Error : font-style bold is not a font-style value : bold
+510	.filter-option:focus	Parse Error oven-knob{ transition-duration: 0.5s; transform: rotate(90deg); margin-top: 10%; }
+712	.faq_container	left is not a align-items value : left
+
+End of test. Test failed.

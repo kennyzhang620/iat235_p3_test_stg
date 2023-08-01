@@ -1,0 +1,5 @@
+CSS Validator test - ticket.css
+Running tests...
+
+
+End of test. Test passed.

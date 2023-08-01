@@ -1,0 +1,6 @@
+HTML Validator test - ticket_section_18.html
+Running tests...
+
+
+
+End of test. Test passed.

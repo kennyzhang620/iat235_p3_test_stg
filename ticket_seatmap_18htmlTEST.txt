@@ -1,0 +1,93 @@
+HTML Validator test - ticket_seatmap_18.html
+Running tests...
+
+Error: Element div not allowed as child of element button in this context. (Suppressing further errors from this subtree.)
+
+From line 133, column 5; to line 133, column 9
+
+on1">↩				<div>Adult<
+
+Contexts in which element div may be used:
+Where flow content is expected.
+As a child of a dl element.
+Content model for element button:
+Phrasing content, but there must be no interactive content descendant and no descendant with the tabindex attribute specified.
+Error: Element div not allowed as child of element button in this context. (Suppressing further errors from this subtree.)
+
+From line 134, column 5; to line 134, column 29
+
+/div>↩				<div class="popup_price">$101.4
+
+Contexts in which element div may be used:
+Where flow content is expected.
+As a child of a dl element.
+Content model for element button:
+Phrasing content, but there must be no interactive content descendant and no descendant with the tabindex attribute specified.
+Error: Element div not allowed as child of element button in this context. (Suppressing further errors from this subtree.)
+
+From line 137, column 5; to line 137, column 9
+
+on2">↩				<div>Senior
+
+Contexts in which element div may be used:
+Where flow content is expected.
+As a child of a dl element.
+Content model for element button:
+Phrasing content, but there must be no interactive content descendant and no descendant with the tabindex attribute specified.
+Error: Element div not allowed as child of element button in this context. (Suppressing further errors from this subtree.)
+
+From line 138, column 5; to line 138, column 29
+
+/div>↩				<div class="popup_price">$96.19
+
+Contexts in which element div may be used:
+Where flow content is expected.
+As a child of a dl element.
+Content model for element button:
+Phrasing content, but there must be no interactive content descendant and no descendant with the tabindex attribute specified.
+Error: Element div not allowed as child of element button in this context. (Suppressing further errors from this subtree.)
+
+From line 141, column 5; to line 141, column 9
+
+on3">↩				<div>Child 
+
+Contexts in which element div may be used:
+Where flow content is expected.
+As a child of a dl element.
+Content model for element button:
+Phrasing content, but there must be no interactive content descendant and no descendant with the tabindex attribute specified.
+Error: Element div not allowed as child of element button in this context. (Suppressing further errors from this subtree.)
+
+From line 142, column 5; to line 142, column 29
+
+/div>↩				<div class="popup_price">$90.95
+
+Contexts in which element div may be used:
+Where flow content is expected.
+As a child of a dl element.
+Content model for element button:
+Phrasing content, but there must be no interactive content descendant and no descendant with the tabindex attribute specified.
+Error: Element div not allowed as child of element button in this context. (Suppressing further errors from this subtree.)
+
+From line 145, column 5; to line 145, column 9
+
+on4">↩				<div>Studen
+
+Contexts in which element div may be used:
+Where flow content is expected.
+As a child of a dl element.
+Content model for element button:
+Phrasing content, but there must be no interactive content descendant and no descendant with the tabindex attribute specified.
+Error: Element div not allowed as child of element button in this context. (Suppressing further errors from this subtree.)
+
+From line 146, column 5; to line 146, column 29
+
+/div>↩				<div class="popup_price">$90.95
+
+Contexts in which element div may be used:
+Where flow content is expected.
+As a child of a dl element.
+Content model for element button:
+Phrasing content, but there must be no interactive content descendant and no descendant with the tabindex attribute specified.
+
+End of test. Test failed.

@@ -1,0 +1,467 @@
+HTML Validator Test - index.html
+Running tests...
+
+Error: The character encoding was not declared. Proceeding using windows-1252.
+
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 5, column 5; to line 5, column 122
+
+itle>↩    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />↩    <
+
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 7, column 5; to line 7, column 109
+
+ript>↩    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></scri
+
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 8, column 5; to line 8, column 73
+
+ript>↩    <link rel="stylesheet" type="text/css" href="stylesheets/main.css" />↩    <
+
+Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+From line 22, column 17; to line 22, column 59
+
+          <img class="title" src="images/title.svg"/>↩     
+
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 22, column 17; to line 22, column 59
+
+          <img class="title" src="images/title.svg"/>↩     
+
+Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+From line 47, column 21; to line 47, column 82
+
+          <img class="selectors" id="img_nav" src="icons/home_icon.svg">↩     
+
+Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+From line 60, column 17; to line 60, column 72
+
+          <img class="pipe_1" src="images/Left_pipe_0x0001.svg" />↩     
+
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 60, column 17; to line 60, column 72
+
+          <img class="pipe_1" src="images/Left_pipe_0x0001.svg" />↩     
+
+Error: Bad value 30% for attribute width on element img: Expected a digit but saw % instead.
+
+From line 62, column 48; to line 62, column 148
+
+">Program <img width="30%" height="30%" style="transform: translate(-17%,30%); " src="images/remy_lay_1.svg" /> </div
+
+Error: Bad value 30% for attribute height on element img: Expected a digit but saw % instead.
+
+From line 62, column 48; to line 62, column 148
+
+">Program <img width="30%" height="30%" style="transform: translate(-17%,30%); " src="images/remy_lay_1.svg" /> </div
+
+Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+From line 62, column 48; to line 62, column 148
+
+">Program <img width="30%" height="30%" style="transform: translate(-17%,30%); " src="images/remy_lay_1.svg" /> </div
+
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 62, column 48; to line 62, column 148
+
+">Program <img width="30%" height="30%" style="transform: translate(-17%,30%); " src="images/remy_lay_1.svg" /> </div
+
+Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+From line 77, column 33; to line 77, column 75
+
+          <img class="icons" src="icons/clock.svg" />↩     
+
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 77, column 33; to line 77, column 75
+
+          <img class="icons" src="icons/clock.svg" />↩     
+
+Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+From line 81, column 33; to line 81, column 88
+
+          <img class="icons" src="icons/intermission_glass.svg" />↩     
+
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 81, column 33; to line 81, column 88
+
+          <img class="icons" src="icons/intermission_glass.svg" />↩     
+
+Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+From line 90, column 13; to line 90, column 70
+
+          <img class="footer_2" src="images/section_2_footer.png" />↩     
+
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 90, column 13; to line 90, column 70
+
+          <img class="footer_2" src="images/section_2_footer.png" />↩     
+
+Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections, or else use a div element instead for any cases where no heading is needed.
+
+From line 58, column 9; to line 58, column 36
+
+↩↩        <section class="site_part2">↩     
+
+Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections, or else use a div element instead for any cases where no heading is needed.
+
+From line 93, column 9; to line 93, column 33
+
+ ↩        <section id="site_part3">↩     
+
+Error: Element h not allowed as child of element section in this context. (Suppressing further errors from this subtree.)
+
+From line 97, column 13; to line 97, column 31
+
+          <h class="musicH1">Now Pl
+
+Content model for element section:
+Flow content.
+Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections, or else use a div element instead for any cases where no heading is needed.
+
+From line 100, column 17; to line 100, column 46
+
+          <section class="musicDisplay">↩     
+
+Error: Element h not allowed as child of element div in this context. (Suppressing further errors from this subtree.)
+
+From line 114, column 17; to line 114, column 35
+
+          <h class="musicH2">Full T
+
+Content model for element div:
+If the element is a child of a dl element: one or more dt elements followed by one or more dd elements, optionally intermixed with script-supporting elements.
+If the element is not a child of a dl element: flow content.
+Warning: A table row was 2 columns wide, which is less than the column count established by the first row (3).
+
+From line 133, column 46; to line 134, column 25
+
+ed Up</td>↩                    </tr>↩     
+
+Warning: A table row was 2 columns wide, which is less than the column count established by the first row (3).
+
+From line 137, column 52; to line 138, column 25
+
+ Yet?</td>↩                    </tr>↩     
+
+Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections, or else use a div element instead for any cases where no heading is needed.
+
+From line 96, column 9; to line 96, column 36
+
+↩↩        <section class="site_part4">↩     
+
+Error: The main element must not appear as a descendant of the section element.
+
+From line 155, column 13; to line 155, column 47
+
+          <main class="subsection_orchestra"> <!--e
+
+Error: The main element must not appear as a descendant of the main element.
+
+From line 155, column 13; to line 155, column 47
+
+          <main class="subsection_orchestra"> <!--e
+
+Error: A document must not include more than one visible main element.
+
+From line 155, column 13; to line 155, column 47
+
+          <main class="subsection_orchestra"> <!--e
+
+Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+From line 159, column 21; to line 159, column 94
+
+          <img class="left-orchestra-pipes" src="images/left-orchestra-pipes.png" />↩     
+
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 159, column 21; to line 159, column 94
+
+          <img class="left-orchestra-pipes" src="images/left-orchestra-pipes.png" />↩     
+
+Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections, or else use a div element instead for any cases where no heading is needed.
+
+From line 158, column 17; to line 158, column 57
+
+          <section class="left-pipe" id="leftpipe">↩     
+
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 176, column 33; to line 176, column 118
+
+          <img class="orch-remy" src="images/orchestra-remy.png" alt="Remy on orchestra pipes"/>↩↩↩   
+
+Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+From line 188, column 37; to line 188, column 87
+
+          <img class="oven-knob" src="images/oven-knob.png"/>↩     
+
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 188, column 37; to line 188, column 87
+
+          <img class="oven-knob" src="images/oven-knob.png"/>↩     
+
+Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+From line 193, column 37; to line 193, column 87
+
+          <img class="oven-knob" src="images/oven-knob.png"/>↩     
+
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 193, column 37; to line 193, column 87
+
+          <img class="oven-knob" src="images/oven-knob.png"/>↩     
+
+Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+From line 198, column 37; to line 198, column 87
+
+          <img class="oven-knob" src="images/oven-knob.png"/>↩     
+
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 198, column 37; to line 198, column 87
+
+          <img class="oven-knob" src="images/oven-knob.png"/>↩     
+
+Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+From line 203, column 37; to line 203, column 87
+
+          <img class="oven-knob" src="images/oven-knob.png"/>↩     
+
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 203, column 37; to line 203, column 87
+
+          <img class="oven-knob" src="images/oven-knob.png"/>↩     
+
+Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+From line 208, column 37; to line 208, column 87
+
+          <img class="oven-knob" src="images/oven-knob.png"/>↩     
+
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 208, column 37; to line 208, column 87
+
+          <img class="oven-knob" src="images/oven-knob.png"/>↩     
+
+Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+From line 215, column 41; to line 215, column 110
+
+          <img class="profile-pics" id="otto-tausk" src="images/otto-tausk.png">↩     
+
+Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+From line 220, column 41; to line 220, column 108
+
+          <img class="profile-pics" id="david-bui" src="images/david-bui.png">↩     
+
+Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+From line 228, column 45; to line 228, column 124
+
+          <img class="profile-pics" id="nicholas-wright" src="images/nicholas-wright.png">↩     
+
+Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+From line 234, column 45; to line 234, column 124
+
+          <img class="profile-pics" id="timothy-steeves" src="images/timothy-steeves.png">↩     
+
+Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+From line 240, column 45; to line 240, column 126
+
+          <img class="profile-pics" id="david-lakirovich" src="images/david-lakirovich.png">↩     
+
+Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+From line 246, column 45; to line 246, column 118
+
+          <img class="profile-pics" id="jennie-press" src="images/jennie-press.png">↩     
+
+Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+From line 252, column 45; to line 252, column 118
+
+          <img class="profile-pics" id="jae-won-bang" src="images/jae-won-bang.png">↩     
+
+Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+From line 258, column 45; to line 258, column 126
+
+          <img class="profile-pics" id="rebecca-whitling" src="images/rebecca-whitling.png">↩     
+
+Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+From line 264, column 45; to line 264, column 108
+
+          <img class="profile-pics" id="yi-zhou" src="images/yi-zhou.png">↩     
+
+Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+From line 270, column 45; to line 270, column 118
+
+          <img class="profile-pics" id="xue-feng-wei" src="images/xue-feng-wei.png">↩     
+
+Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+From line 276, column 45; to line 276, column 128
+
+          <img class="profile-pics" id="cassandra-bequary" src="images/cassandra-bequary.png">↩     
+
+Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+From line 284, column 45; to line 284, column 124
+
+          <img class="profile-pics" id="christie-reside" src="images/christie-reside.png">↩     
+
+Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+From line 290, column 45; to line 290, column 120
+
+          <img class="profile-pics" id="dakota-martin" src="images/dakota-martin.png">↩     
+
+Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+From line 296, column 45; to line 296, column 116
+
+          <img class="profile-pics" id="karin-walsh" src="images/karin-walsh.png">↩     
+
+Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+From line 302, column 45; to line 302, column 126
+
+          <img class="profile-pics" id="jeanette-jonquil" src="images/jeanette-jonquil.png">↩     
+
+Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+From line 308, column 45; to line 308, column 126
+
+          <img class="profile-pics" id="michelle-goddard" src="images/michelle-goddard.png">↩     
+
+Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+From line 314, column 45; to line 314, column 126
+
+          <img class="profile-pics" id="rosanne-wieringa" src="images/rosanne-wieringa.png">↩     
+
+Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+From line 320, column 45; to line 320, column 114
+
+          <img class="profile-pics" id="aiden-wong" src="images/aiden-wong.png">↩     
+
+Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+From line 326, column 45; to line 326, column 122
+
+          <img class="profile-pics" id="julia-lockhart" src="images/julia-lockhart.png">↩     
+
+Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+From line 332, column 45; to line 332, column 126
+
+          <img class="profile-pics" id="sophia-dansereau" src="images/sophia-dansereau.png">↩     
+
+Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+From line 341, column 45; to line 341, column 103
+
+          <img class="profile-pics" src="images/oliver-declercq.png">↩     
+
+Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+From line 347, column 45; to line 347, column 98
+
+          <img class="profile-pics" src="images/andrew-mee.png">↩     
+
+Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+From line 353, column 45; to line 353, column 99
+
+          <img class="profile-pics" src="images/holly-bryan.png">↩     
+
+Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+From line 359, column 45; to line 359, column 104
+
+          <img class="profile-pics" src="images/william-loveless.png">↩     
+
+Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+From line 365, column 45; to line 365, column 99
+
+          <img class="profile-pics" src="images/larry-knopp.png">↩     
+
+Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+From line 371, column 45; to line 371, column 105
+
+          <img class="profile-pics" src="images/vincent-vohradsky.png">↩     
+
+Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+From line 377, column 45; to line 377, column 102
+
+          <img class="profile-pics" src="images/marcus-goddard.png">↩     
+
+Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+From line 383, column 45; to line 383, column 100
+
+          <img class="profile-pics" src="images/brian-wendel.png">↩     
+
+Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+From line 389, column 45; to line 389, column 102
+
+          <img class="profile-pics" src="images/andrew-poirier.png">↩     
+
+Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+From line 397, column 45; to line 397, column 102
+
+          <img class="profile-pics" src="images/vern-griffiths.png">↩     
+
+Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+From line 403, column 45; to line 403, column 103
+
+          <img class="profile-pics" src="images/michael-jarrett.png">↩     
+
+Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections, or else use a div element instead for any cases where no heading is needed.
+
+From line 163, column 17; to line 163, column 63
+
+          <section class="orchestra-info" id="orch-tabs">↩     
+
+Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections, or else use a div element instead for any cases where no heading is needed.
+
+From line 143, column 9; to line 143, column 33
+
+↩↩        <section id="site_part5">↩  
+
+End of test. HTML Validation failed.
