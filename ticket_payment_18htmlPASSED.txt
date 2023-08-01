@@ -1,0 +1,5 @@
+HTML Validator Test - ticket_payment_18.html
+Running tests...
+
+
+End of test. Tests passed.
