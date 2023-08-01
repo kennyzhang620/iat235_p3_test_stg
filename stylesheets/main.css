@@ -487,12 +487,25 @@ footer {
   .tabs input[type="radio"]:checked + label + .tab {
     display: block;
   }
-  
-  @media (max-width: 45em) {
-    .tabs .tab,
-    .tabs label {
-      order: initial;
-    }
+
+  /* literally dont know LOL */
+  @media (max-width: 20rem) {
+    
+    .tabs {
+        background: cover;
+        flex-wrap: nowrap;
+        width:100%;
+      }
+    
+    .tabs .tab{
+        padding: 0%;
+      }
+
+      .tabs label {
+        padding: 0rem 0rem;
+        margin-right: 0.2rem;    
+      }
+
     .tabs label {
       width: 100%;
       margin-right: 0;
@@ -500,71 +513,6 @@ footer {
     }
   }
   
-  /**
-   * Generic Styling
-  */
-
-/* Rebecca Tab Stuff */
-
-    /* .filteredList{
-        margin-top: 5%;
-
-        grid-column-end: 8;
-    }
-
-    .filter-option{
-        background-color: transparent;
-        outline: none;
-        border: none;
-        border-radius: 24px;
-        margin-right: 5%;
-
-        grid-column-end: 8;
-    } */
-
-    /* when clicked */
-/* 
-
-    .filter-option:focus{
-        .oven-knob{
-            transition-duration: 0.5s;
-            transform: rotate(90deg);
-            margin-top: 10%;
-        }
-    }
-
-    button[data-filter="Strings"]:focus ~ div:not([class*="Strings"]){
-        display:none;
-    }
-    button[data-filter="Maestros"]:focus ~ div:not([class*="Maestros"]){
-        display:none;
-    }
-    button[data-filter="Woodwinds"]:focus ~ div:not([class*="Woodwinds"]){
-        display:none;
-    }
-    button[data-filter="Brass"]:focus ~ div:not([class*="Brass"]){
-        display:none;
-    }
-    button[data-filter="Percussion"]:focus ~ div:not([class*="Percussion"]){
-        display:none;
-    }
-
-      .oven-knob{
-        height: 1.5em;
-        width: auto;
-        padding-right: 1em;
-      }
-
-      .lines{
-        padding-left: 1.5em;
-        height: 2em;
-      }
-
-      #perc{
-        padding-top: 2.7em;
-      } */
-
-
       /* orchestra profiles */
 
       .orchestra-profiles{
