@@ -1,0 +1,347 @@
+Merge test started.
+
+d207-023-162-211:iat235_p3 kennyzhang$ git status
+On branch integration_test_ext1
+nothing to commit, working tree clean
+d207-023-162-211:iat235_p3 kennyzhang$ git merge stin_section_1_p2
+merge: stin_section_1_p2 - not something we can merge
+
+Did you mean this?
+	origin/stin_section_1_p2
+d207-023-162-211:iat235_p3 kennyzhang$ git merge origin/stin_section_1_p2
+Updating f3365fe..ea80593
+Checking out files: 100% (133/133), done.
+Fast-forward
+ fonts/Playfair_Display.zip                         | Bin 0 -> 2808917 bytes
+ fonts/Playfair_Display/OFL.txt                     |  93 +++
+ .../PlayfairDisplay-Italic-VariableFont_wght.ttf   | Bin 0 -> 277356 bytes
+ .../PlayfairDisplay-VariableFont_wght.ttf          | Bin 0 -> 298268 bytes
+ fonts/Playfair_Display/README.txt                  |  75 ++
+ .../static/PlayfairDisplay-Black.ttf               | Bin 0 -> 193036 bytes
+ .../static/PlayfairDisplay-BlackItalic.ttf         | Bin 0 -> 177144 bytes
+ .../static/PlayfairDisplay-Bold.ttf                | Bin 0 -> 193136 bytes
+ .../static/PlayfairDisplay-BoldItalic.ttf          | Bin 0 -> 177660 bytes
+ .../static/PlayfairDisplay-ExtraBold.ttf           | Bin 0 -> 193128 bytes
+ .../static/PlayfairDisplay-ExtraBoldItalic.ttf     | Bin 0 -> 177700 bytes
+ .../static/PlayfairDisplay-Italic.ttf              | Bin 0 -> 177224 bytes
+ .../static/PlayfairDisplay-Medium.ttf              | Bin 0 -> 193220 bytes
+ .../static/PlayfairDisplay-MediumItalic.ttf        | Bin 0 -> 177724 bytes
+ .../static/PlayfairDisplay-Regular.ttf             | Bin 0 -> 192812 bytes
+ .../static/PlayfairDisplay-SemiBold.ttf            | Bin 0 -> 193272 bytes
+ .../static/PlayfairDisplay-SemiBoldItalic.ttf      | Bin 0 -> 177796 bytes
+ fonts/Raleway.zip                                  | Bin 0 -> 3546203 bytes
+ fonts/Raleway/OFL.txt                              |  93 +++
+ fonts/Raleway/README.txt                           |  81 ++
+ fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf | Bin 0 -> 303956 bytes
+ fonts/Raleway/Raleway-VariableFont_wght.ttf        | Bin 0 -> 309720 bytes
+ fonts/Raleway/static/Raleway-Black.ttf             | Bin 0 -> 162888 bytes
+ fonts/Raleway/static/Raleway-BlackItalic.ttf       | Bin 0 -> 160968 bytes
+ fonts/Raleway/static/Raleway-Bold.ttf              | Bin 0 -> 163276 bytes
+ fonts/Raleway/static/Raleway-BoldItalic.ttf        | Bin 0 -> 161484 bytes
+ fonts/Raleway/static/Raleway-ExtraBold.ttf         | Bin 0 -> 163384 bytes
+ fonts/Raleway/static/Raleway-ExtraBoldItalic.ttf   | Bin 0 -> 161576 bytes
+ fonts/Raleway/static/Raleway-ExtraLight.ttf        | Bin 0 -> 163504 bytes
+ fonts/Raleway/static/Raleway-ExtraLightItalic.ttf  | Bin 0 -> 161532 bytes
+ fonts/Raleway/static/Raleway-Italic.ttf            | Bin 0 -> 161320 bytes
+ fonts/Raleway/static/Raleway-Light.ttf             | Bin 0 -> 163404 bytes
+ fonts/Raleway/static/Raleway-LightItalic.ttf       | Bin 0 -> 161564 bytes
+ fonts/Raleway/static/Raleway-Medium.ttf            | Bin 0 -> 163392 bytes
+ fonts/Raleway/static/Raleway-MediumItalic.ttf      | Bin 0 -> 161432 bytes
+ fonts/Raleway/static/Raleway-Regular.ttf           | Bin 0 -> 163388 bytes
+ fonts/Raleway/static/Raleway-SemiBold.ttf          | Bin 0 -> 163388 bytes
+ fonts/Raleway/static/Raleway-SemiBoldItalic.ttf    | Bin 0 -> 161624 bytes
+ fonts/Raleway/static/Raleway-Thin.ttf              | Bin 0 -> 163208 bytes
+ fonts/Raleway/static/Raleway-ThinItalic.ttf        | Bin 0 -> 161196 bytes
+ icons/clock.svg                                    |   5 +
+ icons/home_icon.svg                                |   3 +
+ icons/intermission_glass.svg                       |   3 +
+ ...-1645248_ratatouille-ratatouille-logo-png 1.png | Bin 0 -> 49645 bytes
+ ...-1645248_ratatouille-ratatouille-logo-png 1.svg | 889 +++++++++++++++++++++
+ images/IN CONCERT.svg                              |  40 +
+ images/Left_pipe_0x0001.svg                        | 129 +++
+ images/Ratatouille VSO SVG.svg                     |  80 ++
+ images/aiden-wong.png                              | Bin 0 -> 8130 bytes
+ images/andrew-mee.png                              | Bin 0 -> 53419 bytes
+ images/andrew-poirier.png                          | Bin 0 -> 65885 bytes
+ images/brian-wendel.png                            | Bin 0 -> 48244 bytes
+ images/cassandra-bequary.png                       | Bin 0 -> 40013 bytes
+ images/christie-reside.png                         | Bin 0 -> 80389 bytes
+ images/dakota-martin.png                           | Bin 0 -> 77333 bytes
+ images/david-bui.png                               | Bin 0 -> 66079 bytes
+ images/david-lakirovich.png                        | Bin 0 -> 48000 bytes
+ images/faq_rat.png                                 | Bin 0 -> 1912659 bytes
+ images/holly-bryan.png                             | Bin 0 -> 91036 bytes
+ images/jae-won-bang.png                            | Bin 0 -> 80035 bytes
+ images/jeanette-jonquil.png                        | Bin 0 -> 75237 bytes
+ images/jennie-press.png                            | Bin 0 -> 70361 bytes
+ images/julia-lockhart.png                          | Bin 0 -> 77698 bytes
+ images/karin-walsh.png                             | Bin 0 -> 72269 bytes
+ images/larry-knopp.png                             | Bin 0 -> 41766 bytes
+ images/left-orchestra-pipes.png                    | Bin 0 -> 52705 bytes
+ images/line-perc.png                               | Bin 0 -> 146 bytes
+ images/logo_png.png                                | Bin 0 -> 95340 bytes
+ images/main-orchestra-pipes.png                    | Bin 0 -> 5961 bytes
+ images/main_img.png                                | Bin 0 -> 2068358 bytes
+ images/marcus-goddard.png                          | Bin 0 -> 37412 bytes
+ images/michael-jarrett.png                         | Bin 0 -> 62694 bytes
+ images/michelle-goddard.png                        | Bin 0 -> 56590 bytes
+ images/nicholas-wright.png                         | Bin 0 -> 66506 bytes
+ images/oliver-declercq.png                         | Bin 0 -> 70627 bytes
+ images/orchestra-remy.png                          | Bin 0 -> 37492 bytes
+ images/orchestra-section-line.png                  | Bin 0 -> 163 bytes
+ images/otto-tausk.png                              | Bin 0 -> 68326 bytes
+ images/outer box for tracks.png                    | Bin 0 -> 635159 bytes
+ images/oven-knob.png                               | Bin 0 -> 1705 bytes
+ images/overview_img.png                            | Bin 0 -> 1280795 bytes
+ images/rebecca-whitling.png                        | Bin 0 -> 73398 bytes
+ images/remy-and-pipes.png                          | Bin 0 -> 56853 bytes
+ images/remy_lay_1.svg                              |   9 +
+ images/rosanne-wieringa.png                        | Bin 0 -> 77804 bytes
+ images/section_2_footer.png                        | Bin 0 -> 673441 bytes
+ images/sophia-dansereau.png                        | Bin 0 -> 56145 bytes
+ images/ticket/BackBalcony.png                      | Bin 0 -> 1830469 bytes
+ images/ticket/BackOrchestra.png                    | Bin 0 -> 1876359 bytes
+ images/ticket/Balcony.png                          | Bin 0 -> 1804940 bytes
+ images/ticket/FrontBalcony.png                     | Bin 0 -> 1875605 bytes
+ images/ticket/FrontOrchestra.png                   | Bin 0 -> 2230725 bytes
+ images/ticket/Gallery.png                          | Bin 0 -> 1782643 bytes
+ images/ticket/GrandTier.png                        | Bin 0 -> 1847122 bytes
+ images/ticket/Hall_seating_backBalcony.png         | Bin 0 -> 1191203 bytes
+ images/ticket/Hall_seating_backOrchestra.png       | Bin 0 -> 694597 bytes
+ images/ticket/Hall_seating_frontBalcony.png        | Bin 0 -> 1233028 bytes
+ images/ticket/Hall_seating_frontOrchestra.png      | Bin 0 -> 714344 bytes
+ images/ticket/Loge.png                             | Bin 0 -> 1844506 bytes
+ images/ticket/Orchestra.png                        | Bin 0 -> 2184841 bytes
+ images/ticket/new/Back_Balcony.png                 | Bin 0 -> 1804940 bytes
+ images/ticket/new/Back_Orchestra.png               | Bin 0 -> 1844506 bytes
+ images/ticket/new/Empty.png                        | Bin 0 -> 1462265 bytes
+ images/ticket/new/Front_Balcony.png                | Bin 0 -> 1847122 bytes
+ images/ticket/new/Front_Orchestra.png              | Bin 0 -> 2184841 bytes
+ images/ticket/option 1a-1a.png                     | Bin 0 -> 1475436 bytes
+ images/ticket/option 1a-1b.png                     | Bin 0 -> 1440193 bytes
+ images/ticket/option 1a-2.png                      | Bin 0 -> 529405 bytes
+ images/ticket/option 1a-3.png                      | Bin 0 -> 347643 bytes
+ images/ticket/option 1b-1.png                      | Bin 0 -> 1571404 bytes
+ images/ticket/option 1b-2.png                      | Bin 0 -> 524877 bytes
+ images/timothy-steeves.png                         | Bin 0 -> 44037 bytes
+ images/title.svg                                   | 362 +++++++++
+ images/vern-griffiths.png                          | Bin 0 -> 38908 bytes
+ images/vincent-vohradsky.png                       | Bin 0 -> 40215 bytes
+ images/vso logo white 1.png                        | Bin 0 -> 19063 bytes
+ images/vso-logo.svg                                | 202 +++++
+ images/william-loveless.png                        | Bin 0 -> 90757 bytes
+ images/xue-feng-wei.png                            | Bin 0 -> 71590 bytes
+ images/yi-zhou.png                                 | Bin 0 -> 42025 bytes
+ index.html                                         | 457 ++++++++++-
+ scripts/jQuery.js                                  |  10 +
+ scripts/main.js                                    |  21 +-
+ scripts/timer.js                                   | 115 +++
+ scripts/vfx_ticket_map.js                          |  62 ++
+ scripts/vfx_ticket_section.js                      | 120 +++
+ stylesheets/main.css                               | 692 +++++++++++++++-
+ stylesheets/ticket.css                             | 303 +++++++
+ stylesheets/ticket_grid.css                        | 206 +++++
+ stylesheets/timer.css                              |  54 ++
+ ticket_18.html                                     | 106 +++
+ ticket_section_18.html                             | 101 +++
+ ticket_section_19.html                             | 102 +++
+ 133 files changed, 4396 insertions(+), 17 deletions(-)
+ create mode 100644 fonts/Playfair_Display.zip
+ create mode 100755 fonts/Playfair_Display/OFL.txt
+ create mode 100755 fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf
+ create mode 100755 fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf
+ create mode 100755 fonts/Playfair_Display/README.txt
+ create mode 100755 fonts/Playfair_Display/static/PlayfairDisplay-Black.ttf
+ create mode 100755 fonts/Playfair_Display/static/PlayfairDisplay-BlackItalic.ttf
+ create mode 100755 fonts/Playfair_Display/static/PlayfairDisplay-Bold.ttf
+ create mode 100755 fonts/Playfair_Display/static/PlayfairDisplay-BoldItalic.ttf
+ create mode 100755 fonts/Playfair_Display/static/PlayfairDisplay-ExtraBold.ttf
+ create mode 100755 fonts/Playfair_Display/static/PlayfairDisplay-ExtraBoldItalic.ttf
+ create mode 100755 fonts/Playfair_Display/static/PlayfairDisplay-Italic.ttf
+ create mode 100755 fonts/Playfair_Display/static/PlayfairDisplay-Medium.ttf
+ create mode 100755 fonts/Playfair_Display/static/PlayfairDisplay-MediumItalic.ttf
+ create mode 100755 fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf
+ create mode 100755 fonts/Playfair_Display/static/PlayfairDisplay-SemiBold.ttf
+ create mode 100755 fonts/Playfair_Display/static/PlayfairDisplay-SemiBoldItalic.ttf
+ create mode 100644 fonts/Raleway.zip
+ create mode 100755 fonts/Raleway/OFL.txt
+ create mode 100755 fonts/Raleway/README.txt
+ create mode 100755 fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf
+ create mode 100755 fonts/Raleway/Raleway-VariableFont_wght.ttf
+ create mode 100755 fonts/Raleway/static/Raleway-Black.ttf
+ create mode 100755 fonts/Raleway/static/Raleway-BlackItalic.ttf
+ create mode 100755 fonts/Raleway/static/Raleway-Bold.ttf
+ create mode 100755 fonts/Raleway/static/Raleway-BoldItalic.ttf
+ create mode 100755 fonts/Raleway/static/Raleway-ExtraBold.ttf
+ create mode 100755 fonts/Raleway/static/Raleway-ExtraBoldItalic.ttf
+ create mode 100755 fonts/Raleway/static/Raleway-ExtraLight.ttf
+ create mode 100755 fonts/Raleway/static/Raleway-ExtraLightItalic.ttf
+ create mode 100755 fonts/Raleway/static/Raleway-Italic.ttf
+ create mode 100755 fonts/Raleway/static/Raleway-Light.ttf
+ create mode 100755 fonts/Raleway/static/Raleway-LightItalic.ttf
+ create mode 100755 fonts/Raleway/static/Raleway-Medium.ttf
+ create mode 100755 fonts/Raleway/static/Raleway-MediumItalic.ttf
+ create mode 100755 fonts/Raleway/static/Raleway-Regular.ttf
+ create mode 100755 fonts/Raleway/static/Raleway-SemiBold.ttf
+ create mode 100755 fonts/Raleway/static/Raleway-SemiBoldItalic.ttf
+ create mode 100755 fonts/Raleway/static/Raleway-Thin.ttf
+ create mode 100755 fonts/Raleway/static/Raleway-ThinItalic.ttf
+ create mode 100755 icons/clock.svg
+ create mode 100644 icons/home_icon.svg
+ create mode 100755 icons/intermission_glass.svg
+ create mode 100644 images/164-1645248_ratatouille-ratatouille-logo-png 1.png
+ create mode 100644 images/164-1645248_ratatouille-ratatouille-logo-png 1.svg
+ create mode 100644 images/IN CONCERT.svg
+ create mode 100644 images/Left_pipe_0x0001.svg
+ create mode 100644 images/Ratatouille VSO SVG.svg
+ create mode 100644 images/aiden-wong.png
+ create mode 100644 images/andrew-mee.png
+ create mode 100644 images/andrew-poirier.png
+ create mode 100644 images/brian-wendel.png
+ create mode 100644 images/cassandra-bequary.png
+ create mode 100644 images/christie-reside.png
+ create mode 100644 images/dakota-martin.png
+ create mode 100644 images/david-bui.png
+ create mode 100644 images/david-lakirovich.png
+ create mode 100644 images/faq_rat.png
+ create mode 100644 images/holly-bryan.png
+ create mode 100644 images/jae-won-bang.png
+ create mode 100644 images/jeanette-jonquil.png
+ create mode 100644 images/jennie-press.png
+ create mode 100644 images/julia-lockhart.png
+ create mode 100644 images/karin-walsh.png
+ create mode 100644 images/larry-knopp.png
+ create mode 100644 images/left-orchestra-pipes.png
+ create mode 100644 images/line-perc.png
+ create mode 100644 images/logo_png.png
+ create mode 100644 images/main-orchestra-pipes.png
+ create mode 100644 images/main_img.png
+ create mode 100644 images/marcus-goddard.png
+ create mode 100644 images/michael-jarrett.png
+ create mode 100644 images/michelle-goddard.png
+ create mode 100644 images/nicholas-wright.png
+ create mode 100644 images/oliver-declercq.png
+ create mode 100644 images/orchestra-remy.png
+ create mode 100644 images/orchestra-section-line.png
+ create mode 100644 images/otto-tausk.png
+ create mode 100644 images/outer box for tracks.png
+ create mode 100644 images/oven-knob.png
+ create mode 100644 images/overview_img.png
+ create mode 100644 images/rebecca-whitling.png
+ create mode 100644 images/remy-and-pipes.png
+ create mode 100644 images/remy_lay_1.svg
+ create mode 100644 images/rosanne-wieringa.png
+ create mode 100644 images/section_2_footer.png
+ create mode 100644 images/sophia-dansereau.png
+ create mode 100644 images/ticket/BackBalcony.png
+ create mode 100644 images/ticket/BackOrchestra.png
+ create mode 100644 images/ticket/Balcony.png
+ create mode 100644 images/ticket/FrontBalcony.png
+ create mode 100644 images/ticket/FrontOrchestra.png
+ create mode 100644 images/ticket/Gallery.png
+ create mode 100644 images/ticket/GrandTier.png
+ create mode 100644 images/ticket/Hall_seating_backBalcony.png
+ create mode 100644 images/ticket/Hall_seating_backOrchestra.png
+ create mode 100644 images/ticket/Hall_seating_frontBalcony.png
+ create mode 100644 images/ticket/Hall_seating_frontOrchestra.png
+ create mode 100644 images/ticket/Loge.png
+ create mode 100644 images/ticket/Orchestra.png
+ create mode 100644 images/ticket/new/Back_Balcony.png
+ create mode 100644 images/ticket/new/Back_Orchestra.png
+ create mode 100644 images/ticket/new/Empty.png
+ create mode 100644 images/ticket/new/Front_Balcony.png
+ create mode 100644 images/ticket/new/Front_Orchestra.png
+ create mode 100644 images/ticket/option 1a-1a.png
+ create mode 100644 images/ticket/option 1a-1b.png
+ create mode 100644 images/ticket/option 1a-2.png
+ create mode 100644 images/ticket/option 1a-3.png
+ create mode 100644 images/ticket/option 1b-1.png
+ create mode 100644 images/ticket/option 1b-2.png
+ create mode 100644 images/timothy-steeves.png
+ create mode 100644 images/title.svg
+ create mode 100644 images/vern-griffiths.png
+ create mode 100644 images/vincent-vohradsky.png
+ create mode 100644 images/vso logo white 1.png
+ create mode 100644 images/vso-logo.svg
+ create mode 100644 images/william-loveless.png
+ create mode 100644 images/xue-feng-wei.png
+ create mode 100644 images/yi-zhou.png
+ create mode 100644 scripts/jQuery.js
+ create mode 100644 scripts/timer.js
+ create mode 100644 scripts/vfx_ticket_map.js
+ create mode 100644 scripts/vfx_ticket_section.js
+ create mode 100644 stylesheets/ticket.css
+ create mode 100644 stylesheets/ticket_grid.css
+ create mode 100644 stylesheets/timer.css
+ create mode 100644 ticket_18.html
+ create mode 100644 ticket_section_18.html
+ create mode 100644 ticket_section_19.html
+d207-023-162-211:iat235_p3 kennyzhang$ git merge origin/kenny_section_2_p2
+Merge made by the 'recursive' strategy.
+d207-023-162-211:iat235_p3 kennyzhang$ git merge origin/karel_section4_p2
+Already up to date.
+d207-023-162-211:iat235_p3 kennyzhang$ git merge origin/karel_section4_p2
+Already up to date.
+d207-023-162-211:iat235_p3 kennyzhang$ git merge origin/rebecca_section_5_p2
+Auto-merging stylesheets/main.css
+Auto-merging index.html
+Removing images/remy-and-pipes.png
+Merge made by the 'recursive' strategy.
+ images/left-orchestra-pipes.png       | Bin 52705 -> 47768 bytes
+ images/main-orchestra-pipes-small.png | Bin 0 -> 12861 bytes
+ images/main-orchestra-pipes.png       | Bin 5961 -> 15988 bytes
+ images/orch-mobile-pipe.png           | Bin 0 -> 2316 bytes
+ images/remy-and-pipes.png             | Bin 56853 -> 0 bytes
+ index.html                            | 529 ++++++++++++++++------------------
+ scripts/main.js                       |  16 -
+ stylesheets/main.css                  | 240 ++++++++-------
+ 8 files changed, 365 insertions(+), 420 deletions(-)
+ create mode 100644 images/main-orchestra-pipes-small.png
+ create mode 100644 images/orch-mobile-pipe.png
+ delete mode 100644 images/remy-and-pipes.png
+d207-023-162-211:iat235_p3 kennyzhang$ git merge origin/stin_section_6_p2
+Auto-merging stylesheets/main.css
+Merge made by the 'recursive' strategy.
+ stylesheets/main.css | 44 +++++++++++++++++++++++++++++++++++++-------
+ 1 file changed, 37 insertions(+), 7 deletions(-)
+d207-023-162-211:iat235_p3 kennyzhang$ git merge origin/dennis_section_ticket_p2 
+Removing ticket_section_19.html
+Removing stylesheets/timer.css
+Merge made by the 'recursive' strategy.
+ icons/icon_cross.svg                         |   3 +
+ icons/icon_phone.svg                         |   3 +
+ icons/seat_map_icon.svg                      |  36 +++
+ images/ticket/Hall_seating_backBalcony.png   | Bin 1191203 -> 1191113 bytes
+ images/ticket/Hall_seating_backOrchestra.png | Bin 694597 -> 857850 bytes
+ images/ticket/Hall_seating_frontBalcony.png  | Bin 1233028 -> 962127 bytes
+ scripts/jQuery.js                            |   3 +-
+ scripts/vfx_ticket_map.js                    |  98 ++++++-
+ scripts/vfx_ticket_section.js                |  45 ++--
+ stylesheets/ticket.css                       | 384 ++++++++++++++++++++++++---
+ stylesheets/ticket_grid.css                  |  70 ++++-
+ stylesheets/timer.css                        |  54 ----
+ ticket_payment_18.html                       |  64 +++++
+ ticket_18.html => ticket_seatmap_18.html     |  83 ++++--
+ ticket_section_18.html                       |  15 +-
+ ticket_section_19.html                       | 102 -------
+ 16 files changed, 706 insertions(+), 254 deletions(-)
+ create mode 100644 icons/icon_cross.svg
+ create mode 100644 icons/icon_phone.svg
+ create mode 100644 icons/seat_map_icon.svg
+ delete mode 100644 stylesheets/timer.css
+ create mode 100644 ticket_payment_18.html
+ rename ticket_18.html => ticket_seatmap_18.html (55%)
+ delete mode 100644 ticket_section_19.html
+d207-023-162-211:iat235_p3 kennyzhang$ git commit -m "Merge test successful!"
+-bash: !": event not found
+d207-023-162-211:iat235_p3 kennyzhang$ git commit -m "Merge test successful"
+On branch integration_test_ext1
+nothing to commit, working tree clean
+d207-023-162-211:iat235_p3 kennyzhang$ git add .
+d207-023-162-211:iat235_p3 kennyzhang$ git commit -m "Merge test successful"
+On branch integration_test_ext1
+nothing to commit, working tree clean
+d207-023-162-211:iat235_p3 kennyzhang$ git add .
+d207-023-162-211:iat235_p3 kennyzhang$ git commit -m "Validation tests unsuccessful, UI test, responsiveness"
+
+Merge test successful.
