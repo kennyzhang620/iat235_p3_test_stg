@@ -68,15 +68,20 @@ footer {
 
 .button_ticket{
     background-color: #A17C3F; 
-    border: none;
     color: white;
+
     border-radius: 10px;
-    
+    border: none;
     padding: 4% 30%;
+    display: inline-block;
+
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
+
+    margin-right:auto;
+    margin-left:auto;
+    margin-top:10px;
 
 }
 
@@ -91,21 +96,11 @@ footer {
 }
 
 .ticket_main h1{
-
     color: white;
     margin: 50% 0;
     
     text-align:center;
     }
-
-.button_ticket {
-    text-align:center;
-    border: 5;
-
-    margin-right:auto;
-    margin-left:auto;
-    margin-top:10px;
-}
 
 /* Media Queries */
 @media screen and (max-width: 60rem){
