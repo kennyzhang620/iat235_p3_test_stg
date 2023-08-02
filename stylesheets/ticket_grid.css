@@ -324,6 +324,7 @@
 	  bottom: 0;
 	  left: 0;
 	  width: 100%;
+	  padding: 2rem 0;
 	  border-radius: 0px;
 	  background-color: grey;  /* Set the color to grey */
 	}
@@ -338,7 +339,7 @@
 	  display: block;
 	  margin-bottom: 1.5rem; /* adjust as needed */
 	  margin-right: 15rem;
-	  width: 60%;
+	  width: 100%;
 	}	
 
 	#payment_cart_assistant{
@@ -347,6 +348,9 @@
 
 	.ticket_information_container{
 	  height: 40rem; /* This will set a fixed height to your container */
-
 	}
+
+	.personal_information_container{
+	  padding: 2vh 2vh 7vh 2vh;
+	}	
 }
