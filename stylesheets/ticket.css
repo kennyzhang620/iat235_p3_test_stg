@@ -316,7 +316,7 @@ a{
 }
 
 #cart_summary{
-	font-size: 0.75vw;
+	font-size: 1vw;
 	text-align: center;
 	margin-bottom: 2.5vh;
 }
@@ -328,12 +328,12 @@ a{
 
 #your_tickets{
 	font-weight: 900;
-	font-size: 0.5vw;
+	font-size: 0.75vw;
 }
 
 .cart_container{
 	border-bottom: 0.01vh solid #eaeaea; 
-  font-size: 0.45vw;
+  font-size: 0.55vw;
   line-height: 3; 
 }
 
@@ -344,7 +344,7 @@ a{
 }
 
 #cart_total{
-  font-size: 0.5vw;
+  font-size: 0.75vw;
   margin-left: 0.75vw;
   padding-top: 0.25vw;
 }
@@ -500,13 +500,33 @@ a{
   gap: 3vh;
 }
 
-.card-information-container,
-.personal-information-container {
-  padding: 2vw;
-  background-color: #fff;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.25);
-  border-radius: 5px;
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2vh 5vw;  /* adjust as needed */
 }
+
+.column-1,
+.column-2 {
+    flex: 1;
+    margin-right: 2vw; /* adjust as needed */
+}
+
+.column-2 {
+    margin-right: 0;
+    margin: 5vh auto;
+}
+
+.card-information-container,
+.personal-information-container,
+.ticket-information-container {
+    padding: 2vh;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.25);
+    border-radius: 5px;
+    margin-bottom: 2vh;
+}
+
 
 .input-group {
   margin-bottom: 1vh;
@@ -536,7 +556,7 @@ a{
 #payment-form input,
 #personal-info-form input {
   width: 100%;
-  padding: 1vh 0;
+  padding: 1vh 1vw;
   margin: 1vh 0 2vh 0;
 
   border: 1px solid #ccc;
@@ -559,6 +579,25 @@ a{
   background-color: #A17C3F;
 }
 
+.location-input-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.location-input-row .input-group:nth-child(1),
+.location-input-row .input-group:nth-child(2) {
+  flex: 0 0 40%;    
+}
+
+.location-input-row .input-group:nth-child(3) {
+  flex: 0 0 15%;
+}
+
+.payment-icon {
+  display: block;
+  margin-bottom: 1.5rem; /* adjust as needed */
+  margin-right: 15rem;
+}
 
 
 /*--------------------------------timer-----------------------------------*/

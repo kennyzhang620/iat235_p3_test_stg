@@ -5,60 +5,118 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ticket Payment Page</title>
   <link rel="stylesheet" type="text/css" href="stylesheets/ticket.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/ticket_grid.css">
+
 </head>
 
 <body>
-  <div class="payment-container">
+  <div class="container">
+    <div class="column-1">
+      <div class="payment-container">
+        <div class="card-information-container">
+          <h4>Card Information</h4>
+          <img src="icons/icon_payments.svg" alt="Payment Icon" class="payment-icon">
+          <form id="payment-form">
+            <div class="input-group">
+              <label for="card-holder-name">Cardholder's Name</label>
+              <input type="text" id="card-holder-name">
+            </div>
+            
+            <div class="input-group">
+              <label for="card-number">Card Number</label>
+              <input type="text" id="card-number">
+            </div>
+            
+            <div class="input-row">
+              <div class="input-group">
+                <label for="expiry-date">Expiry Date</label>
+                <input type="text" id="expiry-date">
+              </div>
+              
+              <div class="input-group">
+                <label for="cvc">CVC</label>
+                <input type="text" id="cvc">
+              </div>
+            </div>
+          </form>
+        </div>
 
-    <div class="card-information-container">
-      <h4>Card Information</h4>
-      <form id="payment-form">
-        <div class="input-group">
-          <label for="card-holder-name">Cardholder's Name</label>
-          <input type="text" id="card-holder-name">
+        <div class="personal-information-container">
+          <h4>Personal Information</h4>
+          <form id="personal-info-form">
+            <div class="input-row">
+              <div class="input-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name">
+              </div>
+
+              <div class="input-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name">
+              </div>
+            </div>
+
+            <div class="input-group">
+                <label for="address">Address</label>
+                <input type="text" id="address">
+            </div>
+
+            <div class="location-input-row">
+                <div class="input-group">
+                    <label for="country">Country</label>
+                    <input type="text" id="country">
+                </div>
+
+                <div class="input-group">
+                    <label for="city">City</label>
+                    <input type="text" id="city">
+                </div>
+
+                <div class="input-group">
+                    <label for="postal-code">Postal Code</label>
+                    <input type="text" id="postal-code">
+                </div>
+            </div>
+          </form>
         </div>
-        
-        <div class="input-group">
-          <label for="card-number">Card Number</label>
-          <input type="text" id="card-number">
-        </div>
-        
-        <div class="input-row">
-          <div class="input-group">
-            <label for="expiry-date">Expiry Date</label>
-            <input type="text" id="expiry-date">
-          </div>
-          
-          <div class="input-group">
-            <label for="cvc">CVC</label>
-            <input type="text" id="cvc">
-          </div>
-        </div>
-      </form>
+      </div>
     </div>
 
-    <div class="personal-information-container">
-      <h4>Personal Information</h4>
-      <form id="personal-info-form">
-        <div class="input-row">
-          <div class="input-group">
-            <label for="first-name">First Name</label>
-            <input type="text" id="first-name">
-          </div>
+    <div class="column-2">
+      <div class="ticket-information-container">
+            <!-- cart column -->
+            <div class="cart_ticket_wrapper">
+              <div class="cart">
+                <h4 id="cart_summary">CART SUMMARY</h4>
+                <p id="your_tickets">YOUR TICKETS<br></p>
+                <div class="cart_container">
+                  <p id="cart_empty"></p>
+                  <p id="cart_section">SECTION<br>-<br></p>
+                  <p id="cart_row">ROW<br>-<br></p>
+                  <p id="cart_seat">SEAT<br>-<br></p>
+                  <p id="cart_price">PRICE<br>-<br></p>
+                </div>
 
-          <div class="input-group">
-            <label for="last-name">Last Name</label>
-            <input type="text" id="last-name">
-          </div>
-        </div>
+                <div class="price_container">
+                  <p id="cart_total">Total-No Ticket</p>
+                  <p id="cart_total_price">$0.00</p>
+                </div>
+                
+                <div class="payment-container">
+                  <button class="submit-payment-btn">Submit Payment</button>
+                </div>
 
-        <!-- more fields for personal information as you need -->
-
-      </form>
+                <p id="cart_assistant">
+                  <img id="phoneIcon" src="icons/icon_phone.svg" alt="Phone icon">
+                  Need Help? 1-604-123-1234
+                </p>
+              </div> <!-- End of cart -->
+            </div> <!-- End of cart_wrapper -->
+      </div>
     </div>
-
-    <button class="submit-payment-btn">Submit Payment</button>
   </div>
-  
+
+
+
 </body>
 </html>
