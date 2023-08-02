@@ -11,112 +11,111 @@
 
 <body>
   <div class="container">
-    <div class="column-1">
-      <div class="payment-container">
-        <div class="card-information-container">
+    <div class="column_1">
+      <div class="payment_container">
+        <div class="card_information_container">
           <h4>Card Information</h4>
-          <img src="icons/icon_payments.svg" alt="Payment Icon" class="payment-icon">
-          <form id="payment-form">
-            <div class="input-group">
-              <label for="card-holder-name">Cardholder's Name</label>
-              <input type="text" id="card-holder-name">
+          <img src="icons/icon_payments.svg" alt="Payment Icon" class="payment_icon">
+          <form id="payment_form">
+            <div class="input_group">
+              <label for="card_holder_name">Cardholder's Name</label>
+              <input type="text" id="card_holder_name">
             </div>
             
-            <div class="input-group">
-              <label for="card-number">Card Number</label>
-              <input type="text" id="card-number">
+            <div class="input_group">
+              <label for="card_number">Card Number</label>
+              <input type="text" id="card_number">
             </div>
             
-            <div class="input-row">
-              <div class="input-group">
-                <label for="expiry-date">Expiry Date</label>
-                <input type="text" id="expiry-date">
+            <div class="input_row">
+              <div class="input_group">
+                <label for="expiry_date">Expiry Date</label>
+                <input type="text" id="expiry_date">
               </div>
               
-              <div class="input-group">
+              <div class="input_group">
                 <label for="cvc">CVC</label>
                 <input type="text" id="cvc">
               </div>
-            </div>
+            </div> <!-- End of input_row -->
           </form>
-        </div>
+        </div> <!-- End of card_information_container -->
 
-        <div class="personal-information-container">
+        <div class="personal_information_container">
           <h4>Personal Information</h4>
-          <form id="personal-info-form">
-            <div class="input-row">
-              <div class="input-group">
-                <label for="first-name">First Name</label>
-                <input type="text" id="first-name">
+          <form id="personal_info_form">
+            <div class="input_row">
+              <div class="input_group">
+                <label for="first_name">First Name</label>
+                <input type="text" id="first_name">
               </div>
 
-              <div class="input-group">
-                <label for="last-name">Last Name</label>
-                <input type="text" id="last-name">
+              <div class="input_group">
+                <label for="last_name">Last Name</label>
+                <input type="text" id="last_name">
               </div>
             </div>
 
-            <div class="input-group">
+            <div class="input_group">
                 <label for="address">Address</label>
                 <input type="text" id="address">
-            </div>
+            </div> <!-- End of input_group -->
 
-            <div class="location-input-row">
-                <div class="input-group">
+            <div class="location_input_row">
+                <div class="input_group">
                     <label for="country">Country</label>
                     <input type="text" id="country">
                 </div>
 
-                <div class="input-group">
+                <div class="input_group">
                     <label for="city">City</label>
                     <input type="text" id="city">
                 </div>
 
-                <div class="input-group">
-                    <label for="postal-code">Postal Code</label>
-                    <input type="text" id="postal-code">
+                <div class="input_group">
+                    <label for="postal_code">Zip</label>
+                    <input type="text" id="postal_code">
                 </div>
-            </div>
+            </div> <!-- End of location_input_row -->
           </form>
-        </div>
-      </div>
-    </div>
+        </div> <!-- End of personal_information_container -->
+      </div> <!-- End of payment_container -->
+    </div> <!-- End of column_1 -->
 
-    <div class="column-2">
-      <div class="ticket-information-container">
+    <div class="column_2">
+      <div class="ticket_information_container">
             <!-- cart column -->
             <div class="cart_ticket_wrapper">
-              <div class="cart">
-                <h4 id="cart_summary">CART SUMMARY</h4>
-                <p id="your_tickets">YOUR TICKETS<br></p>
-                <div class="cart_container">
-                  <p id="cart_empty"></p>
-                  <p id="cart_section">SECTION<br>-<br></p>
-                  <p id="cart_row">ROW<br>-<br></p>
-                  <p id="cart_seat">SEAT<br>-<br></p>
-                  <p id="cart_price">PRICE<br>-<br></p>
+              <div class="payment_cart">
+                <img id="concertPic" src="images/main_img.png" alt="concert_image">
+                <h4 id="payment_cart_summary">Ratatouille in Concert<br>
+                                      UNDER ORPHEUM VANCOUVER,BC<br>
+                                      Show Time: 18/07/2023</h4>
+                <p id="payment_your_tickets">Seats<br></p>
+                <div class="payment_cart_container">
+                  <p id="payment_cart_empty"></p>
+                  <p id="payment_cart_section"><span>SECTION</span><br>BB<br></p>
+                  <p id="payment_cart_row"><span>ROW</span><br>D<br></p>
+                  <p id="payment_cart_seat"><span>SEAT</span><br>230<br></p>
+                  <p id="payment_cart_price"><span>PRICE</span><br>$101.43<br></p>
                 </div>
 
-                <div class="price_container">
-                  <p id="cart_total">Total-No Ticket</p>
-                  <p id="cart_total_price">$0.00</p>
+                <div class="payment_price_container">
+                  <p id="payment_cart_total">Total - 1 Ticket</p>
+                  <p id="payment_cart_total_price">$101.43</p>
                 </div>
                 
-                <div class="payment-container">
-                  <button class="submit-payment-btn">Submit Payment</button>
-                </div>
+                <button class="submit_payment_btn">COMPLETE ORDER</button>
 
-                <p id="cart_assistant">
-                  <img id="phoneIcon" src="icons/icon_phone.svg" alt="Phone icon">
+                <p id="payment_cart_assistant">
+                  <img id="payment_phoneIcon" src="icons/icon_phone.svg" alt="Phone icon">
                   Need Help? 1-604-123-1234
                 </p>
               </div> <!-- End of cart -->
             </div> <!-- End of cart_wrapper -->
-      </div>
-    </div>
-  </div>
-
-
-
+      </div> <!-- End of ticket_information_container-->
+    </div> <!-- End of column_2-->
+  </div> <!-- End of container-->
+  <script src="scripts/vfx_ticket_map.js"></script>
 </body>
 </html>
