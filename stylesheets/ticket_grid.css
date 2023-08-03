@@ -59,9 +59,9 @@
 
 .main_map_container {
   display: grid;
-  grid-template-columns: 15% 65% 20%; 
+  grid-template-columns: 20% 60% 20%; 
   grid-template-rows: auto;
-  align-items: start; /* This line aligns grid items to the start of the grid cell */
+  align-items: start; 
 }
 
 
@@ -88,7 +88,7 @@
 
 .seat_map_img {
   grid-column: 2; /* Position seat_map_img on the second column */
-  z-index: -1;
+  z-index: 5;
 }
 
 .cart_wrapper {
@@ -97,13 +97,15 @@
   z-index: 1; /* Increase the z-index to bring this above the pseudo-element */
 }
 
-.cart_container{
+.cart_container,
+.payment_cart_container{
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%; /* Here we define the width percentages for each column */
   grid-template-rows: auto; /* Here we let the row height be determined by the content */
 }
 
-#cart_empty{
+#cart_empty,
+#payment_cart_empty{
 	grid-column: 1;
 }
 
@@ -123,11 +125,65 @@
 	grid-column: 5;
 }
 
-.price_container{
+.price_container,
+.payment_price_container{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
+#cart_assistant,
+#payment_cart_assistant{
+	display: flex;
+  align-items: center;
+}
+
+/*--------------------------- Popup window -----------------------------*/
+
+.popup_seat_type{
+	display: grid;
+	grid-template-columns: 50% 25% 25%;
+	grid-template-rows: auto;
+	align-items: start;
+}
+
+#popup_section{
+	grid-column: 1;
+}
+
+#popup_row{
+	grid-column: 2;
+}
+
+#popup_seat{
+	grid-column: 3;
+}
+
+.popup_seat_selection{
+	display: grid;
+	grid-template-columns: 50% 25% 25%;
+	grid-template-rows: auto;
+	align-items: start;
+}
+
+#popup_section_selecting{
+	grid-column: 1;
+}
+
+#popup_row_selecting{
+	grid-column: 2;
+}
+
+#popup_seat_selecting{
+	grid-column: 3;
+}
+
+.popup_button{
+	display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /*--------------------------- Media Querires ---------------------------*/
 
 /*@media screen and (max-width:60rem){
@@ -135,6 +191,8 @@
 }*/
 
 @media(max-width:60rem){
+
+/*------------------ticket section---------------------*/
 	.seat_sections{
 		top: 41%;
 	}
@@ -144,15 +202,15 @@
 		margin-bottom: 11vh;
 	}
 
-	h1, h2, h3{
+	.main_container h1,.main_container h2,.main_container h3{
 		font-size: 2.5vw;
 	}
 
-	h2, h3{
+	.main_containerh2, .main_containerh3{
 		text-align: center;
 	}
 
-	ul{
+	.main_container ul{
 		list-style: none;
 		position: relative;
 		right: 6vw;
@@ -160,13 +218,17 @@
 		font-weight: bold;
 	}
 
+	h1{
+		font-size: 3vw;
+	}
+
 	img{
 		top: -18%; 
 	}
 
-	html,body{
-		text-align: center;margin: 0; height: 100%; overflow: hidden
-	}
+/*	html,body{
+		text-align: center;margin: 0; height: 100% 
+	}*/
 
 	.redirecting_exit{
 		position: absolute;
@@ -177,7 +239,7 @@
 		font-size: 2vw;
 
 		width: 100%;
-		height: 100%;
+		height: 25%;
 		background-color: #212343;
 		/* Set the z-index to a value higher than the background image to ensure that it appears on top */
 
@@ -188,19 +250,107 @@
 	}
 
 	.top{
-		padding: 2vw;
+		padding: 5vw;
+	}
+
+	.top-1of3 {
+	  order: 1; 
+	  flex: 1;
+	  text-align: left;
+	}
+
+	.top-2of3 {
+	  order: 2; 
+	  width: 50px;
+	}
+
+	.top-2of3 svg {
+	  width: 50px;
+	  height: 50px;
+	}
+
+	.top-3of3 {
+	  order: 3;
+	  width: 15px;
 	}
 }
+/*------------------ticket seatmap---------------------*/	
 
-@media(max-height:30rem){
-	.seat_sections a{
-		font-size: 2vw;
-		margin: 2vw;
-	}
-}
 
-@media(max-height:120 rem){
-	.cart{
-		font-size: 50%;
+/*------------------ticket payment---------------------*/
+@media(max-width:60rem){
+
+	.container {
+	  margin: 0;
+	  padding: 0;
+	  width: 100%;
+
+	  /*flex put the children horizontally*/
+	  display: flex;
+	  flex-wrap: wrap;
 	}
+	.column_1{
+	  order:2;
+	  padding: 1rem 0;
+	  flex: 1 1 299px;  
+	}
+
+	.column_2 {
+	  order:1;
+	  padding: 1rem 0;	  
+	  flex: 1 1 299px;  
+	}
+
+	.ticket_information_container{
+	  width: 90vw;
+	  max-width: 600px;
+	  margin: 0.5vh auto auto auto; 
+	  display: flex;
+	  flex-direction: column;
+	  gap: 2vh;  
+	}
+
+	.payment_container {
+	  width: 90vw;
+	  max-width: 600px;
+	  margin: 0.5vh auto auto auto;
+	  display: flex;
+	  flex-direction: column;
+	  gap: 2vh;
+	}
+
+	.submit_payment_btn {
+	  position: fixed;
+	  bottom: 0;
+	  left: 0;
+	  width: 100%;
+	  padding: 2rem 0;
+	  border-radius: 0px;
+	  background-color: grey;  /* Set the color to grey */
+	}
+
+  #concertPic{
+	  display: block;
+	  margin:0; /* adjust as needed */
+	  width: 100%;  
+	}
+
+	.payment_icon {
+	  display: block;
+	  margin-bottom: 1.5rem; /* adjust as needed */
+	  margin-right: 15rem;
+	  width: 100%;
+	}	
+
+	#payment_cart_assistant{
+		padding-top: 1rem;
+	}	
+
+	.ticket_information_container{
+	  height: 40rem; /* This will set a fixed height to your container */
+	}
+
+	.personal_information_container{
+	  padding: 2vh 2vh 7vh 2vh;
+	}	
 }
