@@ -1,4 +1,4 @@
-// Credit: Mateusz Rybczonec
+// Credit: Mateusz Rybczonec - https://codepen.io/dalalRohit/pen/RwRzVvW
 
 const FULL_DASH_ARRAY = 283;
 const WARNING_THRESHOLD = 30;
