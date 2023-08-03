@@ -22,8 +22,6 @@ window.onload = function() {
 };
 
 
-
-
 document.getElementById("map_backBalcony").addEventListener("click", function(e){
   e.preventDefault();
   resetColors();
@@ -63,10 +61,12 @@ function resetColors(){
 document.getElementById("seatingMapImage").addEventListener("click", function(e){
   var popup = document.getElementById("popup");
 
-  if (popup.style.display !== "block") {
+  if (popup.style.display !== "block" && window.innerWidth > 768) {
     popup.style.left = `${e.pageX}px`;
     popup.style.top = `${e.pageY}px`;
     popup.style.display = "block";
+  } else {
+    e.preventDefault();
   }
 });
 
@@ -98,19 +98,19 @@ document.getElementById("crossIcon").addEventListener("click", function(e){
 
 
 document.getElementById("button1").addEventListener("click", function(){
-  // Your code here
+
 });
 
 document.getElementById("button2").addEventListener("click", function(){
-  // Your code here
+
 });
 
 document.getElementById("button3").addEventListener("click", function(){
-  // Your code here
+
 });
 
 document.getElementById("button4").addEventListener("click", function(){
-  // Your code here
+
 });
 
 // -----------------------------popup buttons--------------------------
@@ -143,6 +143,45 @@ document.getElementById("nextButton").addEventListener("click", function(e){
 });
 
 
+// -------------------------mobile version--------------------------
 
+document.getElementById('mobile_seat_map').addEventListener('change', function() {
+    var section = this.value.replace(" ", ""); // Remove spaces from section name
+    changeImage("images/ticket/Hall_seating_" + section + ".png");
+});
 
+// Get a reference to the exit button
+const exitButton = document.getElementById("exit_icon");
+
+// Get references to the seat options and cart wrapper
+const seatOptions = document.querySelectorAll('#seat_options li');
+const cartWrapper = document.getElementById("cart_wrapper");
+
+// Add a click event listener to each seat option
+seatOptions.forEach((seatOption) => {
+  seatOption.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    // Show the cart wrapper with the slide-in effect
+    cartWrapper.style.display = "block";
+    cartWrapper.classList.add('show');
+  });
+});
+
+// Add a click event listener to the exit button
+exitButton.addEventListener("click", function(e) {
+  if (cartWrapper.classList.contains('show')) {
+    e.preventDefault();
+
+    // Animation: slide the cart wrapper to the right
+    cartWrapper.style.animation = "slideOutRight 0.5s forwards";
+
+    // After the animation finishes, hide the cart wrapper
+    setTimeout(function() {
+      cartWrapper.style.display = "none";
+      cartWrapper.style.animation = "";  // Reset the animation property
+      cartWrapper.classList.remove('show');
+    }, 500);  // The same duration as your animation
+  }
+});
 
