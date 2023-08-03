@@ -306,7 +306,7 @@ footer {
 .musicH1{
     font-family: 'rale-way';
     font-weight: bold;
-    font-size: 75px;
+    font-size: 3em;
 }
 .musicH2{
     font-family: 'sans-serif';
@@ -376,10 +376,10 @@ footer {
         background-size: 95% 100%;
     }
     .musicTrack{
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
     .musicH1{
-        font-size: 2rem;
+        font-size: 4rem;
     }
     .musicH2{
         font-size: 2rem;
@@ -388,14 +388,14 @@ footer {
         background-size: 100% 100%;
     }
     #musicName{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         overflow: hidden;
     }
     #musicTime{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
     #musicAuthor{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         overflow: hidden;   
     }
     .musicControl span{
