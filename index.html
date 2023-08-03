@@ -8,7 +8,6 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/main.css" />
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <script src="https://kit.fontawesome.com/88af899100.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -107,24 +106,34 @@
         <section id="site_part3">
         </section>
 
+<!-- section 4 -->
         <section class="site_part4">
+            <section class="audio">
+                <audio id="audio" src=""></audio>
+            </section>
+
             <h class="musicH1">Now Playing</h>
 
             <div class="mainBackground">
                 <section class="musicDisplay">
                     <div class="musicDisplayInfo">
-                        <p class="musicName">01 Le Festin</p>
-                        <p class="musicTime">2:50</p>
-                        <p class="musicAuthor">Camille, Michael Giacchino</p>
+                        <span id="musicName"></span>
+                        <span id="musicTime"></span>
+                        <span id="musicAuthor"></span>
                     </div>
-                    <div class="musicControl">
-                        <i class="fa-solid fa-backward fa-2xl"></i>
-                        <i class="fa-solid fa-play fa-2xl"></i>
-                        <i class="fa-solid fa-forward fa-2xl"></i>
+                    <div id="musicControl" class="musicControl">
+                        <span><i id="preSong" class="fa-solid fa-backward fa-2xl"></i></span>
+                        <span><i id="playSong" class="fa-solid fa-play fa-2xl"></i></span>
+                        <span><i id="nextSong" class="fa-solid fa-forward fa-2xl"></i></span>
+                        <span><i id="songVoice" class="fa-solid fa-volume-high fa-2xl"></i></span>
+                    </div>
+                    <div>
+                        <img class="pipe" src="images/section4pipe1.jpg">
                     </div>
                 </section>
                 <div class="control">
                 </div>
+
                 <h class="musicH2">Full Tracklist</h>
                 <table class="musicTrack">
                     <tr>
@@ -146,13 +155,14 @@
                         <td>04 Granny Get Your Gun</td>
                         <td>09 Souped Up</td>
                     </tr>
-                    <tr>
+                    <tr class="bottom">
                         <td>05 100 Rat Dash</td>
                         <td>10 Is It Soup Yet?</td>
                     </tr>
                 </table>
             </div>
         </section>
+<!-- end of section 4 -->
 
         <section id="site_part5">
             <!-- orchestra -->
@@ -497,4 +507,6 @@
     </main>
     <script src="scripts/main.js"></script>
 </body>
+
+<script src="scripts/main.js"></script>
 </html>
