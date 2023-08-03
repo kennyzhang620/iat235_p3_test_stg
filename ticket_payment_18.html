@@ -14,7 +14,7 @@
     <div class="column_1">
       <div class="payment_container">
         <div class="card_information_container">
-          <h4>Card Information</h4>
+          <h4 class="payment_title">Card Information</h4>
           <img src="icons/icon_payments.svg" alt="Payment Icon" class="payment_icon">
           <form id="payment_form">
             <div class="input_group">
@@ -42,7 +42,7 @@
         </div> <!-- End of card_information_container -->
 
         <div class="personal_information_container">
-          <h4>Personal Information</h4>
+          <h4 class="payment_title">Personal Information</h4>
           <form id="personal_info_form">
             <div class="input_row">
               <div class="input_group">
@@ -90,7 +90,7 @@
                 <img id="concertPic" src="images/main_img.png" alt="concert_image">
                 <h4 id="payment_cart_summary">Ratatouille in Concert<br>
                                       UNDER ORPHEUM VANCOUVER,BC<br>
-                                      Show Time: 18/07/2023</h4>
+                                      Show Time: 18/07/2023  - Tue 7:30 pm</h4>
                 <p id="payment_your_tickets">Seats<br></p>
                 <div class="payment_cart_container">
                   <p id="payment_cart_empty"></p>
@@ -107,15 +107,14 @@
                 
                 <button class="submit_payment_btn">COMPLETE ORDER</button>
 
-                <p id="payment_cart_assistant">
+                <a href="#" id="payment_cart_assistant">
                   <img id="payment_phoneIcon" src="icons/icon_phone.svg" alt="Phone icon">
                   Need Help? 1-604-123-1234
-                </p>
+                </a>
               </div> <!-- End of cart -->
             </div> <!-- End of cart_wrapper -->
       </div> <!-- End of ticket_information_container-->
     </div> <!-- End of column_2-->
   </div> <!-- End of container-->
-  <script src="scripts/vfx_ticket_map.js"></script>
 </body>
 </html>
