@@ -286,6 +286,7 @@ footer {
     color: white;
     margin-left: 10%;
     white-space: nowrap;
+    background-size: cover;
 }
 .mainBackground{
     background-image:url("../images/outer box for tracks.png");
@@ -356,6 +357,7 @@ footer {
     margin-top: 4%;
     border-radius: 20px;
     height: 60px;
+    width: 20%;
 }
 .musicControl span{
     transition: all 0.4s;
@@ -367,6 +369,41 @@ footer {
     margin-left: 2.9%;
     position: absolute;
     width: 18%;
+}
+
+@media screen and (max-width: 60rem){
+    .mainBackground{
+        background-size: 95% 100%;
+    }
+    .musicTrack{
+        font-size: 1rem;
+    }
+    .musicH1{
+        font-size: 2rem;
+    }
+    .musicH2{
+        font-size: 2rem;
+    }
+    .musicDisplayInfo{
+        background-size: 100% 100%;
+    }
+    #musicName{
+        font-size: 1.2rem;
+        overflow: hidden;
+    }
+    #musicTime{
+        font-size: 1.2rem;
+    }
+    #musicAuthor{
+        font-size: 1.2rem;
+        overflow: hidden;   
+    }
+    .musicControl span{
+        font-size: 0.5rem;
+    }
+    .pipe{
+        display: none;
+    }
 }
 /* End of section*/
 
