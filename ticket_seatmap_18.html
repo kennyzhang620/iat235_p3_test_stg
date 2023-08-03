@@ -12,7 +12,7 @@
 
 </head>
 
-<body>
+<body id="ticketSeatmapPage">
 	<header class="top">
 			<h1 class="top-1of3" id="flexible-width">Ratatouille in Concert<br>
 				UNDER ORPHEUM VANCOUVER, BC<br>
@@ -73,15 +73,85 @@
 
 		</div> <!-- End of lef_col -->
 
+	    <!-- seating map -->
 		<div class="seat_map_img" id="background_map_image">
 
 		    <img id="seatingMapImage" src="images/ticket/Hall_seating_backBalcony.png" alt="displaying the back orchestra seating with spotlight" width="1920" height="1080">
 
 		    <img id="seatMapIcon" src="icons/seat_map_icon.svg" alt="seat map icon"> 
 		</div> <!-- End of seat_sections_img -->
+		<!-- drop down menu during mobile size -->
+
+	    <div class="mobile_container">
+	        <select id="mobile_seat_map">
+	            <option value="Back Balcony">&nbsp;&nbsp;Back Balcony</option>
+	            <option value="Front Balcony">&nbsp;&nbsp;Front Balcony</option>
+	            <option value="Back Orchestra">&nbsp;&nbsp;Back Orchestra</option>
+	            <option value="Front Orchestra">&nbsp;&nbsp;Front Orchestra</option>
+	        </select>
+
+	        <ul id="seat_options">
+				<li>
+				<a href="#">Row D, Seat 230</a>
+				<span class="mobile_price">CA $101.43<span class="taxes"><br>(including taxes)</span></span>
+				</li>
+				<li>
+				<a href="#">Row D, Seat 231</a>
+				<span class="mobile_price">CA $101.43<span class="taxes"><br>(including taxes)</span></span>
+				</li>
+				<li>
+				<a href="#">Row D, Seat 232</a>
+				<span class="mobile_price">CA $101.43<span class="taxes"><br>(including taxes)</span></span>
+				</li>
+				<li>
+				<a href="#">Row D, Seat 233</a>
+				<span class="mobile_price">CA $97.43<span class="taxes"><br>(including taxes)</span></span>
+				</li>
+				<li>
+				<a href="#">Row D, Seat 234</a>
+				<span class="mobile_price">CA $97.43<span class="taxes"><br>(including taxes)</span></span>
+				</li>
+				<li>
+				<a href="#">Row D, Seat 235</a>
+				<span class="mobile_price">CA $101.43<span class="taxes"><br>(including taxes)</span></span>
+				</li>
+				<li>
+				<a href="#">Row D, Seat 236</a>
+				<span class="mobile_price">CA $90.43<span class="taxes"><br>(including taxes)</span></span>
+				</li>
+				<li>
+				<a href="#">Row D, Seat 237</a>
+				<span class="mobile_price">CA $90.43<span class="taxes"><br>(including taxes)</span></span>
+				</li>
+				<li>
+				<a href="#">Row D, Seat 238</a>
+				<span class="mobile_price">CA $90.43<span class="taxes"><br>(including taxes)</span></span>
+				</li>
+				<li>
+				<a href="#">Row D, Seat 239</a>
+				<span class="mobile_price">CA $97.43<span class="taxes"><br>(including taxes)</span></span>
+				</li>
+				<li>
+				<a href="#">Row D, Seat 240</a>
+				<span class="mobile_price">CA $97.43<span class="taxes"><br>(including taxes)</span></span>
+				</li>
+				<li>
+				<a href="#">Row D, Seat 241</a>
+				<span class="mobile_price">CA $97.43<span class="taxes"><br>(including taxes)</span></span>
+				</li>
+				<li>
+				<a href="#">Row D, Seat 242</a>
+				<span class="mobile_price">CA $97.43<span class="taxes"><br>(including taxes)</span></span>
+				</li>
+				<li>
+				<a href="#">Row D, Seat 243</a>
+				<span class="mobile_price">CA $90.43<span class="taxes"><br>(including taxes)</span></span>
+				</li>				
+    		</ul>    
+	    </div>
 
 		<!-- cart column -->
-		<div class="cart_wrapper">
+		<div id="cart_wrapper" class="cart_wrapper">
 			<div class="cart">
 				<h4 id="cart_summary">CART SUMMARY</h4>
 				<p id="your_tickets">YOUR TICKETS<br></p>

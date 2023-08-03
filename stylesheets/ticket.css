@@ -1,13 +1,4 @@
 
-/*100: Thin (Hairline)
-200: Extra Light (Ultra Light)
-300: Light
-400: Normal
-500: Medium
-600: Semi Bold (Demi Bold)
-700: Bold
-800: Extra Bold (Ultra Bold)
-900: Black (Heavy)*/
 *{
 	box-sizing: border-box;
 }
@@ -52,9 +43,10 @@ h3{
 
 ul{
 	color: #DE4040;
-  font-size: 0.75vw;
-  font-family: 'raleway', 'sans-serif';
+  font-size: 0.55vw;
+  font-family: 'satoshi_complete', 'sans-serif';
   font-weight: bold;
+  padding: 0 1rem;
 }
 
 a{
@@ -67,6 +59,9 @@ a{
 
     font-family: 'playfair_display';
     src: url(../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
+
+    font-family: 'satoshi_complete';
+    src: url(../fonts/Satoshi_complete/Satoshi-Variable.ttf);    
 }
 
 /*------------------------------------Ticket section site---------------------------------------*/
@@ -76,8 +71,8 @@ a{
   width: 105%;
   height: 105%;
   object-fit: cover;
-  left: -2.5%; /* centers the image again after enlargement */
-  top: -2.5%; /* centers the image again after enlargement */
+  left: -2.5%; 
+  top: -2.5%; 
   z-index: -1;
   opacity: 0;
   transition: opacity 1s ease;
@@ -101,7 +96,7 @@ a{
 	left: 0;
 	margin: 2vh 1vw;
 }
-	/* Set the z-index to a value higher than the background image to ensure that it appears on top */
+
 
 #redirecting{
 	padding: 1vh 1vw;
@@ -137,9 +132,9 @@ a{
 .seat_sections a:before {
   content: "";
   position: absolute;
-  top: -4vh; /* viewport height */
+  top: -4vh; 
   bottom: -4vh; 
-  left: -8vw; /* viewport width */
+  left: -8vw; 
   right: -8vw; 
   z-index: -1;
 }
@@ -197,7 +192,7 @@ a{
 }
 
 .return_home{
-  font-family: 'raleway', 'sans-serif';
+  font-family: 'satoshi_complete', 'sans-serif';
   color: #DE4040;
   font-size: 0.75vw;
   font-weight: 900;
@@ -252,39 +247,37 @@ a{
 
 .seat_map a {
   font-family: 'playfair_display', 'serif';
-  font-size: 1vw; /* adjust as needed */
+  font-size: 1vw;
   font-weight: bold;
-
-  background-color: #A17C3F; /* initial background color */
-  color: white; /* initial text color */
-
-  display: flex; /* Flex will ensure contents are centered */
-  flex-direction: column; /* Stack items vertically */
-  justify-content: center; /* Center items vertically */
-  align-items: center; /* Center items horizontally */
-
+  background-color: #A17C3F;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  width: 12.5vw; /* Set fixed width, adjust as per your design */
-  height: 10vh; /* Set fixed height, adjust as per your design */
-  margin: 0.75vh 0; 
-  transition: background-color 0.1s, color 0.1s; /* smooth color transition */
+  width: 12.5vw;
+  height: 10vh;
+  margin: 0.75vh 0;
+  transition: background-color 0.1s, color 0.1s;
 }
 
 .seat_map a:hover {
-  background-color: #CFA765; /* background color when hovered */
-  color: white; /* text color when hovered */
+  background-color: #CFA765;
+  color: white;
 }
 
 .seat_map a:active {
-  background-color: #594030; /* background color when clicked */
+  background-color: #594030;
 }
 
 .seat_map .price {
   display: block;
-  border-top: 1px solid white; /* color of the line */
-  padding-top: 0.5vh; /* space between the line and the price */
-  margin-top: 0.5vw; /* space between the line and the section */
+  border-top: 1px solid white;
+  padding-top: 0.5vh;
+  margin-top: 0.5vw;
 }
+
 
 #redirecting_map{
 	background-color: white;
@@ -307,10 +300,10 @@ a{
 }
 
 .cart{
-  font-family: 'raleway', 'sans-serif';
+  font-family: 'satoshi_complete', 'sans-serif';
   font-weight: bold;
   padding: 1vh 2vw;
-  position: relative; /* Create a new context for absolute positioning */
+  position: relative; 
   z-index: 1; /* Increase the z-index to bring this above the pseudo-element */
 }
 
@@ -348,12 +341,8 @@ a{
   padding-top: 0.25vw;
 }
 
-/*.price_container{
-	border-bottom: 0.01vh solid #eaeaea;
-}*/
-
 #cart_assistant{
-  font-family: 'raleway', 'sans-serif';
+  font-family: 'satoshi_complete', 'sans-serif';
 	font-weight: 700;
 	font-size: 0.5vw;
   color: #888888;
@@ -378,31 +367,28 @@ a{
 
 #nextButton {
   animation: fadeIn 1s ease-in-out;
-
   border: none;
   border-radius: 5px;
   background-color: #B38C4A;
   text-align: center;
   font-weight: 900;
   display: none; /* Initially hidden */
-
   width: 100%;
   margin: 1vh 0;
   padding: 1vh 0 1vh 0;
   transition: background-color 0.1s, color 0.1s; /* smooth color transition */
-
 }
 
 #nextButton:hover{
-  background-color: #CFA765; /* background color when hovered */
+  background-color: #CFA765; 
 }
 
 #nextButton:active{
-  background-color: #594030; /* background color when clicked */
+  background-color: #594030; 
 }
 
 .return_seating_home{
-  font-family: 'raleway', 'sans-serif';
+  font-family: 'satoshi_complete', 'sans-serif';
   color: #DE4040;
   font-size: 0.75vw;
   font-weight: 900;
@@ -435,18 +421,18 @@ a{
   border: none;
   font-size: 1vw;
 
-  background-color: #A17C3F; /* initial background color */
-  color: white; /* initial text color */
-  border-radius: 5px; /* optional, for rounded corners */
-  transition: background-color 0.1s, color 0.1s; /* smooth color transition */
+  background-color: #A17C3F; 
+  color: white; /
+  border-radius: 5px; /* for rounded corners */
+  transition: background-color 0.1s, color 0.1s; 
 }
 
 .popup_button:hover {
-  background-color: #CFA765; /* background color when hovered */
+  background-color: #CFA765;
 }
 
 .popup_button:active {
-  background-color: #594030; /* background color when clicked */
+  background-color: #594030;
 }
 
 #choose_ticket_type{
@@ -468,7 +454,7 @@ a{
 }
 
 .popup_seat_type{
-  font-family: 'raleway', 'sans-serif';
+  font-family: 'satoshi_complete', 'sans-serif';
   font-weight: 400;
   font-size: 0.85vw;
   color: #757575;
@@ -477,7 +463,7 @@ a{
 }
 
 .popup_seat_selection{
-  font-family: 'raleway', 'sans-serif';
+  font-family: 'satoshi_complete', 'sans-serif';
   font-weight: 500;
   font-size: 1vw;
 
@@ -485,13 +471,13 @@ a{
 }
 
 .popup_price {
-  margin-left: 10vw; /* Add left margin to create more space */
+  margin-left: 10vw; 
 }
 
 #crossIcon {
   position: absolute;
-  top: 1vh; /* Adjust as needed */
-  right: 0.75vw; /* Adjust as needed */
+  top: 1vh; 
+  right: 0.75vw; 
 
   height: 2vh;
 }
@@ -503,7 +489,6 @@ a{
   padding: 1rem;
   width: 100%;
 
-  /*flex put the children horizontally*/
   display: flex;
   flex-wrap: wrap;
   overflow: auto;
@@ -640,11 +625,11 @@ a{
 }
 
 .payment_cart{
-  font-family: 'raleway', 'sans-serif';
+  font-family: 'satoshi_complete', 'sans-serif';
   font-weight: bold;
   padding: 1rem 1.5rem;
-  position: relative; /* Create a new context for absolute positioning */
-  z-index: 1; /* Increase the z-index to bring this above the pseudo-element */
+  position: relative; 
+  z-index: 1; 
 }
 
 #payment_cart_summary{
@@ -690,7 +675,7 @@ a{
 
 #payment_cart_assistant{
   margin-top: 1rem;
-  font-family: 'raleway', 'sans-serif';
+  font-family: 'satoshi_complete', 'sans-serif';
   font-weight: 700;
   font-size: 0.5rem;
   color: #888888;
