@@ -15,51 +15,65 @@
     <main>
         <header>
         </header>
+        <div class="mobile_nav" id="mobile_navigator">
+            <div class="mobile_nav_o" id="nav_menu">
+                <div class="nav_button_mob" id="mobile_btn" onclick="switchState()"><a href="#logo_home"><img id="img_button_nav_m" class="img_button_nav" src="icons/mobile_ham.svg"></a></div>
 
+                <div class="navigation_vert">
+                    <div class="selectors_m"><a href="#logo_home"><img class="img_button_nav" src="icons/home_icon.png"></a></div>
+                    <div class="selectors_m"><a href="#header_p">PROGRAM</a></div>
+                    <div class="selectors_m"><a href="#logo_home">TICKETS</a></div>
+                    <div class="selectors_m"><a href="#site_part5">CAST</a></div>
+                    <div class="selectors_m"><a href="#site_part6">INFO</a></div>
 
+                    <div class="selectors_m"><img class="img_button_nav" style="filter: invert(62%) sepia(12%) saturate(1860%) hue-rotate(359deg) brightness(91%) contrast(80%);" src="icons/ticket_icon.png"></div>
+                </div>
+            </div>
+        </div>
         <section class="site_part1">
-            <div class="logo_header">
-                <img class="title" src="images/title.svg"/>
-                
+            <div class="logo_header" id="logo_home">
+                <img class="title" src="images/title.svg" />
+
                 <!-- TICKET MODULE -->
                 <div class="ticket_main" style="contain:layout">
-                    <div><h1>July<br>18</h1></div> 
+                    <div><h1>July<br>18</h1></div>
                     <div class="ticket_subsection">
-                    <h2>Tue 7:30 pm ⸺ Orpheum, Vancouver</h2>
-                    <button class ="button button_ticket">Get Tickets</button>
+                        <h2>Tue 7:30 pm ⸺ Orpheum, Vancouver</h2>
+                        <button class="button button_ticket">Get Tickets</button>
                     </div>
                 </div>
 
                 <!-- TICKET MODULE -->
                 <div class="ticket_main" style="contain:layout">
-                    <div><h1>July<br>19</h1></div> 
+                    <div><h1>July<br>19</h1></div>
                     <div class="ticket_subsection">
-                    <h2>Wed 7:30 pm ⸺ Orpheum, Vancouver</h2>
-                    <button class ="button button_ticket">Get Tickets</button>
+                        <h2>Wed 7:30 pm ⸺ Orpheum, Vancouver</h2>
+                        <button class="button button_ticket">Get Tickets</button>
                     </div>
                 </div>
 
             </div>
 
             <!-- Sticky Nav -->
-            <div class="main_nav" style="text-align: center;">
+            <div class="main_nav" id="def_nav">
                 <div class="front_nav">
-                    <img class="selectors" id="img_nav" src="icons/home_icon.svg">
-                    <div class="selectors">PROGRAM</div>
-                    <div class="selectors">TICKETS</div>
-                    <div class="selectors">CAST</div>
-                    <div class="selectors">INFO</div>
+                    <a href="#logo_home"><div class="selectors"><img id="img_button_nav" src="icons/home_icon.png"></div></a>
+                    <div class="selectors"><a href="#site_part5">CAST</a></div>
+                    <div class="selectors"><a href="#site_part6">INFO</a></div>
+                    <div class="selectors"><a href="#header_p">PROGRAM</a></div>
+
+                    <button class="button button_nav"><img id="img_button_nav" src="icons/ticket_icon.png" style="float:inline-start"><div style="float:right"><a href="#">BUY<br>TICKETS</a></div></button>
+
                 </div>
             </div>
             <!--  -->
+        </section>
 
-        </section> 
-
-        <section class="site_part2">
+        <div class="site_part2">
             <div class="subsection_main">
-                <img class="pipe_1" src="images/Left_pipe_0x0001.svg" />
+                <img class="pipe_1" src="images/Left_pipe_0x0001.svg" alt="Left decorative pipe">
                 <div class="program_info">
-                    <div id="header_p">Program <img width="30%" height="30%" style="transform: translate(-17%,30%); " src="images/remy_lay_1.svg" /> </div>
+                    <div id="header_p">Program <img style="width:30%; height:30%; transform: translate(-17%,30%); " src="images/remy_lay_1.svg" alt="This is Remy from Ratatouille laying on a box."> </div>
                     <div class="overview_img">
                         <div class="subsection">
                             <div class="paragraphs" id="paragraph_1">
@@ -74,11 +88,11 @@
                         <div class="subsection2">
                             <div class="header_p" id="header_l">Length</div>
                             <div class="information_row">
-                                <img class="icons" src="icons/clock.svg" />
+                                <img class="icons" src="icons/clock.svg" alt="The expected time taken is">
                                 <div class="information_row" id="time_interval">130 minutes</div>
                             </div>
                             <div class="information_row">
-                                <img class="icons" src="icons/intermission_glass.svg" />
+                                <img class="icons" src="icons/intermission_glass.svg" alt="The amount of intermissions">
                                 <div class="information_row" id="intermissions_limit">1 intermission</div>
                             </div>
                         </div>
@@ -87,9 +101,9 @@
 
                 </div>
             </div>
-            <img class="footer_2" src="images/section_2_footer.png" />
-        </section>
-        
+            <img class="footer_2" src="images/section_2_footer.png" alt="This is the end of the description for the concert.">
+        </div>
+
         <section id="site_part3">
         </section>
 
@@ -110,7 +124,7 @@
                     </div>
                 </section>
                 <div class="control">
-                </div>  
+                </div>
                 <h class="musicH2">Full Tracklist</h>
                 <table class="musicTrack">
                     <tr>
@@ -142,26 +156,25 @@
 
         <section id="site_part5">
             <!-- orchestra -->
-
             <!-- sources used -->
             <!-- https://www.w3schools.com/howto/howto_js_tabs.asp -->
             <!-- https://www.w3schools.com/css/css_grid.asp -->
             <!-- https://www.w3schools.com/css/css3_borders.asp -->
             <!-- https://cssgradient.io/ -->
-    
 
-            <main class="subsection_orchestra"> <!--entire orchestra module-->
 
+            <main class="subsection_orchestra">
+                <!--entire orchestra module-->
                 <!-- this is the first flexbox along with the menu of orchestra-info -->
                 <section class="left-pipe" id="leftpipe">
                     <img class="left-orchestra-pipes" src="images/left-orchestra-pipes.png" />
                 </section>
 
                 <!-- this has flexboxes - also is the second flexbox to the left-pipe -->
-                <section class="orchestra-info" id="orch-tabs"> 
+                <section class="orchestra-info" id="orch-tabs">
                     <div class="o-header">
                         <div class="right-orch-pipes">
-                            <img class="orch-remy" src="images/orchestra-remy.png"/>
+                            <img class="orch-remy" src="images/orchestra-remy.png" />
                             <div class="o-heading" id="header_orchestra">Orchestra</div>
                             <!-- <div id="header_orchestra">Orchestra</div> -->
                         </div>
@@ -170,42 +183,42 @@
                         <div class="dissolve-tabs">
                             <!-- <button class="tablinks" onclick="openSections(section, 'Maestros')">  -->
                             <button class="tablinks" input type="radio" onclick="openSections(section, 'Maestros')">
-                                <img class="oven-knob" src="images/oven-knob.png"/>
+                                <img class="oven-knob" src="images/oven-knob.png" />
                                 <!-- <div class="tab-names">Maestros</div> -->
                                 Maestros
-                                <img class="lines" src="images/orchestra-section-line.png"/>
+                                <img class="lines" src="images/orchestra-section-line.png" />
                             </button>
 
                             <!-- <button class="tablinks" onclick="openSections(section, 'Strings')">  -->
                             <button class="tablinks" input type="radio" onclick="openSections(section, 'String')">
-                                <img class="oven-knob" src="images/oven-knob.png"/>
+                                <img class="oven-knob" src="images/oven-knob.png" />
                                 <!-- <div class="tab-names">Strings</div> -->
                                 Strings
-                                <img class="lines" src="images/orchestra-section-line.png"/>
+                                <img class="lines" src="images/orchestra-section-line.png" />
                             </button>
-                            
+
                             <!-- <button class="tablinks" onclick="openSections(section, 'Woodwinds')">  -->
                             <button class="tablinks" input type="radio" onclick="openSections(section, 'Woodwinds')">
-                                <img class="oven-knob" src="images/oven-knob.png"/>
+                                <img class="oven-knob" src="images/oven-knob.png" />
                                 <!-- <div class="tab-names">Woodwinds</div> -->
                                 Woodwinds
-                                <img class="lines" src="images/orchestra-section-line.png"/>
+                                <img class="lines" src="images/orchestra-section-line.png" />
                             </button>
-                            
+
                             <!-- <button class="tablinks" onclick="openSections(section, 'Brass')">  -->
                             <button class="tablinks" input type="radio" onclick="openSections(section, 'Brass')">
-                                <img class="oven-knob" src="images/oven-knob.png"/>
+                                <img class="oven-knob" src="images/oven-knob.png" />
                                 <!-- <div class="tab-names">Brass</div> -->
                                 Brass
-                                <img class="lines" src="images/orchestra-section-line.png"/>
+                                <img class="lines" src="images/orchestra-section-line.png" />
                             </button>
-                            
+
                             <!-- <button class="tablinks" onclick="openSections(section, 'Percussion')">  -->
                             <button class="tablinks" input type="radio" onclick="openSections(section, 'Percussion')">
-                                <img class="oven-knob" src="images/oven-knob.png"/>
+                                <img class="oven-knob" src="images/oven-knob.png" />
                                 <!-- <div class="tab-names">Percussion</div> -->
                                 Percussion
-                                <img class="lines" src="images/line-perc.png"/>
+                                <img class="lines" src="images/line-perc.png" />
                             </button>
                         </div>
                     </div>
@@ -291,59 +304,59 @@
 
                         <div id="Woodwinds" class="tabcontent">
                             <div class="profiles-grid">
-                            <div class="profiles">
-                                <img class="profile-pics" id="christie-reside" src="images/christie-reside.png">
-                                <div class="profile-names">Christie Reside</div>
-                                <div class="profile-instrument-names">Flute</div>
-                            </div>
+                                <div class="profiles">
+                                    <img class="profile-pics" id="christie-reside" src="images/christie-reside.png">
+                                    <div class="profile-names">Christie Reside</div>
+                                    <div class="profile-instrument-names">Flute</div>
+                                </div>
 
-                            <div class="profiles">
-                                <img class="profile-pics" id="dakota-martin" src="images/dakota-martin.png">
-                                <div class="profile-names">Dakota Martin</div>
-                                <div class="profile-instrument-names">Flute</div>
-                            </div>
+                                <div class="profiles">
+                                    <img class="profile-pics" id="dakota-martin" src="images/dakota-martin.png">
+                                    <div class="profile-names">Dakota Martin</div>
+                                    <div class="profile-instrument-names">Flute</div>
+                                </div>
 
-                            <div class="profiles">
-                                <img class="profile-pics" id="karin-walsh" src="images/karin-walsh.png">
-                                <div class="profile-names">Karin Walsh</div>
-                                <div class="profile-instrument-names">Oboe</div>
-                            </div>
+                                <div class="profiles">
+                                    <img class="profile-pics" id="karin-walsh" src="images/karin-walsh.png">
+                                    <div class="profile-names">Karin Walsh</div>
+                                    <div class="profile-instrument-names">Oboe</div>
+                                </div>
 
-                            <div class="profiles">
-                                <img class="profile-pics" id="jeanette-jonquil" src="images/jeanette-jonquil.png">
-                                <div class="profile-names">Jeanette Jonquil</div>
-                                <div class="profile-instrument-names">Clarinet</div>
-                            </div>
+                                <div class="profiles">
+                                    <img class="profile-pics" id="jeanette-jonquil" src="images/jeanette-jonquil.png">
+                                    <div class="profile-names">Jeanette Jonquil</div>
+                                    <div class="profile-instrument-names">Clarinet</div>
+                                </div>
 
-                            <div class="profiles">
-                                <img class="profile-pics" id="michelle-goddard" src="images/michelle-goddard.png">
-                                <div class="profile-names">Michelle Goddard</div>
-                                <div class="profile-instrument-names">Clarinet</div>
-                            </div>
+                                <div class="profiles">
+                                    <img class="profile-pics" id="michelle-goddard" src="images/michelle-goddard.png">
+                                    <div class="profile-names">Michelle Goddard</div>
+                                    <div class="profile-instrument-names">Clarinet</div>
+                                </div>
 
-                            <div class="profiles">
-                                <img class="profile-pics" id="rosanne-wieringa" src="images/rosanne-wieringa.png">
-                                <div class="profile-names">Rosanne Wieringa</div>
-                                <div class="profile-instrument-names">Flute</div>
-                            </div>
+                                <div class="profiles">
+                                    <img class="profile-pics" id="rosanne-wieringa" src="images/rosanne-wieringa.png">
+                                    <div class="profile-names">Rosanne Wieringa</div>
+                                    <div class="profile-instrument-names">Flute</div>
+                                </div>
 
-                            <div class="profiles">
-                                <img class="profile-pics" id="aiden-wong" src="images/aiden-wong.png">
-                                <div class="profile-names">Aiden Wong</div>
-                                <div class="profile-instrument-names">Bass Clarinet</div>
-                            </div>
+                                <div class="profiles">
+                                    <img class="profile-pics" id="aiden-wong" src="images/aiden-wong.png">
+                                    <div class="profile-names">Aiden Wong</div>
+                                    <div class="profile-instrument-names">Bass Clarinet</div>
+                                </div>
 
-                            <div class="profiles">
-                                <img class="profile-pics" id="julia-lockhart" src="images/julia-lockhart.png">
-                                <div class="profile-names">Julia Mockhart</div>
-                                <div class="profile-instrument-names">Bassoon</div>
-                            </div>
+                                <div class="profiles">
+                                    <img class="profile-pics" id="julia-lockhart" src="images/julia-lockhart.png">
+                                    <div class="profile-names">Julia Mockhart</div>
+                                    <div class="profile-instrument-names">Bassoon</div>
+                                </div>
 
-                            <div class="profiles">
-                                <img class="profile-pics" id="sophia-dansereau" src="images/sophia-dansereau.png">
-                                <div class="profile-names">Sophie Dansearu</div>
-                                <div class="profile-instrument-names">Contrabassoon</div>
-                            </div>
+                                <div class="profiles">
+                                    <img class="profile-pics" id="sophia-dansereau" src="images/sophia-dansereau.png">
+                                    <div class="profile-names">Sophie Dansearu</div>
+                                    <div class="profile-instrument-names">Contrabassoon</div>
+                                </div>
 
 
                             </div> <!--woodwind-grid-->
@@ -425,61 +438,58 @@
                             </div>
                         </div>
 
-                
+
                         <!-- js stuff -->
                         <!-- <script type="text/javascript"> -->
-                        <script>
-                            function openCity(sect, section_name) {
+                        <script>function openCity(sect, section_name) {
                                 var i, tabcontent, tablinks;
                                 tabcontent = document.getElementsByClassName("tabcontent");
                                 for (i = 0; i < tabcontent.length; i++) {
-                                tabcontent[i].style.display = "none";
+                                    tabcontent[i].style.display = "none";
                                 }
                                 tablinks = document.getElementsByClassName("tablinks");
                                 for (i = 0; i < tablinks.length; i++) {
-                                tablinks[i].className = tablinks[i].className.replace(" active", "");
+                                    tablinks[i].className = tablinks[i].className.replace(" active", "");
                                 }
                                 document.getElementById(section_name).style.display = "block";
                                 sect.currentTarget.className += " active";
-                            }
-                        </script>
+                            }</script>
                     </section>
                 </section> <!--end of orchestra-info section -->
-             </main> <!--entire section-->
-
-<!-- end of section 5 -->
+            </main> <!--entire section-->
+            <!-- end of section 5 -->
         </section>
 
         <section id="site_part6">
 
-                <div class="faq_container">
+            <div class="faq_container">
                 <h1>FAQ</h1>
-                    <details>
-                        <summary>How will this concert be different from a theatre experience?</summary>
-                        A live orchestra concert can have variations in volume and balance and allows the audience to feel the music, creating a more engaging experience. A concert can be more special and memorable than the theatre, creating a sense of occasion.
-                      </details>
+                <details>
+                    <summary>How will this concert be different from a theatre experience?</summary>
+                    A live orchestra concert can have variations in volume and balance and allows the audience to feel the music, creating a more engaging experience. A concert can be more special and memorable than the theatre, creating a sense of occasion.
+                </details>
 
-                      <details>
-                        <summary>Are cameras and recording devices allowed in the theatre?</summary>
-                        Sorry, but cameras and recording devices are not allowed in the theatre. We have a strict policy of respecting the privacy and enjoyment of all audience members.
-                      </details>
+                <details>
+                    <summary>Are cameras and recording devices allowed in the theatre?</summary>
+                    Sorry, but cameras and recording devices are not allowed in the theatre. We have a strict policy of respecting the privacy and enjoyment of all audience members.
+                </details>
 
-                      <details>
-                        <summary>Do I need to watch Ratatouille before attending?</summary>
-                        You can attend a live orchestra performance of Ratatouille without having seen the movie beforehand. It is not necessary to watch the movie prior to attending the concert.
-                      </details>
+                <details>
+                    <summary>Do I need to watch Ratatouille before attending?</summary>
+                    You can attend a live orchestra performance of Ratatouille without having seen the movie beforehand. It is not necessary to watch the movie prior to attending the concert.
+                </details>
 
-                        <details>
-                        <summary>Is there a dress code for orchestra concerts?</summary>
-                        In general, formal or semi-formal attire is commonly expected, but this can vary depending on the venue and the type of concert.
-                      </details>
+                <details>
+                    <summary>Is there a dress code for orchestra concerts?</summary>
+                    In general, formal or semi-formal attire is commonly expected, but this can vary depending on the venue and the type of concert.
+                </details>
 
-                      <details>
-                        <summary>How old do you need to be to attend the concert?</summary>
-                        Typically, all ages are welcome to attend the concert. Some may recommend that younger children be accompanied by an adult due to the sound intensity.
-                      </details>
-                </div>
-            
+                <details>
+                    <summary>How old do you need to be to attend the concert?</summary>
+                    Typically, all ages are welcome to attend the concert. Some may recommend that younger children be accompanied by an adult due to the sound intensity.
+                </details>
+            </div>
+
         </section>
 
         <footer>
