@@ -9,17 +9,18 @@ function changeImage(src) {
 }
 
 window.onload = function() {
-    // document.getElementById("map_backBalcony").style.backgroundColor = '#594030';
-    // changeImage("images/ticket/Hall_seating_backBalcony.png");
-
     const urlParams = new URLSearchParams(window.location.search);
     const section = urlParams.get('section');
 
     if (section) {
         document.getElementById("map_" + section).style.backgroundColor = '#594030';
         changeImage("images/ticket/Hall_seating_" + section + ".png");
+    } else {
+        document.getElementById("map_backBalcony").style.backgroundColor = '#594030';
+        changeImage("images/ticket/Hall_seating_backBalcony.png");
     }
 };
+
 
 
 
@@ -134,8 +135,6 @@ for (var i = 0; i < buttonIds.length; i++) {
 }
 
 // --------------------------payment button---------------------------
-// document.getElementById("nextButton").style.opacity = '1';
-// document.getElementById("nextButton").style.visibility = 'visible';
 
 
 document.getElementById("nextButton").addEventListener("click", function(e){

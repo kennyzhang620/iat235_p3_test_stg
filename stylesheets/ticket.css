@@ -197,7 +197,6 @@ a{
 }
 
 .return_home{
-
   font-family: 'raleway', 'sans-serif';
   color: #DE4040;
   font-size: 0.75vw;
@@ -388,7 +387,7 @@ a{
   display: none; /* Initially hidden */
 
   width: 100%;
-  margin-top: 1vh;
+  margin: 1vh 0;
   padding: 1vh 0 1vh 0;
   transition: background-color 0.1s, color 0.1s; /* smooth color transition */
 
@@ -400,6 +399,14 @@ a{
 
 #nextButton:active{
   background-color: #594030; /* background color when clicked */
+}
+
+.return_seating_home{
+  font-family: 'raleway', 'sans-serif';
+  color: #DE4040;
+  font-size: 0.75vw;
+  font-weight: 900;
+  margin-left: 0.5vw;
 }
 
 /*--------------------pop up window----------------------*/
@@ -515,12 +522,13 @@ a{
 .ticket_information_container{
 /*  width: 90vw;*/
   max-width: 600px;
-  height: 55rem; /* This will set a fixed height to your container */
+  max-height: 1000px;
+  height: 877px; 
   overflow: hidden; /* This will create a scrollbar if the content overflows */
   margin: 2rem auto auto 1rem; 
   display: flex;
   flex-direction: column;
-  gap: 2vh;  
+  gap: 2rem;  
   padding: 2rem 2rem 7rem 2rem;
   background-color: #fff;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.25);
@@ -531,26 +539,23 @@ a{
 .payment_container {
 /*  width: 90vw;*/
   max-width: 600px;
+  max-height: 1000px;
   margin: 2rem 1rem auto auto;
   display: flex;
   flex-direction: column;
-  gap: 2vh;
+  gap: 0.55rem;
 }
 
 
 .card_information_container,
 .personal_information_container{
-  padding: 2vh;
+  padding: 1rem 2rem 2rem 2rem;
   background-color: #fff;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.25);
   border-radius: 5px;
-  margin-bottom: 2vh;
+  margin-bottom: 2rem;
 }
 
-
-.input_group {
-  margin-bottom: 1vh;
-}
 
 .input_group label {
   display: block;
@@ -570,14 +575,14 @@ a{
 #payment_form label,
 #personal_info_form label {
   display: block;
-  margin-bottom: 0.25vh;
+  margin-bottom: 0.25rem;
 }
 
 #payment_form input,
 #personal_info_form input {
   width: 100%;
   padding: 0.75rem 0.5rem;
-  margin: 1vh 0 1.5vh 0;
+  margin: 0.25rem 0 1.5rem 0;
 
   border: 1px solid #ccc;
   border-radius: 3px;
@@ -587,7 +592,7 @@ a{
   align-self: center;
   width: 100%;
   cursor: pointer;
-  padding: 2vh 4vw;
+  padding: 2rem 4rem;
   border: none;
   border-radius: 5px;
   background-color: #B38C4A;
@@ -605,13 +610,13 @@ a{
   justify-content: space-between;
 }
 
-.location_input_row .input_group:nth-child(1),
+.location_input_row .input_group:nth-child(3),
 .location_input_row .input_group:nth-child(2) {
-  flex: 0 0 40%;    
+  flex: 0 0 35%;    
 }
 
-.location_input_row .input_group:nth-child(3) {
-  flex: 0 0 15%;
+.location_input_row .input_group:nth-child(1) {
+  flex: 0 0 20%;
 }
 
 .payment_icon {
@@ -625,6 +630,13 @@ a{
   display: block;
   margin:2rem 0; /* adjust as needed */
   width: 100%;  
+}
+
+.payment_title{
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0 0 1rem 0;
+  margin: 0.5rem 0;
 }
 
 .payment_cart{
@@ -677,17 +689,18 @@ a{
 }
 
 #payment_cart_assistant{
+  margin-top: 1rem;
   font-family: 'raleway', 'sans-serif';
   font-weight: 700;
   font-size: 0.5rem;
   color: #888888;
 
-  border-top: 0.01vh solid #eaeaea;  
+  border-top: 0.02rem solid #eaeaea;  
 }
 
 #payment_phoneIcon {
-  height: 1.5vh; 
-  margin: 0.35vw;
+  height: 0.75rem; 
+  margin: 0.35rem;
 }
 /*--------------------------------timer-----------------------------------*/
 
