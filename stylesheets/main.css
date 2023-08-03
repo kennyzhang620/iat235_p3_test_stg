@@ -269,10 +269,12 @@ footer {
 @keyframes open {
     from {
         width: 0%;
+        height:100%;
     }
 
     to {
         width: 100%;
+        height:100%;
     }
 }
 
