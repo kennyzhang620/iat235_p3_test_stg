@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ratatouille in Concert|Vancouver Symphony Orchestra| Seat Map</title>
+
+	<link rel="stylesheet" type="text/css" href="stylesheets/ticket.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/ticket_grid.css">
+
+	<script src="scripts/timer.js"></script>
+
+</head>
+
+<body>
+	<header class="top">
+			<h1 class="top-1of3" id="flexible-width">Ratatouille in Concert<br>
+				UNDER ORPHEUM VANCOUVER, BC<br>
+	 			Jul 18, 2023 - Tue 7:30 pm</h1>
+		<div class="top-2of3 base-timer" id="fixed-width">
+		  <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+		    <g class="base-timer__circle">
+		      <circle class="base-timer__path-elapsed" cx="50" cy="50" r="45"></circle>
+		      <path
+		        id="base-timer-path-remaining"
+		        stroke-dasharray="283"
+		        class="base-timer__path-remaining ${remainingPathColor}"
+		        d="
+		          M 50, 50
+		          m -45, 0
+		          a 45,45 0 1,0 90,0
+		          a 45,45 0 1,0 -90,0
+		        "
+		      ></path>
+		    </g>
+		  </svg>
+		  <span id="base-timer-label" class="base-timer__label">${formatTime(
+		    timeLeft
+		  )}</span>
+		</div><!-- End of timer -->
+		<div class="top-3of3" id="empty-space"></div>
+		<a href="index.html"><img id="exit_icon" src="icons/icon_exit.svg" alt="Exit"></a>		
+	</header>
+
+	<div class="main_map_container">
+		<div class="left_col_map">
+			<div class="redirecting_map_exit">
+				<section id="redirecting_map">
+					<h2 id="map-addon-info">Additional Series Performances</h2>
+					<a href="#"><ul id="redirecting_seating_date"><li>July 19.2023 7:30PM</li></ul></a>
+				</section>
+				<a href="index.html"><h3 class="return_seating_home">Return to Homepage</h3></a>
+			</div><!-- End of redirecting_exit -->
+
+			<nav class="seat_map">
+			  <a id="map_backBalcony" href="#">
+			    Back Balcony<br>
+			    <span class="price">$43.81-$101.43</span>
+			  </a>
+			  <a id="map_frontBalcony" href="#">
+			    Front Balcony<br>
+			    <span class="price">$56.81-$125.24</span>
+			  </a>
+			  <a id="map_backOrchestra" href="#">
+			    Back Orchestra<br>
+			    <span class="price">$43.81-$110.43</span>
+			  </a>
+			  <a id="map_frontOrchestra" href="#">
+			    Front Orchestra<br>
+			    <span class="price">$43.81-$110.43</span>
+			  </a>
+			</nav> <!-- End of seat_sections -->
+
+		</div> <!-- End of lef_col -->
+
+		<div class="seat_map_img" id="background_map_image">
+
+		    <img id="seatingMapImage" src="images/ticket/Hall_seating_backBalcony.png" alt="displaying the back orchestra seating with spotlight" width="1920" height="1080">
+
+		    <img id="seatMapIcon" src="icons/seat_map_icon.svg" alt="seat map icon"> 
+		</div> <!-- End of seat_sections_img -->
+
+		<!-- cart column -->
+		<div class="cart_wrapper">
+			<div class="cart">
+				<h4 id="cart_summary">CART SUMMARY</h4>
+				<p id="your_tickets">YOUR TICKETS<br></p>
+				<div class="cart_container">
+					<p id="cart_empty"></p>
+					<p id="cart_section">SECTION<br>-<br></p>
+					<p id="cart_row">ROW<br>-<br></p>
+					<p id="cart_seat">SEAT<br>-<br></p>
+					<p id="cart_price">PRICE<br>-<br></p>
+				</div>
+
+				<div class="price_container">
+					<p id="cart_total">Total - No Ticket</p>
+					<p id="cart_total_price">$0.00</p>
+				</div>
+
+				<!-- pay button -->
+				<button id="nextButton">Next</button>
+
+				<a href="#" id="cart_assistant">
+					<img id="phoneIcon" src="icons/icon_phone.svg" alt="Phone icon">
+					Need Help? 1-604-123-1234
+				</a>
+			</div> <!-- End of cart -->
+		</div> <!-- End of cart_wrapper -->
+
+		<!-- popup window -->
+		<div id="popup">				
+			<img id="crossIcon" src="icons/icon_cross.svg" alt="Cross icon">
+			<div id="popup_section_container">
+				<div class="popup_seat_type">
+					<p id="popup_section">SECTION</p>
+					<p id="popup_row">ROW</p>
+					<p id="popup_seat">SEAT</p>
+				</div> <!-- End of popup_seat_type -->
+
+				<div class="popup_seat_selection">
+					<p id="popup_section_selecting">Back Balcony</p>
+					<p id="popup_row_selecting">D</p>
+					<p id="popup_seat_selecting">230</p>
+				</div> <!-- End of popup_seat_type -->	
+			</div> <!-- End of popup_section_container -->		
+
+		    <p id="choose_ticket_type">Choose a ticket type:</p>
+
+			<button class="popup_button" id="button1">
+				<div>Adult</div>
+				<div class="popup_price">$101.43</div>
+			</button>
+			<button class="popup_button" id="button2">
+				<div>Senior</div>
+				<div class="popup_price">$96.19</div>
+			</button>
+			<button class="popup_button" id="button3">
+				<div>Child (12 & Under)</div>
+				<div class="popup_price">$90.95</div>
+			</button>
+			<button class="popup_button" id="button4">
+				<div>Student (ID Req'd)</div>
+				<div class="popup_price">$90.95</div>
+			</button>
+
+		</div> <!-- End of popup-class -->
+
+	</div> <!-- End of main_container -->
+	<script src="scripts/vfx_ticket_map.js"></script>
+
+</body>
+</html>
