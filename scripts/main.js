@@ -45,6 +45,7 @@ function switchState() {
 		mobi_s.style.width = "100%";
 		mobi_s.style.animationPlayState = "running"
 		mobi_s.style.display = "none"
+		mobile_nav.style.height = "100%";
 		setTimeout(function() {		mobi_s.style.display= "block"
 		btnState = false}, 1);
 	}
@@ -54,6 +55,7 @@ function switchState() {
 		mobi_s.style.animationName="open";
 		mobi_s.style.width = "0%";
 		mobi_s.style.animationPlayState = "running"
+		mobile_nav.style.height = "10%";
 		mobi_s.style.display = "none"
 		
 		setTimeout(function() {		mobi_s.style.display= "block"
