@@ -36,6 +36,17 @@ function switchModesAuto(w, h) {
 	}
 }
 
+function switchModesTicket(w, h) {
+    console.log(w, h, w / h)
+
+    if (w / h <= 16 / 10) {
+        window.location.href="ticket_section_18.html"
+    }
+    else {
+        window.location.href = "ticket_seatmap_18.html"
+    }
+}
+
 
 function switchState() {
 	if (btnState) {
