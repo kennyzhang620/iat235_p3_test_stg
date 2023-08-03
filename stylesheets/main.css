@@ -1,5 +1,16 @@
 /* Global group-agreed styles. DO NOT TOUCH THIS SECTION AS IT WILL RESULT IN MERGE CONFLICTS */
 
+/* fonts */
+@font-face {
+    font-family: 'raleway';
+    src: url(../fonts/Raleway/Raleway-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'playfair_display';
+    src: url(../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
 html {
     
 }
@@ -195,11 +206,6 @@ footer {
     transition: text-decoration-color 300ms;
 }
 
-@font-face {
-    font-family: 'raleway';
-    src: url(../fonts/Raleway/Raleway-VariableFont_wght.ttf);
-}
-
 #img_nav {
     width: 9vw;
     padding-right: 12%;
@@ -290,11 +296,6 @@ a:visited {
 /* End of section */
 
 /* Styles for each section 2*/
-
-@font-face {
-    font-family: 'playfair_display';
-    src: url(../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
-}
 
 .paragraphs {
     font-size: 11pt;
