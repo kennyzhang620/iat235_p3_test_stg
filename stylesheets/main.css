@@ -1062,8 +1062,9 @@ details {
     margin-top:25px;
     text-align:left;
     border-radius: 4px;
-    padding: 0.5em 0;
-    
+
+    padding: 1em 0;
+
 
     color: #B38C4A; 
 }
@@ -1090,7 +1091,6 @@ details summary::before {
   
 /* What happens to the text when its opened */
 details[open] {
-    padding: 0.5em;
 }
 
 details[open] summary {
