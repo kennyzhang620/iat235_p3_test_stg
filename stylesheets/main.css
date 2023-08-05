@@ -173,11 +173,15 @@ footer {
     left: 50%;
     transform: translate(-50%, 0);
     position: fixed;
+    /* move the sticky nav in front of all other elements */
+    z-index: 1;
 }
 
 
 .button_nav {
-    margin: 0;
+    /* margin: 0; */
+    margin-bottom: 2%;
+
     background-color: #A17C3F;
     border: none;
     border-radius: 35px;
@@ -193,7 +197,9 @@ footer {
     }
 
 .front_nav a:hover {
-    text-decoration-color: rgba(255, 255, 255, 1);
+    /* text-decoration-color: rgba(255, 255, 255, 1); */
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .front_nav a:active {
@@ -220,7 +226,8 @@ footer {
     font-family: 'raleway', sans-serif;
     display: inline-block;
     /* top | right | bottom | left */
-    padding: 1vw 12% 1vw 0;
+    /* padding: 1vw 12% 1vw 0; */
+    margin: 1vw 12% 1vw 0;
 }
 
 .selectors_m {
@@ -406,9 +413,11 @@ a:visited {
 }
 
 .musicTrack {
+    margin-top: 2%;
+
     margin-left: 2%;
-    font-family: 'rale-way';
-    font-size: 20px;
+    font-family: 'raleway', 'sans-serif';
+    font-size: 15px;
     width: 60%;
     margin-bottom: 5%;
 }
@@ -418,16 +427,18 @@ a:visited {
     }
 
 .musicH1 {
-
-    font-weight: bold;
-    font-size: 75px;
+    font-family: 'playfair_display', 'serif';
+    /* font-size: 4vw; */
+    font-size: 3em;
+    font-weight: 600;
 }
 
 .musicH2 {
-    font-family: 'sans-serif';
+    font-family: 'playfair_display', 'serif';
+    font-size: 20pt;
+
     margin-left: 2%;
     font-style: normal;
-    font-size: 36px;
 }
 
 .musicDisplayInfo span {
@@ -435,7 +446,9 @@ a:visited {
 }
 
 #musicName {
-    font-family: 'rale-way';
+    /* font-family: 'raleway', sans-serif; */
+    font-family: 'playfair_display', 'serif';
+
     font-size: 30px;
     font-weight: bold;
     margin-top: 5%;
@@ -443,16 +456,17 @@ a:visited {
 }
 
 #musicAuthor {
-    font-family: 'sans-serif';
-    font-size: 25px;
+    /* font-family: 'sans-serif'; */
+    font-family: 'raleway', 'sans-serif';
+    font-size: 16px;
     color: #B38C4A;
     margin-left: 10%;
     margin-bottom: 5%;
 }
 
 #musicTime {
-    font-family: 'sans-serif';
-    font-size: 25px;
+    font-family: 'raleway', 'sans-serif';
+    font-size: 16px;
     margin-left: 80%;
     position: relative;
     margin-top: -4%;
@@ -493,6 +507,7 @@ a:visited {
     margin-left: 2.9%;
     position: absolute;
     width: 18%;
+    overflow: hidden;
 }
 
 @media screen and (max-width: 60rem){
@@ -579,14 +594,13 @@ a:visited {
 /* the word orchestra */
 #header_orchestra {
     font-family: 'playfair_display', 'serif';
-    font-size: 4vw;
-    /* grid-column-start: 5; */
-    grid-row-start: 2;
-    /* margin-top: 17vw; */
+    /* font-size: 4vw; */
+    font-size: 3em;
+    font-weight: 600;
 
+    grid-row-start: 2;
     margin-left: 42vw;
-    margin-top: 17vw;
-    /* margin-top: 220%; */
+    margin-top: 18vw;
 }
 
 .orch-remy {
@@ -862,6 +876,10 @@ a:visited {
 }
 
 .faq_container {
+    /* move module up a bit */
+    margin-top: -10vw;
+
+
     text-align: center;
     padding-top: 10%;
     display: flex;
@@ -891,6 +909,9 @@ summary {
     font-weight: bold;
     margin: -0.5em -0.5em 0;
     padding: 0.5em;
+    
+    /* so people know to click on the Q's */
+    cursor: pointer;
 }
 
 /* hide html style by default */
@@ -939,6 +960,7 @@ footer {
 
     .end-footer a {
         margin-right: 5%;
+        color: #A17C3F;
     }
 
 .footer-links {
