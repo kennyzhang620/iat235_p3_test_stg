@@ -136,14 +136,13 @@ footer {
 .site_part1 {
     background-image: url(../images/main_img.png);
     background-size: cover;
-    /*height:100vh;*/
 }
 
 .logo_header {
     width: 100%;
     height: 87%;
     text-align: center;
-    padding: 42px 20px 20px;
+    padding: 35px 20px;
 }
 
 .logo_vso {
@@ -321,6 +320,7 @@ a:visited {
     display: flex;
 }
 
+/* Section 2 */
 .site_part2 {
 }
 
@@ -381,6 +381,50 @@ a:visited {
 .footer_2 {
     width: 100%;
 }
+
+/* Media Queries */
+@media screen and (max-width: 60rem) {
+
+    [class*="program_info"] {
+        width:100%;
+    }
+
+    [class*="overview_img"] {
+        flex-direction:column;
+    }
+    
+    .subsection_main {
+    }
+
+    .pipe_1 {
+        width: 0%;
+        height: 0%;
+    }
+
+    .paragraphs {
+        padding: 2% 0;
+    }
+    
+    .subsection {
+        padding: 10% 10% 0 10%;
+        width: 100%;    
+    }
+
+    .subsection2 {
+        padding: 4% 0 8% 10%;
+    }
+
+    .icons{
+        width:5%;
+        height:auto;
+    }
+
+    #header_p {
+        padding: 20px 0 0 10%;
+    }
+    
+}
+
 
 /* End of section*/
 
@@ -634,8 +678,8 @@ a:visited {
 /* Source for Tabs: https://alvarotrigo.com/blog/html-css-tabs/ - #10 */
 
 .oven-knob {
-    width: 1vw;
-    height: 1vw;
+    width: 1.5vw;
+    height: auto;
 }
 
 .tab {
@@ -653,6 +697,7 @@ a:visited {
 }
 
     .tabs label {
+        font-family: 'raleway', sans-serif;
         order: 1;
         display: block;
         padding: 1rem 2rem;
@@ -693,31 +738,6 @@ a:visited {
 /* when a tab is pressed, the tab content shows */
 .tabs input[type="radio"]:checked + label + .tab {
     display: block;
-}
-
-/* literally dont know LOL */
-@media (max-width: 20rem) {
-
-    .tabs {
-        background: cover;
-        flex-wrap: nowrap;
-        width: 100%;
-    }
-
-        .tabs .tab {
-            padding: 0%;
-        }
-
-        .tabs label {
-            padding: 0rem 0rem;
-            margin-right: 0.2rem;
-        }
-
-        .tabs label {
-            width: 100%;
-            margin-right: 0;
-            margin-top: 0.2rem;
-        }
 }
 
 /* orchestra profiles */
@@ -807,7 +827,7 @@ a:visited {
     }
 
     .tabs input[type="radio"]:checked + label {
-        background: #313353;
+        background: #B38C4A;
     }
 
 
@@ -875,72 +895,112 @@ a:visited {
 .site_part6 {
 }
 
+
+
 .faq_container {
-    /* move module up a bit */
-    margin-top: -10vw;
-
-
-    text-align: center;
-    padding-top: 10%;
+    text-align:left;
+    padding: 0 0 0 40%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
+
     background-color: black;
     height: 100vh;
     width: 100%;
+  
     /* Rat Image */
-    background-position: top;
-    background-size: 50%;
+    background-position: left;
+    background-size: 40%;
     background-repeat: no-repeat;
     background-image: url(../images/faq_rat.png);
+
+
+    font-family: 'raleway', sans-serif;
+} 
+
+.faq_container h1 {
+    font-family: 'playfair_display', 'serif';
+    font-size: 3em;
+    font-weight: 600;
+    color:white;
 }
 
 /* Style for the FAQ */
-details {
-    width: 30%;
-    margin-top: 25px;
-    text-align: left;
+details {    
+    width:80%;
+    margin-top:25px;
+    text-align:left;
     border-radius: 4px;
-    padding: 0.5em 0.5em 0;
-    color: #B38C4A;
+    padding: 1em 0;
+    
+
+    color: #B38C4A; 
 }
 
 summary {
     font-weight: bold;
     margin: -0.5em -0.5em 0;
     padding: 0.5em;
-    
-    /* so people know to click on the Q's */
-    cursor: pointer;
 }
 
 /* hide html style by default */
-summary {
-    list-style: none
-}
-
-    summary::-webkit-details-marker {
-        display: none;
-    }
+summary {list-style: none}
+summary::-webkit-details-marker {display: none; }
 
 /* This is for the little "twisty" before the question */
-details summary::before {
-    content: "> ";
-    color: #B38C4A;
-}
-
-details[open] summary::before {
-    content: "∨ ";
-}
-
+details summary::before { 
+    content:"> "; 
+    color: #B38C4A; 
+  }
+  
+  details[open] summary::before { 
+    content:"∨ "; 
+  }
+  
 /* What happens to the text when its opened */
-details[open] {
-    padding: 0.5em;
+
+/* details[open] {
+} */
+
+details[open] summary {
+    margin-bottom: 0.5em;
 }
 
-    details[open] summary {
-        margin-bottom: 0.5em;
+
+/* Media Queries for FAQ */
+@media screen and (max-width: 60rem){
+    summary {
+        margin: 0 0;
+        padding: 1%;
     }
+
+    details {    
+        width:100%;
+        margin-top:1.5vw;
+        text-align:center;
+        padding: 0 0 2% 0;
+    
+        border: 1px solid #B38C4A;
+        border-right-color: transparent;
+        border-left-color: transparent;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #B38C4A; 
+    }
+
+    [class*="faq_container"] {
+        text-align:center;
+        align-items: center;
+
+        padding-top:0;
+        padding: 0 0 0 0;
+
+        /* Rat Image */
+        background-color:rgba(0, 0, 0, 0.5);
+        background-size: 50%;
+        background-position:center;
+    } 
+}
+
 
 /* End of section*/
 

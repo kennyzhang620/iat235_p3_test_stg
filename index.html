@@ -3,10 +3,10 @@
 <head>
     <title>testpage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="stylesheets/main.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
@@ -19,23 +19,23 @@
 
         <div class="mobile_nav" id="mobile_navigator">
             <div class="mobile_nav_o" id="nav_menu">
-                <div class="nav_button_mob" id="mobile_btn" onclick="switchState()"><a href="#logo_home"><img id="img_button_nav_m" class="img_button_nav" src="icons/mobile_ham.svg"></a></div>
+                <div class="nav_button_mob" id="mobile_btn" onclick="switchState()"><a href="#logo_home" alt="Tap for Mobile Menu"><img id="img_button_nav_m" class="img_button_nav" src="icons/mobile_ham.svg"></a></div>
 
                 <div class="navigation_vert">
-                    <div class="selectors_m"><a href="#logo_home"><img class="img_button_nav" src="icons/home_icon.png"></a></div>
+                    <div class="selectors_m"><a href="#logo_home"><img class="img_button_nav" src="icons/home_icon.png" alt="Home"></a></div>
                     <div class="selectors_m"><a href="#header_p">PROGRAM</a></div>
                     <div class="selectors_m"><a href="#logo_home">TICKETS</a></div>
                     <div class="selectors_m"><a href="#site_part4">MUSIC</a></div>
                     <div class="selectors_m"><a href="#site_part5">CAST</a></div>
                     <div class="selectors_m"><a href="#site_part6">FAQ</a></div>
-
+<!-- ??? what is this VVV -->
                     <div class="selectors_m"><img class="img_button_nav" style="filter: invert(62%) sepia(12%) saturate(1860%) hue-rotate(359deg) brightness(91%) contrast(80%);" src="icons/ticket_icon.png" onclick="switchModesTicket(window.innerWidth, window.innerHeight)"></div>
                 </div>
             </div>
         </div>
         <section class="site_part1">
             <div class="logo_header" id="logo_home">
-                <img class="title" src="images/title.svg" />
+                <img class="title" src="images/Ratatouille_VSO.svg" alt="Ratatouille in Concert Presented by the Vancouver Symphony Orchestra">
 
                 <!-- TICKET MODULE -->
                 <div class="ticket_main" style="contain:layout">
@@ -60,12 +60,12 @@
             <!-- Sticky Nav -->
             <div class="main_nav" id="def_nav">
                 <div class="front_nav">
-                    <a href="#logo_home"><div class="selectors"><img id="img_button_nav" src="icons/home_icon.png"></div></a>
+                    <a href="#logo_home"><div class="selectors"><img class="img_button_nav" src="icons/home_icon.png" alt="Home"></div></a>
                     <div class="selectors"><a href="#header_p">PROGRAM</a></div>
                     <div class="selectors"><a href="#site_part4">MUSIC</a></div>
                     <div class="selectors"><a href="#site_part5">CAST</a></div>
                     <div class="selectors"><a href="#site_part6">FAQ</a></div>
-                    <button class="button button_nav"><img id="img_button_nav" src="icons/ticket_icon.png" onclick="switchModesTicket(window.innerWidth, window.innerHeight)" style="float:inline-start"><div style="float:right"><a href="#">BUY<br>TICKETS</a></div></button>
+                    <button class="button button_nav" onclick="switchModesTicket(window.innerWidth, window.innerHeight)"><img class="img_button_nav" alt="Get Tickets" src="icons/ticket_icon.png" style="float:inline-start"><div style="float:right">BUY<br>TICKETS</div></button>
 
                 </div>
             </div>
@@ -74,13 +74,13 @@
 
         <div class="site_part2">
             <div class="subsection_main">
-                <img class="pipe_1" src="images/Left_pipe_0x0001.svg" alt="Left decorative pipe">
+                <img class="pipe_1" src="images/Left_pipe.svg" alt="Left decorative pipe">
                 <div class="program_info">
-                    <div id="header_p">Program <img style="width:30%; height:30%; transform: translate(-17%,30%); " src="images/remy_lay_1.svg" alt="This is Remy from Ratatouille laying on a box."> </div>
+                    <div id="header_p">Program <img style="width:30%; height:30%; transform: translate(-17%,30%); " src="images/remy_lay_1.svg" alt="Remy from Ratatouille laying on a box."> </div>
                     <div class="overview_img">
                         <div class="subsection">
                             <div class="paragraphs" id="paragraph_1">
-                                Experience Disney and Pixar's Academy Award®-winning film Ratatouille™ on the big screen while the VSO performs composer Michael Giacchino's beloved score live.
+                                Experience Disney and Pixar's Academy Award-winning film Ratatouille™ on the big screen while the VSO performs composer Michael Giacchinos beloved score live.
                             </div>
 
                             <div class="paragraphs" id="paragraph_2">
@@ -186,10 +186,6 @@
                     <img class="right-orch-pipes" src="images/main-orchestra-pipes-small.png" alt="Main orchestra pipes">
                     <img class="right-orch-mobile-pipes" src="images/orch-mobile-pipe.png" alt="Mobile orchestra pipes">
                     <img class="orch-remy" src="images/orchestra-remy.png" alt="Remy on orchestra pipes" />
-
-
-                    <!-- testing -->
-                    <!-- <img class="remy-and-pipes" src="images/remy-and-pipes.png"/> -->
 
                     <div class="o-heading" id="header_orchestra">Orchestra</div>
                 </div>
@@ -435,12 +431,12 @@
             </div>
         </section>
 
-        <!--End of section 5-->>
+        <!--End of section 5-->
 
         <section id="site_part6">
 
             <div class="faq_container">
-                <h1>FAQ</h1>
+                <h1>FaQ</h1>
                 <details>
                     <summary>How will this concert be different from a theatre experience?</summary>
                     A live orchestra concert can have variations in volume and balance and allows the audience to feel the music, creating a more engaging experience. A concert can be more special and memorable than the theatre, creating a sense of occasion.
