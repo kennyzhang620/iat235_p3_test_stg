@@ -593,30 +593,28 @@ a:visited {
 
 
 
-/* Styles for each section 5*/
+/* Styles for section 5*/
 
-.site_part5 { /* Edited by Stin */
+/* .site_part5 {
     display: flex;
     flex-direction: row;
 }
 
 .subsection_orchestra {
-    /* FLEX STUFF */
     display: flex;
     flex-direction: row;
     justify-content: left;
     align-items: left;
     text-align: left;
-    /* margin-top: 10%; */
     background-color: black;
     width: 100%;
     height: 100%;
 }
 
-/* .left-pipe{
+.left-pipe{
         display: flex;
         width: 10%;
-    } */
+    }
 
 .left-orchestra-pipes {
     width: 70%;
@@ -624,21 +622,13 @@ a:visited {
 }
 
 .s5-header {
-    /* position: absolute; */
-    /* display: inline-block; */
-    /* try grid */
-    display: grid;
-    /* WORKS but may not use:::::::::::: */
-    /* grid-template-columns: [first] 10% [line2] 10% [line3] 10% [line4] 10% [line5] 10% [line5] 10% [line7] 10% [line8] 10%; */
-    /* this is actually better lol i love using vw <3 */
     grid-template-columns: [first] 10vw [line2] 10vw [line3] 10vw [line4] 10vw [line5] 10vw [line5] 10vw [line7] 10vw [line8] 10vw;
     width: 100%;
-}
+} */
 
 /* the word orchestra */
-#header_orchestra {
+/* #header_orchestra {
     font-family: 'playfair_display', 'serif';
-    /* font-size: 4vw; */
     font-size: 3em;
     font-weight: 600;
 
@@ -664,7 +654,7 @@ a:visited {
     display: none;
 }
 
-.orchestra_info { /* Edited by Stin */
+.orchestra_info {
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -673,9 +663,6 @@ a:visited {
     color: white;
     margin-top: 5%;
 }
-
-/* Stin Tab Stuff */
-/* Source for Tabs: https://alvarotrigo.com/blog/html-css-tabs/ - #10 */
 
 .oven-knob {
     width: 1.5vw;
@@ -705,7 +692,6 @@ a:visited {
         cursor: pointer;
         background: transparent;
         font-weight: bold;
-        /* transition: background ease 0.2s; */
     }
 
     .tabs .tab {
@@ -717,12 +703,10 @@ a:visited {
         padding: 1rem;
     }
 
-    /* when a tab is not pressed, it's content is hidden */
     .tabs input[type="radio"] {
         display: none;
     }
 
-        /* WHEN THE TAB IS PRESSED, the label does this!! */
         .tabs input[type="radio"]:checked + label {
             .oven-knob
 
@@ -735,14 +719,13 @@ a:visited {
 
 }
 
-/* when a tab is pressed, the tab content shows */
 .tabs input[type="radio"]:checked + label + .tab {
     display: block;
-}
+} */
 
 /* orchestra profiles */
 
-.orchestra-profiles {
+/* .orchestra-profiles {
     padding-top: 10%;
     margin-right: 5%;
 }
@@ -759,25 +742,17 @@ a:visited {
 
 .profiles-grid {
     display: grid;
-    /* 6 profiles on each column!! */
-    /* grid-template-columns: 0.85fr 0.85fr 0.85fr 0.85fr 0.85fr 0.85fr; */
 
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     margin-top: 5%;
-    /* position: absolute;
-        transition: opacity .2s cubic-bezier(.42, 0, .34, 1.01);
-        opacity: 0; */
 }
 
 .profiles {
     text-align: left;
-    /* padding-bottom: 5em; */
     margin-bottom: 35%;
 }
 
 .profile-pics {
-    /* width: 150px;
-        height: auto; */
     width: 80%;
 }
 
@@ -789,12 +764,10 @@ a:visited {
 
 .profile-instrument-names {
     font-family: 'raleway', sans-serif;
-    /* font-size: 1.5rem; */
     margin-top: 1%;
-    /* font-size: 10pt; */
     font-size: 1vw;
     font-weight: bold;
-}
+} */
 
 /* ----------------------------------MEDIA QUERIES---------------------------------- */
 
@@ -832,11 +805,9 @@ a:visited {
 
 
     .profiles-grid {
-        /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
         overflow: auto;
         white-space: nowrap;
         overflow-x: auto;
-        /* testing */
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
@@ -848,7 +819,6 @@ a:visited {
 
     .profiles {
         text-align: center;
-        /* grid-row: 1 / span 2; */
         border-radius: 12px;
         padding: 6px;
         margin-right: 5px;
@@ -858,24 +828,19 @@ a:visited {
     }
 
     .profile-pics {
-        /* make the profile pictures smaller */
         width: 50px;
-        /* with the %, the profile pictures arent the same size, but the px makes them all consistant */
-        /* width: 90%; */
         height: auto;
         border-radius: 5px;
     }
 
     .profile-names {
-        font-family: 'PT Serif', 'serif';
-        /* font-size: 2rem; */
+        font-family: 'playfair_display', 'serif';
         font-size: 6pt;
         padding-top: 1rem;
     }
 
     .profile-instrument-names {
         font-family: 'raleway', sans-serif;
-        /* font-size: 1.5rem; */
         margin-top: 1%;
         font-size: 7pt;
         font-weight: bold;
