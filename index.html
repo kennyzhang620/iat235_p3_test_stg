@@ -66,7 +66,14 @@
                     <div class="selectors"><a href="#site_part4">MUSIC</a></div>
                     <div class="selectors"><a href="#site_part5">CAST</a></div>
                     <div class="selectors"><a href="#site_part6">FAQ</a></div>
-                    <button class="button button_nav" onclick="switchModesTicket(window.innerWidth, window.innerHeight)"><img class="img_button_nav" alt="Get Tickets" src="icons/ticket_icon.png" style="float:inline-start"><div style="float:right">BUY<br>TICKETS</div></button>
+                    <!-- <button class="button button_nav" onclick="switchModesTicket(window.innerWidth, window.innerHeight)"><img class="img_button_nav" alt="Get Tickets" src="icons/ticket_icon.png" style="float:inline-start"><div style="float:right">BUY<br>TICKETS</div></button> -->
+                    <button class="button button_nav" onclick="switchModesTicket(window.innerWidth, window.innerHeight)">
+                        <img class="img_button_nav" alt="Get Tickets" src="icons/ticket_icon.png" style="float:inline-start">
+                        <div style="float:right">
+                                <!-- BUY<br>TICKETS -->
+                                TICKETS
+                        </div>
+                    </button>
 
                 </div>
             </div>
@@ -136,30 +143,72 @@
                         <img class="pipe" src="images/section4pipe1.jpg">
                     </div>
                 </section>
-                <!-- <h class="musicH2">Full Tracklist</h> -->
+
                 <table class="musicTrack">
-                    <tr>
+                    <tr id="row1">
                         <td>01. Le Festin</td>
                         <td>06. Wall Rat</td>
                         <td>11. A New Deal</td>
                     </tr>
-                    <tr>
+                    <tr id="row2">
                         <td>02. Welcome to Gusteau's</td>
                         <td>07. Cast of Cooks</td>
                         <td>12. Remy Drives a Linguini</td>
                     </tr>
-                    <tr>
+                    <tr id="row3">
                         <td>03. This is Me</td>
                         <td>08. A Real Gourmet Kitchen</td>
                         <td>13. Colette Shows Him Le Ropes</td>
                     </tr>
-                    <tr>
+                    <tr id="row4">
                         <td>04. Granny Get Your Gun</td>
                         <td>09. Souped Up</td>
                     </tr>
                     <tr class="bottom">
                         <td>05. 100 Rat Dash</td>
                         <td>10. Is It Soup Yet?</td>
+                    </tr>
+                </table>
+
+                <table class="musicTrack-mobile">
+                    <tr>
+                        <td>01. Le Festin</td>
+                    </tr>
+                    <tr>
+                        <td>02. Welcome to Gusteau's</td>
+                    </tr>
+                    <tr>
+                        <td>03. This is Me</td>
+                    </tr>
+                    <tr>
+                        <td>04. Granny Get Your Gun</td>
+                    </tr>
+                    <tr>
+                        <td>05. 100 Rat Dash</td>
+                    </tr>
+                    <tr>
+                        <td>06. Wall Rat</td>
+                    </tr>
+                    <tr>
+                        <td>07. Cast of Cooks</td>
+                    </tr>
+                    <tr>
+                        <td>08. A Real Gourmet Kitchen</td>
+                    </tr>
+                    <tr>
+                        <td>09. Souped Up</td>
+                    </tr>
+                    <tr>
+                        <td>10. Is It Soup Yet?</td>
+                    </tr>
+                    <tr>
+                        <td>11. A New Deal</td>
+                    </tr>
+                    <tr>
+                        <td>12. Remy Drives a Linguini</td> 
+                    </tr>
+                    <tr>
+                        <td>13. Colette Shows Him Le Ropes</td>
                     </tr>
                 </table>
             </div>
@@ -182,8 +231,6 @@
             <div class="orchestra_info" style="contain:layout">
 
                 <div class="s5-header">
-                    <!-- testiong -->
-                    <!-- <img class="left-orchestra-pipes" src="images/left-orchestra-pipes.png" /> -->
                     <img class="right-orch-pipes" src="images/main-orchestra-pipes-small.png" alt="Main orchestra pipes">
                     <img class="right-orch-mobile-pipes" src="images/orch-mobile-pipe.png" alt="Mobile orchestra pipes">
                     <img class="orch-remy" src="images/orchestra-remy.png" alt="Remy on orchestra pipes" />

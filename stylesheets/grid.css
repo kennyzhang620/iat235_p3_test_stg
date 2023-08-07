@@ -9,42 +9,6 @@
 }
 
 /* Section 5: Orchestra */
-
-/* .s5-header {
-    grid-template-columns: [first] 10vw [line2] 10vw [line3] 10vw [line4] 10vw [line5] 10vw [line5] 10vw [line7] 10vw [line8] 10vw;
-    width: 100%;
-}
-
-#header_orchestra {
-    font-family: 'playfair_display', 'serif';
-    font-size: 3em;
-    font-weight: 600;
-
-    grid-row-start: 2;
-    margin-left: 42vw;
-    margin-top: 18vw;
-}
-
-.orch-remy {
-    grid-column-start: 4;
-    grid-row-start: 2;
-    width: 18vw;
-}
-
-.right-orch-pipes {
-    grid-column-end: 5;
-    grid-row-end: 3;
-    overflow: hidden;
-    width: 70vw;
-}
-
-.profiles-grid {
-    display: grid;
-
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    margin-top: 5%;
-} */
-
 .site_part5 {
     display: flex;
     flex-direction: row;
@@ -84,20 +48,24 @@
 
     grid-row-start: 2;
     margin-left: 42vw;
-    margin-top: 18vw;
+    margin-top: -18vw;
 }
 
 .orch-remy {
-    grid-column-start: 4;
-    grid-row-start: 2;
+    /* grid-column-start: 8; */
+    /* grid-row-start: 2; */
     width: 18vw;
+    margin-left: 30vw;
+    margin-top: -47vw;
 }
 
 .right-orch-pipes {
-    grid-column-end: 5;
+    margin-left: 30vw;
     grid-row-end: 3;
     overflow: hidden;
     width: 70vw;
+    padding-bottom: 10%;
+
 }
 
 .right-orch-mobile-pipes {
@@ -124,7 +92,8 @@
 }
 
 .tabs {
-    margin-top: 5%;
+    margin-top: 10%;
+    margin-bottom: 5%;
     margin-left: 15vw;
     display: flex;
     flex-wrap: wrap;
@@ -158,14 +127,12 @@
     }
 
         .tabs input[type="radio"]:checked + label {
-            .oven-knob
-
-{
-    width: 1vw;
-    height: 1vw;
-    transition-duration: 0.5s;
-    transform: rotate(90deg);
-}
+            .oven-knob{
+                width: 1.5vw;
+                height: auto;
+                transition-duration: 0.5s;
+                transform: rotate(90deg);
+            }
 
 }
 
@@ -206,7 +173,7 @@
 }
 
 .profile-names {
-    font-family: 'PT Serif', 'serif';
+    font-family: 'playfair_display', 'serif';
     font-size: 1.4vw;
     padding-top: 1rem;
 }
@@ -216,4 +183,84 @@
     margin-top: 1%;
     font-size: 1vw;
     font-weight: bold;
+}
+
+
+/* ----------------------------------MEDIA QUERIES---------------------------------- */
+
+@media screen and (max-width: 60rem) {
+    .right-orch-pipes {
+        display: none;
+    }
+
+    .left-orchestra-pipes {
+        display: none;
+    }
+
+    .right-orch-mobile-pipes {
+        display: inline;
+        /* grid-column-end: 4; */
+        margin-left: 30vw;
+        margin-top: -9vw;
+        width: 50vw;
+    }
+
+    .orch-remy {
+        width: 30%;
+        margin-top: -40vw;
+        margin-right: 10vw;
+    }
+
+    #header_orchestra {
+        font-family: 'playfair_display', 'serif';
+        font-size: 4vw;
+        margin-left: 45vw;
+        margin-top: -11vw;
+    }
+
+    .tabs input[type="radio"]:checked + label {
+        background: #B38C4A;
+    }
+
+
+    .profiles-grid {
+        overflow: auto;
+        white-space: nowrap;
+        overflow-x: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+
+    .oven-knob {
+        display: none;
+    }
+
+    .profiles {
+        text-align: center;
+        border-radius: 12px;
+        padding: 6px;
+        margin-right: 5px;
+        background: rgb(141,143,175);
+        background: linear-gradient(rgba(141,143,175,1) 0%, rgba(34,33,35,1) 80%);
+    }
+
+    .profile-pics {
+        width: 50px;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .profile-names {
+        font-family: 'playfair_display', 'serif';
+        font-size: 6pt;
+        padding-top: 1rem;
+    }
+
+    .profile-instrument-names {
+        font-family: 'raleway', sans-serif;
+        margin-top: 1%;
+        font-size: 7pt;
+        font-weight: bold;
+    }
 }
