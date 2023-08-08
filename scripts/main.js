@@ -23,8 +23,12 @@ const mobi_img = document.getElementById('img_button_nav_m')
 var btnState = true;
 
 mobile_nav.addEventListener("animationend", () => {
-    if (btnState && mobi_s.style.animationDirection == "reverse")
+    if (btnState && mobi_s.style.animationDirection == "reverse") {
         mobile_nav.style.height = "0%";
+        mobi_s.style.animationPlayState = "paused"
+        mobi_s.style.animationDirection = "normal"
+    }
+
 });
 
 function switchModesAuto(w, h) {
