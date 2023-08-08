@@ -22,6 +22,8 @@ body {
     /* this prevents the scrollbar being needed to go left-right */
     overflow-x: hidden;
     background-color: black;
+    width: 103%;
+    /*Removes black bars*/
 }
 
 h1 {
