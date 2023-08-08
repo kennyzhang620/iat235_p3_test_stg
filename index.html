@@ -2,68 +2,93 @@
 <html lang="en">
 <head>
     <title>testpage</title>
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="stylesheets/main.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+    <link rel="stylesheet" href="stylesheets/grid.css">
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <script src="https://kit.fontawesome.com/88af899100.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body onresize="switchModesAuto(window.innerWidth, window.innerHeight)">
     <main>
         <header>
         </header>
 
+        <div class="mobile_nav" id="mobile_navigator" >
+            <div class="mobile_nav_o" id="nav_menu">
+                <div class="nav_button_mob" id="mobile_btn" onclick="switchState()"><img alt="Tap for Mobile Menu" id="img_button_nav_m" class="img_button_nav" src="icons/mobile_ham.svg"></div>
 
+                <div class="navigation_vert">
+                    <div class="selectors_m"><a href="#logo_home"><img class="img_button_nav" src="icons/home_icon.png" alt="Home"></a></div>
+                    <div class="selectors_m"><a href="#header_p">PROGRAM</a></div>
+                    <div class="selectors_m"><a href="#logo_home">TICKETS</a></div>
+                    <div class="selectors_m"><a href="#site_part4">MUSIC</a></div>
+                    <div class="selectors_m"><a href="#site_part5">CAST</a></div>
+                    <div class="selectors_m"><a href="#site_part6">FAQ</a></div>
+<!-- ??? what is this VVV -->
+                    <div class="selectors_m"><img class="img_button_nav" style="filter: invert(62%) sepia(12%) saturate(1860%) hue-rotate(359deg) brightness(91%) contrast(80%);" src="icons/ticket_icon.png" onclick="switchModesTicket(window.innerWidth, window.innerHeight)"></div>
+                </div>
+            </div>
+        </div>
         <section class="site_part1">
-            <div class="logo_header">
-                <img class="title" src="images/title.svg"/>
-                
+            <div class="logo_header" id="logo_home">
+                <img class="title" src="images/Ratatouille_VSO.svg" alt="Ratatouille in Concert Presented by the Vancouver Symphony Orchestra">
+
                 <!-- TICKET MODULE -->
                 <div class="ticket_main" style="contain:layout">
-                    <div><h1>July<br>18</h1></div> 
+                    <div><h1>July<br>18</h1></div>
                     <div class="ticket_subsection">
-                    <h2>Tue 7:30 pm ⸺ Orpheum, Vancouver</h2>
-                    <button class ="button button_ticket">Get Tickets</button>
+                        <h2>Tue 7:30 pm ⸺ Orpheum, Vancouver</h2>
+                        <button class="button button_ticket" onclick="switchModesTicket(window.innerWidth, window.innerHeight)">Get Tickets</button>
                     </div>
                 </div>
 
                 <!-- TICKET MODULE -->
                 <div class="ticket_main" style="contain:layout">
-                    <div><h1>July<br>19</h1></div> 
+                    <div><h1>July<br>19</h1></div>
                     <div class="ticket_subsection">
-                    <h2>Wed 7:30 pm ⸺ Orpheum, Vancouver</h2>
-                    <button class ="button button_ticket">Get Tickets</button>
+                        <h2>Wed 7:30 pm ⸺ Orpheum, Vancouver</h2>
+                        <button class="button button_ticket" onclick="switchModesTicket(window.innerWidth, window.innerHeight)">Get Tickets</button>
                     </div>
                 </div>
 
             </div>
 
             <!-- Sticky Nav -->
-            <div class="main_nav" style="text-align: center;">
+            <div class="main_nav" id="def_nav">
                 <div class="front_nav">
-                    <img class="selectors" id="img_nav" src="icons/home_icon.svg">
-                    <div class="selectors">PROGRAM</div>
-                    <div class="selectors">TICKETS</div>
-                    <div class="selectors">CAST</div>
-                    <div class="selectors">INFO</div>
+                    <a href="#logo_home"><div class="selectors"><img class="img_button_nav" src="icons/home_icon.png" alt="Home"></div></a>
+                    <div class="selectors"><a href="#header_p">PROGRAM</a></div>
+                    <div class="selectors"><a href="#site_part4">MUSIC</a></div>
+                    <div class="selectors"><a href="#site_part5">CAST</a></div>
+                    <div class="selectors"><a href="#site_part6">FAQ</a></div>
+                    <!-- <button class="button button_nav" onclick="switchModesTicket(window.innerWidth, window.innerHeight)"><img class="img_button_nav" alt="Get Tickets" src="icons/ticket_icon.png" style="float:inline-start"><div style="float:right">BUY<br>TICKETS</div></button> -->
+                    <button class="button button_nav" onclick="switchModesTicket(window.innerWidth, window.innerHeight)">
+                        <img class="img_button_nav" alt="Get Tickets" src="icons/ticket_icon.png" style="float:inline-start">
+                        <div style="float:right">
+                                <!-- BUY<br>TICKETS -->
+                                TICKETS
+                        </div>
+                    </button>
+
                 </div>
             </div>
             <!--  -->
+        </section>
 
-        </section> 
-
-        <section class="site_part2">
+        <div class="site_part2">
             <div class="subsection_main">
-                <img class="pipe_1" src="images/Left_pipe_0x0001.svg" />
+                <img class="pipe_1" src="images/Left_pipe.svg" alt="Left decorative pipe">
                 <div class="program_info">
-                    <div id="header_p">Program <img width="30%" height="30%" style="transform: translate(-17%,30%); " src="images/remy_lay_1.svg" /> </div>
+                    <div id="header_p">Program <img style="width:30%; height:30%; transform: translate(-17%,30%); " src="images/remy_lay_1.svg" alt="Remy from Ratatouille laying on a box."> </div>
                     <div class="overview_img">
                         <div class="subsection">
                             <div class="paragraphs" id="paragraph_1">
-                                Experience Disney and Pixar's Academy Award®-winning film Ratatouille™ on the big screen while the VSO performs composer Michael Giacchino's beloved score live.
+                                Experience Disney and Pixar's Academy Award-winning film Ratatouille™ on the big screen while the VSO performs composer Michael Giacchinos beloved score live.
                             </div>
 
                             <div class="paragraphs" id="paragraph_2">
@@ -74,11 +99,11 @@
                         <div class="subsection2">
                             <div class="header_p" id="header_l">Length</div>
                             <div class="information_row">
-                                <img class="icons" src="icons/clock.svg" />
+                                <img class="icons" src="icons/clock.svg" alt="The expected time taken is">
                                 <div class="information_row" id="time_interval">130 minutes</div>
                             </div>
                             <div class="information_row">
-                                <img class="icons" src="icons/intermission_glass.svg" />
+                                <img class="icons" src="icons/intermission_glass.svg" alt="The amount of intermissions">
                                 <div class="information_row" id="intermissions_limit">1 intermission</div>
                             </div>
                         </div>
@@ -87,210 +112,226 @@
 
                 </div>
             </div>
-            <img class="footer_2" src="images/section_2_footer.png" />
-        </section>
-        
+            <img class="footer_2" src="images/section_2_footer.png" alt="This is the end of the description for the concert.">
+        </div>
+
         <section id="site_part3">
         </section>
 
-        <section class="site_part4">
+        <!-- section 4 -->
+        <section class="site_part4" id="site_part4">
+            <section class="audio">
+                <audio id="audio" src=""></audio>
+            </section>
+
             <h class="musicH1">Now Playing</h>
 
             <div class="mainBackground">
                 <section class="musicDisplay">
                     <div class="musicDisplayInfo">
-                        <p class="musicName">01 Le Festin</p>
-                        <p class="musicTime">2:50</p>
-                        <p class="musicAuthor">Camille, Michael Giacchino</p>
+                        <span id="musicName"></span>
+                        <span id="musicTime"></span>
+                        <span id="musicAuthor"></span>
                     </div>
-                    <div class="musicControl">
-                        <i class="fa-solid fa-backward fa-2xl"></i>
-                        <i class="fa-solid fa-play fa-2xl"></i>
-                        <i class="fa-solid fa-forward fa-2xl"></i>
+                    <div id="musicControl" class="musicControl">
+                        <span><i id="preSong" class="fa-solid fa-backward fa-2xl"></i></span>
+                        <span><i id="playSong" class="fa-solid fa-play fa-2xl"></i></span>
+                        <span><i id="nextSong" class="fa-solid fa-forward fa-2xl"></i></span>
+                        <span><i id="songVoice" class="fa-solid fa-volume-high fa-2xl"></i></span>
+                    </div>
+                    <div>
+                        <img class="pipe" src="images/section4pipe1.jpg">
                     </div>
                 </section>
-                <div class="control">
-                </div>  
-                <h class="musicH2">Full Tracklist</h>
+
                 <table class="musicTrack">
+                    <tr id="row1">
+                        <td>01. Le Festin</td>
+                        <td>06. Wall Rat</td>
+                        <td>11. A New Deal</td>
+                    </tr>
+                    <tr id="row2">
+                        <td>02. Welcome to Gusteau's</td>
+                        <td>07. Cast of Cooks</td>
+                        <td>12. Remy Drives a Linguini</td>
+                    </tr>
+                    <tr id="row3">
+                        <td>03. This is Me</td>
+                        <td>08. A Real Gourmet Kitchen</td>
+                        <td>13. Colette Shows Him Le Ropes</td>
+                    </tr>
+                    <tr id="row4">
+                        <td>04. Granny Get Your Gun</td>
+                        <td>09. Souped Up</td>
+                    </tr>
+                    <tr class="bottom">
+                        <td>05. 100 Rat Dash</td>
+                        <td>10. Is It Soup Yet?</td>
+                    </tr>
+                </table>
+
+                <table class="musicTrack-mobile">
                     <tr>
-                        <td>01 Le Festin</td>
-                        <td>06 Wall Rat</td>
-                        <td>11 A New Deal</td>
+                        <td>01. Le Festin</td>
                     </tr>
                     <tr>
-                        <td>02 Welcome to Gusteau's</td>
-                        <td>07 Cast of Cooks</td>
-                        <td>12 Remy Drives a Linguini</td>
+                        <td>02. Welcome to Gusteau's</td>
                     </tr>
                     <tr>
-                        <td>03 This is Me</td>
-                        <td>08 A Real Gourmet Kitchen</td>
-                        <td>13 Colette Shows Him Le Ropes</td>
+                        <td>03. This is Me</td>
                     </tr>
                     <tr>
-                        <td>04 Granny Get Your Gun</td>
-                        <td>09 Souped Up</td>
+                        <td>04. Granny Get Your Gun</td>
                     </tr>
                     <tr>
-                        <td>05 100 Rat Dash</td>
-                        <td>10 Is It Soup Yet?</td>
+                        <td>05. 100 Rat Dash</td>
+                    </tr>
+                    <tr>
+                        <td>06. Wall Rat</td>
+                    </tr>
+                    <tr>
+                        <td>07. Cast of Cooks</td>
+                    </tr>
+                    <tr>
+                        <td>08. A Real Gourmet Kitchen</td>
+                    </tr>
+                    <tr>
+                        <td>09. Souped Up</td>
+                    </tr>
+                    <tr>
+                        <td>10. Is It Soup Yet?</td>
+                    </tr>
+                    <tr>
+                        <td>11. A New Deal</td>
+                    </tr>
+                    <tr>
+                        <td>12. Remy Drives a Linguini</td> 
+                    </tr>
+                    <tr>
+                        <td>13. Colette Shows Him Le Ropes</td>
                     </tr>
                 </table>
             </div>
         </section>
+        <!-- end of section 4 -->
 
-        <section id="site_part5">
+        <section class="site_part5" id="site_part5">
             <!-- orchestra -->
-
             <!-- sources used -->
             <!-- https://www.w3schools.com/howto/howto_js_tabs.asp -->
             <!-- https://www.w3schools.com/css/css_grid.asp -->
             <!-- https://www.w3schools.com/css/css3_borders.asp -->
             <!-- https://cssgradient.io/ -->
-    
+            <!-- https://dev.to/dhintz89/simple-filters-in-css-or-js-185k -->
+            <!-- https://www.w3schools.com/css/css3_transitions.asp -->
+            <!-- NOTE:: THE LEFT PIPE SHOULD BE ITS OWN FLEX SECTION SINCE IT OVERFLOWS OVER THE MEDIA PLAYER AND CAST **or** SPLIT INTO TWO -->
+            <div><img class="left-orchestra-pipes" src="images/left-orchestra-pipes.png"></div>
 
-            <main class="subsection_orchestra"> <!--entire orchestra module-->
 
-                <!-- this is the first flexbox along with the menu of orchestra-info -->
-                <section class="left-pipe" id="leftpipe">
-                    <img class="left-orchestra-pipes" src="images/left-orchestra-pipes.png" />
-                </section>
+            <div class="orchestra_info" style="contain:layout">
 
-                <!-- this has flexboxes - also is the second flexbox to the left-pipe -->
-                <section class="orchestra-info" id="orch-tabs"> 
-                    <div class="o-header">
-                        <div class="right-orch-pipes">
-                            <img class="orch-remy" src="images/orchestra-remy.png"/>
-                            <div class="o-heading" id="header_orchestra">Orchestra</div>
-                            <!-- <div id="header_orchestra">Orchestra</div> -->
-                        </div>
-                        <!-- </div> -->
+                <div class="s5-header">
+                    <img class="right-orch-pipes" src="images/main-orchestra-pipes-small.png" alt="Main orchestra pipes">
+                    <img class="right-orch-mobile-pipes" src="images/orch-mobile-pipe.png" alt="Mobile orchestra pipes">
+                    <img class="orch-remy" src="images/orchestra-remy.png" alt="Remy on orchestra pipes" />
 
-                        <div class="dissolve-tabs">
-                            <!-- <button class="tablinks" onclick="openSections(section, 'Maestros')">  -->
-                            <button class="tablinks" input type="radio" onclick="openSections(section, 'Maestros')">
-                                <img class="oven-knob" src="images/oven-knob.png"/>
-                                <!-- <div class="tab-names">Maestros</div> -->
-                                Maestros
-                                <img class="lines" src="images/orchestra-section-line.png"/>
-                            </button>
+                    <div class="o-heading" id="header_orchestra">Orchestra</div>
+                </div>
 
-                            <!-- <button class="tablinks" onclick="openSections(section, 'Strings')">  -->
-                            <button class="tablinks" input type="radio" onclick="openSections(section, 'String')">
-                                <img class="oven-knob" src="images/oven-knob.png"/>
-                                <!-- <div class="tab-names">Strings</div> -->
-                                Strings
-                                <img class="lines" src="images/orchestra-section-line.png"/>
-                            </button>
-                            
-                            <!-- <button class="tablinks" onclick="openSections(section, 'Woodwinds')">  -->
-                            <button class="tablinks" input type="radio" onclick="openSections(section, 'Woodwinds')">
-                                <img class="oven-knob" src="images/oven-knob.png"/>
-                                <!-- <div class="tab-names">Woodwinds</div> -->
-                                Woodwinds
-                                <img class="lines" src="images/orchestra-section-line.png"/>
-                            </button>
-                            
-                            <!-- <button class="tablinks" onclick="openSections(section, 'Brass')">  -->
-                            <button class="tablinks" input type="radio" onclick="openSections(section, 'Brass')">
-                                <img class="oven-knob" src="images/oven-knob.png"/>
-                                <!-- <div class="tab-names">Brass</div> -->
-                                Brass
-                                <img class="lines" src="images/orchestra-section-line.png"/>
-                            </button>
-                            
-                            <!-- <button class="tablinks" onclick="openSections(section, 'Percussion')">  -->
-                            <button class="tablinks" input type="radio" onclick="openSections(section, 'Percussion')">
-                                <img class="oven-knob" src="images/oven-knob.png"/>
-                                <!-- <div class="tab-names">Percussion</div> -->
-                                Percussion
-                                <img class="lines" src="images/line-perc.png"/>
-                            </button>
-                        </div>
+                <div class="tabs">
+                    <!-- Maestros -->
+                    <input type="radio" name="tabs" id="tabone" checked="checked">
+                    <label for="tabone">
+                        <img class="oven-knob" src="images/oven-knob.png" />
+                        Maestros
+                    </label>
+                    <div class="tab">
+                        <div class="profiles-grid Maestros">
+                            <div class="profiles">
+                                <img class="profile-pics" id="otto-tausk" src="images/otto-tausk.png">
+                                <div class="profile-names">Otto Tausk</div>
+                                <div class="profile-instrument-names">Music Director</div>
+                            </div>
+                            <div class="profiles">
+                                <img class="profile-pics" id="david-bui" src="images/david-bui.png">
+                                <div class="profile-names">David Bui</div>
+                                <div class="profile-instrument-names">RBC Assistant Conductor</div>
+                            </div>
+                        </div> <!--end of maestros profile grid-->
                     </div>
 
-                    <!-- <section class="orchestra-profiles" id="orch-profiles"> -->
-                    <section class="orchestra-profiles">
-                        <!-- right now all the profiles are showing, later on when the js is implemented it wont be like this!! -->
-
-                        <div id="Maestros" class="tabcontent">
-                            <div class="profiles-grid">
-                                <div class="profiles">
-                                    <img class="profile-pics" id="otto-tausk" src="images/otto-tausk.png">
-                                    <div class="profile-names">Otto Tausk</div>
-                                    <div class="profile-instrument-names">Music Director</div>
-                                </div>
-
-                                <div class="profiles">
-                                    <img class="profile-pics" id="david-bui" src="images/david-bui.png">
-                                    <div class="profile-names">David Bui</div>
-                                    <div class="profile-instrument-names">RBC Assistant Conductor</div>
-                                </div>
+                    <!-- Strings -->
+                    <input type="radio" name="tabs" id="tabtwo">
+                    <label for="tabtwo">
+                        <img class="oven-knob" src="images/oven-knob.png" />
+                        Strings
+                    </label>
+                    <div class="tab">
+                        <div class="profiles-grid Strings">
+                            <div class="profiles">
+                                <img class="profile-pics" id="nicholas-wright" src="images/nicholas-wright.png">
+                                <div class="profile-names">Nicholas Wright</div>
+                                <div class="profile-instrument-names">First Violin</div>
                             </div>
-                        </div>
 
-                        <div id="Strings" class="tabcontent">
-                            <div class="profiles-grid">
-                                <div class="profiles">
-                                    <img class="profile-pics" id="nicholas-wright" src="images/nicholas-wright.png">
-                                    <div class="profile-names">Nicholas Wright</div>
-                                    <div class="profile-instrument-names">First Violin</div>
-                                </div>
-
-                                <div class="profiles">
-                                    <img class="profile-pics" id="timothy-steeves" src="images/timothy-steeves.png">
-                                    <div class="profile-names">Timothy Steeves</div>
-                                    <div class="profile-instrument-names">First Violin</div>
-                                </div>
-
-                                <div class="profiles">
-                                    <img class="profile-pics" id="david-lakirovich" src="images/david-lakirovich.png">
-                                    <div class="profile-names">David Lakirovich</div>
-                                    <div class="profile-instrument-names">First Violin</div>
-                                </div>
-
-                                <div class="profiles">
-                                    <img class="profile-pics" id="jennie-press" src="images/jennie-press.png">
-                                    <div class="profile-names">Jennie Press</div>
-                                    <div class="profile-instrument-names">First Violin</div>
-                                </div>
-
-                                <div class="profiles">
-                                    <img class="profile-pics" id="jae-won-bang" src="images/jae-won-bang.png">
-                                    <div class="profile-names">Jae-Won Bang</div>
-                                    <div class="profile-instrument-names">First Violin</div>
-                                </div>
-
-                                <div class="profiles">
-                                    <img class="profile-pics" id="rebecca-whitling" src="images/rebecca-whitling.png">
-                                    <div class="profile-names">Rebecca Whitling</div>
-                                    <div class="profile-instrument-names">First Violin</div>
-                                </div>
-
-                                <div class="profiles">
-                                    <img class="profile-pics" id="yi-zhou" src="images/yi-zhou.png">
-                                    <div class="profile-names">Yi Zhou</div>
-                                    <div class="profile-instrument-names">First Violin</div>
-                                </div>
-
-                                <div class="profiles">
-                                    <img class="profile-pics" id="xue-feng-wei" src="images/xue-feng-wei.png">
-                                    <div class="profile-names">Xue Feng Wei</div>
-                                    <div class="profile-instrument-names">First Violin</div>
-                                </div>
-
-                                <div class="profiles">
-                                    <img class="profile-pics" id="cassandra-bequary" src="images/cassandra-bequary.png">
-                                    <div class="profile-names">Cassandra Bequary</div>
-                                    <div class="profile-instrument-names">First Violin</div>
-                                </div>
-
+                            <div class="profiles">
+                                <img class="profile-pics" id="timothy-steeves" src="images/timothy-steeves.png">
+                                <div class="profile-names">Timothy Steeves</div>
+                                <div class="profile-instrument-names">First Violin</div>
                             </div>
-                        </div>
 
-                        <div id="Woodwinds" class="tabcontent">
-                            <div class="profiles-grid">
+                            <div class="profiles">
+                                <img class="profile-pics" id="david-lakirovich" src="images/david-lakirovich.png">
+                                <div class="profile-names">David Lakirovich</div>
+                                <div class="profile-instrument-names">First Violin</div>
+                            </div>
+
+                            <div class="profiles">
+                                <img class="profile-pics" id="jennie-press" src="images/jennie-press.png">
+                                <div class="profile-names">Jennie Press</div>
+                                <div class="profile-instrument-names">First Violin</div>
+                            </div>
+
+                            <div class="profiles">
+                                <img class="profile-pics" id="jae-won-bang" src="images/jae-won-bang.png">
+                                <div class="profile-names">Jae-Won Bang</div>
+                                <div class="profile-instrument-names">First Violin</div>
+                            </div>
+
+                            <div class="profiles">
+                                <img class="profile-pics" id="rebecca-whitling" src="images/rebecca-whitling.png">
+                                <div class="profile-names">Rebecca Whitling</div>
+                                <div class="profile-instrument-names">First Violin</div>
+                            </div>
+
+                            <div class="profiles">
+                                <img class="profile-pics" id="yi-zhou" src="images/yi-zhou.png">
+                                <div class="profile-names">Yi Zhou</div>
+                                <div class="profile-instrument-names">First Violin</div>
+                            </div>
+
+                            <div class="profiles">
+                                <img class="profile-pics" id="xue-feng-wei" src="images/xue-feng-wei.png">
+                                <div class="profile-names">Xue Feng Wei</div>
+                                <div class="profile-instrument-names">First Violin</div>
+                            </div>
+
+                            <div class="profiles">
+                                <img class="profile-pics" id="cassandra-bequary" src="images/cassandra-bequary.png">
+                                <div class="profile-names">Cassandra Bequary</div>
+                                <div class="profile-instrument-names">First Violin</div>
+                            </div>
+                        </div> <!--end of strings-->
+                    </div>
+
+                    <!-- Woodwinds -->
+                    <input type="radio" name="tabs" id="tabthree">
+                    <label for="tabthree">
+                        <img class="oven-knob" src="images/oven-knob.png" />
+                        Woodwinds
+                    </label>
+                    <div class="tab">
+                        <div class="profiles-grid Woodwinds">
                             <div class="profiles">
                                 <img class="profile-pics" id="christie-reside" src="images/christie-reside.png">
                                 <div class="profile-names">Christie Reside</div>
@@ -344,146 +385,140 @@
                                 <div class="profile-names">Sophie Dansearu</div>
                                 <div class="profile-instrument-names">Contrabassoon</div>
                             </div>
+                        </div> <!--end of woodwind-grid-->
+                    </div>
 
-
-                            </div> <!--woodwind-grid-->
-                        </div> <!--tabcontent-->
-
-                        <div id="Brass" class="tabcontent">
-                            <div class="profiles-grid">
-                                <div class="profiles">
-                                    <img class="profile-pics" src="images/oliver-declercq.png">
-                                    <div class="profile-names">Oliver De Clercq</div>
-                                    <div class="profile-instrument-names">French Horn</div>
-                                </div>
-
-                                <div class="profiles">
-                                    <img class="profile-pics" src="images/andrew-mee.png">
-                                    <div class="profile-names">Andrew Mee</div>
-                                    <div class="profile-instrument-names">French Horn</div>
-                                </div>
-
-                                <div class="profiles">
-                                    <img class="profile-pics" src="images/holly-bryan.png">
-                                    <div class="profile-names">Holly Bryan</div>
-                                    <div class="profile-instrument-names">French Horn</div>
-                                </div>
-
-                                <div class="profiles">
-                                    <img class="profile-pics" src="images/william-loveless.png">
-                                    <div class="profile-names">William Loveless</div>
-                                    <div class="profile-instrument-names">French Horn</div>
-                                </div>
-
-                                <div class="profiles">
-                                    <img class="profile-pics" src="images/larry-knopp.png">
-                                    <div class="profile-names">Larry Knopp</div>
-                                    <div class="profile-instrument-names">Trumpet</div>
-                                </div>
-
-                                <div class="profiles">
-                                    <img class="profile-pics" src="images/vincent-vohradsky.png">
-                                    <div class="profile-names">Vincent Vohradsky</div>
-                                    <div class="profile-instrument-names">Trumpet</div>
-                                </div>
-
-                                <div class="profiles">
-                                    <img class="profile-pics" src="images/marcus-goddard.png">
-                                    <div class="profile-names">Marcus Goddard</div>
-                                    <div class="profile-instrument-names">Trumpet</div>
-                                </div>
-
-                                <div class="profiles">
-                                    <img class="profile-pics" src="images/brian-wendel.png">
-                                    <div class="profile-names">Brian Wendel</div>
-                                    <div class="profile-instrument-names">Trombone</div>
-                                </div>
-
-                                <div class="profiles">
-                                    <img class="profile-pics" src="images/andrew-poirier.png">
-                                    <div class="profile-names">Andrew Poirier</div>
-                                    <div class="profile-instrument-names">Trombone</div>
-                                </div>
-
-
+                    <!-- Brass -->
+                    <input type="radio" name="tabs" id="tabfour">
+                    <label for="tabfour">
+                        <img class="oven-knob" src="images/oven-knob.png" />
+                        Brass
+                    </label>
+                    <div class="tab">
+                        <div class="profiles-grid Brass">
+                            <div class="profiles">
+                                <img class="profile-pics" src="images/oliver-declercq.png">
+                                <div class="profile-names">Oliver De Clercq</div>
+                                <div class="profile-instrument-names">French Horn</div>
                             </div>
-                        </div>
 
-                        <div id="Percussion" class="tabcontent">
-                            <div class="profiles-grid">
-                                <div class="profiles">
-                                    <img class="profile-pics" src="images/vern-griffiths.png">
-                                    <div class="profile-names">Vern Griffiths</div>
-                                    <div class="profile-instrument-names">Percussion</div>
-                                </div>
-
-                                <div class="profiles">
-                                    <img class="profile-pics" src="images/michael-jarrett.png">
-                                    <div class="profile-names">Michael Jarrett</div>
-                                    <div class="profile-instrument-names">Percussion</div>
-                                </div>
+                            <div class="profiles">
+                                <img class="profile-pics" src="images/andrew-mee.png">
+                                <div class="profile-names">Andrew Mee</div>
+                                <div class="profile-instrument-names">French Horn</div>
                             </div>
-                        </div>
 
-                
-                        <!-- js stuff -->
-                        <!-- <script type="text/javascript"> -->
-                        <script>
-                            function openCity(sect, section_name) {
-                                var i, tabcontent, tablinks;
-                                tabcontent = document.getElementsByClassName("tabcontent");
-                                for (i = 0; i < tabcontent.length; i++) {
-                                tabcontent[i].style.display = "none";
-                                }
-                                tablinks = document.getElementsByClassName("tablinks");
-                                for (i = 0; i < tablinks.length; i++) {
-                                tablinks[i].className = tablinks[i].className.replace(" active", "");
-                                }
-                                document.getElementById(section_name).style.display = "block";
-                                sect.currentTarget.className += " active";
-                            }
-                        </script>
-                    </section>
-                </section> <!--end of orchestra-info section -->
-             </main> <!--entire section-->
+                            <div class="profiles">
+                                <img class="profile-pics" src="images/holly-bryan.png">
+                                <div class="profile-names">Holly Bryan</div>
+                                <div class="profile-instrument-names">French Horn</div>
+                            </div>
 
-<!-- end of section 5 -->
+                            <div class="profiles">
+                                <img class="profile-pics" src="images/william-loveless.png">
+                                <div class="profile-names">William Loveless</div>
+                                <div class="profile-instrument-names">French Horn</div>
+                            </div>
+
+                            <div class="profiles">
+                                <img class="profile-pics" src="images/larry-knopp.png">
+                                <div class="profile-names">Larry Knopp</div>
+                                <div class="profile-instrument-names">Trumpet</div>
+                            </div>
+
+                            <div class="profiles">
+                                <img class="profile-pics" src="images/vincent-vohradsky.png">
+                                <div class="profile-names">Vincent Vohradsky</div>
+                                <div class="profile-instrument-names">Trumpet</div>
+                            </div>
+
+                            <div class="profiles">
+                                <img class="profile-pics" src="images/marcus-goddard.png">
+                                <div class="profile-names">Marcus Goddard</div>
+                                <div class="profile-instrument-names">Trumpet</div>
+                            </div>
+
+                            <div class="profiles">
+                                <img class="profile-pics" src="images/brian-wendel.png">
+                                <div class="profile-names">Brian Wendel</div>
+                                <div class="profile-instrument-names">Trombone</div>
+                            </div>
+
+                            <div class="profiles">
+                                <img class="profile-pics" src="images/andrew-poirier.png">
+                                <div class="profile-names">Andrew Poirier</div>
+                                <div class="profile-instrument-names">Trombone</div>
+                            </div>
+                        </div> <!--end of brass-->
+                    </div>
+
+                    <!-- Percussion -->
+                    <input type="radio" name="tabs" id="tabfive">
+                    <label for="tabfive">
+                        <img class="oven-knob" src="images/oven-knob.png" />
+                        Percussion
+                    </label>
+                    <div class="tab">
+                        <div class="profiles-grid Percussion">
+                            <div class="profiles">
+                                <img class="profile-pics" src="images/vern-griffiths.png">
+                                <div class="profile-names">Vern Griffiths</div>
+                                <div class="profile-instrument-names">Percussion</div>
+                            </div>
+
+                            <div class="profiles">
+                                <img class="profile-pics" src="images/michael-jarrett.png">
+                                <div class="profile-names">Michael Jarrett</div>
+                                <div class="profile-instrument-names">Percussion</div>
+                            </div>
+                        </div> <!--end of percussion-->
+                    </div>
+
+                </div>
+
+            </div>
         </section>
+
+        <!--End of section 5-->
 
         <section id="site_part6">
 
-                <div class="faq_container">
-                <h1>FAQ</h1>
-                    <details>
-                        <summary>How will this concert be different from a theatre experience?</summary>
-                        A live orchestra concert can have variations in volume and balance and allows the audience to feel the music, creating a more engaging experience. A concert can be more special and memorable than the theatre, creating a sense of occasion.
-                      </details>
+            <div class="faq_container">
+                <h1>FaQ</h1>
+                <details>
+                    <summary>How will this concert be different from a theatre experience?</summary>
+                    A live orchestra concert can have variations in volume and balance and allows the audience to feel the music, creating a more engaging experience. A concert can be more special and memorable than the theatre, creating a sense of occasion.
+                </details>
 
-                      <details>
-                        <summary>Are cameras and recording devices allowed in the theatre?</summary>
-                        Sorry, but cameras and recording devices are not allowed in the theatre. We have a strict policy of respecting the privacy and enjoyment of all audience members.
-                      </details>
+                <details>
+                    <summary>Are cameras and recording devices allowed in the theatre?</summary>
+                    Sorry, but cameras and recording devices are not allowed in the theatre. We have a strict policy of respecting the privacy and enjoyment of all audience members.
+                </details>
 
-                      <details>
-                        <summary>Do I need to watch Ratatouille before attending?</summary>
-                        You can attend a live orchestra performance of Ratatouille without having seen the movie beforehand. It is not necessary to watch the movie prior to attending the concert.
-                      </details>
+                <details>
+                    <summary>Do I need to watch Ratatouille before attending?</summary>
+                    You can attend a live orchestra performance of Ratatouille without having seen the movie beforehand. It is not necessary to watch the movie prior to attending the concert.
+                </details>
 
-                        <details>
-                        <summary>Is there a dress code for orchestra concerts?</summary>
-                        In general, formal or semi-formal attire is commonly expected, but this can vary depending on the venue and the type of concert.
-                      </details>
+                <details>
+                    <summary>Is there a dress code for orchestra concerts?</summary>
+                    In general, formal or semi-formal attire is commonly expected, but this can vary depending on the venue and the type of concert.
+                </details>
 
-                      <details>
-                        <summary>How old do you need to be to attend the concert?</summary>
-                        Typically, all ages are welcome to attend the concert. Some may recommend that younger children be accompanied by an adult due to the sound intensity.
-                      </details>
-                </div>
-            
+                <details>
+                    <summary>How old do you need to be to attend the concert?</summary>
+                    Typically, all ages are welcome to attend the concert. Some may recommend that younger children be accompanied by an adult due to the sound intensity.
+                </details>
+            </div>
+
         </section>
-
         <footer>
+            <div class="end-footer">
+                <a class="footer-links" href="documentation.html">Documentation</a>
+                <a class="footer-links" href="citations.html">Citations</a>
+            </div>
         </footer>
     </main>
+    <script src="scripts/main.js"></script>
 </body>
 </html>

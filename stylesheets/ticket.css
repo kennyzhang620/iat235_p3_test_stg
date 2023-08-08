@@ -1,3 +1,4 @@
+
 *{
 	box-sizing: border-box;
 }
@@ -6,6 +7,9 @@ h1{
 /*	text-align: center;*/
 	text-decoration: none;
 	font-size: 0.75vw;
+/*  font-family: 'raleway', 'sans-serif';*/
+  font-family: 'playfair_display', 'serif';
+  font-weight: normal;
 
 	margin: 0;
 	border: 0;
@@ -35,26 +39,30 @@ h2{
 }
 
 h3{
-	color: #DE4040;
-	font-size: 0.75vw;
-	font-weight: bold;
-	margin-left: 0.5vw;
 }
 
 ul{
 	color: #DE4040;
-  font-size: 0.75vw;
-}
-
-#addon-info{
-	color: white;
+  font-size: 0.55vw;
+  font-family: 'satoshi_complete', 'sans-serif';
+  font-weight: bold;
+  padding: 0 1rem;
 }
 
 a{
-	text-decoration: none;
+  text-decoration: none;
 }
 
+@font-face {
+    font-family: 'raleway';
+    src: url(../fonts/Raleway/Raleway-VariableFont_wght.ttf);
 
+    font-family: 'playfair_display';
+    src: url(../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
+
+    font-family: 'satoshi_complete';
+    src: url(../fonts/Satoshi_complete/Satoshi-Variable.ttf);    
+}
 
 /*------------------------------------Ticket section site---------------------------------------*/
 
@@ -63,16 +71,20 @@ a{
   width: 105%;
   height: 105%;
   object-fit: cover;
-  left: -2.5%; /* centers the image again after enlargement */
-  top: -2.5%; /* centers the image again after enlargement */
- 	z-index: -1; 	
-
- 	transition: transform 0.1s ease;
+  left: -2.5%; 
+  top: -2.5%; 
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 1s ease;
 }
+
+#baseImage {
+  opacity: 1;
+}
+
 
 .main_container {
 	position: relative;
-	/* Add these if .main_container isn't already taking up the full viewport size */
 	width: 100%;
 	height: 100%;
 }
@@ -81,9 +93,9 @@ a{
 	position: absolute;
 	top: 0;
 	left: 0;
-	margin: 2.5vh 3vw;
+	margin: 2vh 1vw;
 }
-	/* Set the z-index to a value higher than the background image to ensure that it appears on top */
+
 
 #redirecting{
 	padding: 1vh 1vw;
@@ -119,10 +131,10 @@ a{
 .seat_sections a:before {
   content: "";
   position: absolute;
-  top: -3vh; /* viewport height */
-  bottom: -3vh; 
-  left: -3vw; /* viewport width */
-  right: -3vw; 
+  top: -4vh; 
+  bottom: -4vh; 
+  left: -8vw; 
+  right: -8vw; 
   z-index: -1;
 }
 
@@ -173,13 +185,27 @@ a{
 }
 
 
+#addon-info{
+  color: white;
+  font-family: 'playfair_display', 'serif';
+}
+
+.return_home{
+  font-family: 'satoshi_complete', 'sans-serif';
+  color: #DE4040;
+  font-size: 0.75vw;
+  font-weight: 900;
+  margin-left: 0.5vw;
+}
+
 /*-----------------------------------Ticket seat map site------------------------------------------*/
 
 
 .seat_map_img {
+  position: relative;
   width: 100%;
   height: 100%;
-  overflow: hidden; /* This will ensure that the contents of the div don't spill over */
+  overflow: hidden;
 }
 
 #seatingMapImage {
@@ -189,6 +215,16 @@ a{
   transition: opacity 0.4s ease-in-out;
   opacity: 0;
 }
+
+#seatMapIcon {
+  position: absolute;
+  top: 3%; 
+  right: -4%; 
+  width: 10vw; 
+  height: 10vh; 
+  z-index: 3;
+}
+
 
 .left_col_map {
   display: flex;
@@ -200,7 +236,6 @@ a{
   margin-top: 2vh;
 }
 
-
 .seat_map {
   display: flex;
   flex-direction: column;
@@ -210,31 +245,38 @@ a{
 }
 
 .seat_map a {
-  background-color: #A17C3F; /* initial background color */
-  color: white; /* initial text color */
-  text-decoration: none;
-  font-size: 1.25vw;
+  font-family: 'playfair_display', 'serif';
+  font-size: 1vw;
+  font-weight: bold;
+  background-color: #A17C3F;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 1.5vh 2.5vw; 
-  margin: 0.75vh 0; 
-  transition: background-color 0.1s, color 0.1s; /* smooth color transition */
+  width: 12.5vw;
+  height: 10vh;
+  margin: 0.75vh 0;
+  transition: background-color 0.1s, color 0.1s;
 }
 
 .seat_map a:hover {
-  background-color: #CFA765; /* background color when hovered */
-  color: white; /* text color when hovered */
+  background-color: #CFA765;
+  color: white;
 }
 
 .seat_map a:active {
-  background-color: #594030; /* background color when clicked */
+  background-color: #594030;
 }
 
 .seat_map .price {
   display: block;
-  border-top: 1px solid white; /* color of the line */
-  padding-top: 0.5vh; /* space between the line and the price */
-  margin-top: 0.5vw; /* space between the line and the section */
+  border-top: 1px solid white;
+  padding-top: 0.5vh;
+  margin-top: 0.5vw;
 }
+
 
 #redirecting_map{
 	background-color: white;
@@ -257,47 +299,449 @@ a{
 }
 
 .cart{
+  font-family: 'satoshi_complete', 'sans-serif';
+  font-weight: bold;
   padding: 1vh 2vw;
-  position: relative; /* Create a new context for absolute positioning */
+  position: relative; 
   z-index: 1; /* Increase the z-index to bring this above the pseudo-element */
 }
 
 #cart_summary{
-	font-weight: bold;
-	font-size: 1.25vw;
+	font-size: 1vw;
 	text-align: center;
 	margin-bottom: 2.5vh;
 }
 
 .cart_container{
-	border-top: 1px solid #eaeaea; 
+	border-top: 0.01vh solid #eaeaea; 
 	text-align: center;
 }
 
 #your_tickets{
-	font-weight: bolder;
-	font-size: 1vw;
+	font-weight: 900;
+	font-size: 0.75vw;
 }
 
 .cart_container{
-	border-bottom: 1px solid #eaeaea; 
-  font-size: 0.5vw;
+	border-bottom: 0.01vh solid #eaeaea; 
+  font-size: 0.55vw;
+  line-height: 3; 
 }
 
 #cart_total_price{
 	font-weight: bolder;
 	font-size: 1vw;
+  margin: 1vh 0 1vh 0;
 }
 
 #cart_total{
-    font-size: 0.75vw;
-}
-
-.price_container{
-	border-bottom: 1px solid #eaeaea;
+  font-size: 0.75vw;
+  margin-left: 0.75vw;
+  padding-top: 0.25vw;
 }
 
 #cart_assistant{
-	font-weight: lighter;
+  font-family: 'satoshi_complete', 'sans-serif';
+	font-weight: 700;
 	font-size: 0.5vw;
+  color: #888888;
+
+  border-top: 0.01vh solid #eaeaea;  
 }
+
+#phoneIcon {
+  height: 1.5vh; 
+  margin: 0.35vw;
+}
+
+#map-addon-info{
+  font-family: 'playfair_display', 'serif';
+  font-weight: bolder;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+#nextButton {
+  animation: fadeIn 1s ease-in-out;
+  border: none;
+  border-radius: 5px;
+  background-color: #B38C4A;
+  text-align: center;
+  font-weight: 900;
+  display: none; /* Initially hidden */
+  width: 100%;
+  margin: 1vh 0;
+  padding: 1vh 0 1vh 0;
+  transition: background-color 0.1s, color 0.1s; /* smooth color transition */
+}
+
+#nextButton:hover{
+  background-color: #CFA765; 
+}
+
+#nextButton:active{
+  background-color: #594030; 
+}
+
+.return_seating_home{
+  font-family: 'satoshi_complete', 'sans-serif';
+  color: #DE4040;
+  font-size: 0.75vw;
+  font-weight: 900;
+  margin-left: 0.5vw;
+}
+
+/*--------------------pop up window----------------------*/
+
+#popup {
+  position: absolute;
+  z-index: 100;
+  padding: 10px;
+  background-color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  filter: drop-shadow(0 0 0.5rem #000);
+
+}
+
+.popup_button {
+  width: 100%; 
+  margin-bottom: 0.75vh; 
+  padding: 0.75vw;
+  text-align: left;
+  outline: none;
+  border: none;
+  font-size: 1vw;
+
+  background-color: #A17C3F; 
+  color: white; /
+  border-radius: 5px; /* for rounded corners */
+  transition: background-color 0.1s, color 0.1s; 
+}
+
+.popup_button:hover {
+  background-color: #CFA765;
+}
+
+.popup_button:active {
+  background-color: #594030;
+}
+
+#choose_ticket_type{
+  font-family: 'playfair_display', 'serif';
+  font-weight: bolder;
+  font-size: 1.5vw;
+  margin-bottom: 1vh;
+}
+
+/*---top section---*/
+
+#popup_section_container{
+  background-color: #f9f9f9;
+  margin: -10px;
+  padding: 15px;
+
+  border-bottom: 0.1vh solid #eaeaea; /* Add a border at the bottom */
+  padding-bottom: 10px; /* Give some space below the content before the border */  
+}
+
+.popup_seat_type{
+  font-family: 'satoshi_complete', 'sans-serif';
+  font-weight: 400;
+  font-size: 0.85vw;
+  color: #757575;
+  margin-top: 1vh;
+  border-bottom: 0.01vh solid #eaeaea;   
+}
+
+.popup_seat_selection{
+  font-family: 'satoshi_complete', 'sans-serif';
+  font-weight: 500;
+  font-size: 1vw;
+
+  border-bottom: 0.01vh solid #eaeaea;   
+}
+
+.popup_price {
+  margin-left: 10vw; 
+}
+
+#crossIcon {
+  position: absolute;
+  top: 1vh; 
+  right: 0.75vw; 
+
+  height: 2vh;
+}
+
+/*--------------------------------payment page----------------------------*/
+
+.container {
+  margin:auto;
+  padding: 1rem;
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+}
+
+.column_1{
+  order:1;
+  flex: 1 1 300px;  
+}
+
+.column_2 {
+  order:2;
+  flex: 1 1 300px;  
+}
+
+.ticket_information_container{
+/*  width: 90vw;*/
+  max-width: 600px;
+  max-height: 1000px;
+  height: 877px; 
+  overflow: hidden; /* This will create a scrollbar if the content overflows */
+  margin: 2rem auto auto 1rem; 
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;  
+  padding: 2rem 2rem 7rem 2rem;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.25);
+  border-radius: 5px;
+  margin-bottom: 2rem;  
+}
+
+.payment_container {
+/*  width: 90vw;*/
+  max-width: 600px;
+  max-height: 1000px;
+  margin: 2rem 1rem auto auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+
+.card_information_container,
+.personal_information_container{
+  font-family: 'satoshi_complete', 'sans-serif';  
+  padding: 1rem 2rem 1rem 2rem;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.25);
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+
+.input_group label {
+  display: block;
+}
+
+.input_row {
+  display: flex;
+  justify-content: space-between;
+  gap: 2vw;
+
+}
+
+.input_row > div {
+  flex-grow: 1;
+}
+
+#payment_form label,
+#personal_info_form label {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+#payment_form input,
+#personal_info_form input {
+  width: 100%;
+  padding: 0.75rem 0.5rem;
+  margin: 0.25rem 0 1.5rem 0;
+
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.submit_payment_btn {
+  align-self: center;
+  width: 100%;
+  cursor: pointer;
+  padding: 2rem 4rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #B38C4A;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.submit_payment_btn:hover {
+  background-color: #A17C3F;
+}
+
+.location_input_row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.location_input_row .input_group:nth-child(3),
+.location_input_row .input_group:nth-child(2) {
+  flex: 0 0 35%;    
+}
+
+.location_input_row .input_group:nth-child(1) {
+  flex: 0 0 20%;
+}
+
+.payment_icon {
+  display: block;
+  margin-bottom: 1.5rem; /* adjust as needed */
+  margin-right: 15rem;
+  width: 60%;
+}
+
+#concertPic{
+  display: block;
+  margin:2rem 0; /* adjust as needed */
+  width: 100%;  
+}
+
+.payment_title{
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0 0 1rem 0;
+  margin: 0.5rem 0;
+}
+
+.payment_cart{
+  font-family: 'satoshi_complete', 'sans-serif';
+  font-weight: bold;
+  padding: 1rem 1.5rem;
+  position: relative; 
+  z-index: 1; 
+}
+
+#payment_cart_summary{
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  line-height: 1.5rem;  
+}
+
+
+.payment_cart_container{
+  border-top: 0.01vh solid #eaeaea; 
+  text-align: center;
+}
+
+#payment_your_tickets{
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.payment_cart_container span {
+  font-weight: 700;
+}
+
+.payment_cart_container{
+  border-bottom: 0.01vh solid #eaeaea; 
+  font-size: 0.75rem;
+  line-height: 3; 
+  font-weight: 400;
+}
+
+#payment_cart_total_price{
+  font-weight: bolder;
+  font-size: 1.5rem;
+
+  margin: 1rem 0 1rem 0;
+}
+
+#payment_cart_total{
+  font-size: 0.75rem;
+  margin-left: 0.75vw;
+  padding-top: 0.25vw;
+}
+
+#payment_cart_assistant{
+  margin-top: 1rem;
+  font-family: 'satoshi_complete', 'sans-serif';
+  font-weight: 700;
+  font-size: 0.5rem;
+  color: #888888;
+
+  border-top: 0.02rem solid #eaeaea;  
+}
+
+#payment_phoneIcon {
+  height: 0.75rem; 
+  margin: 0.35rem;
+}
+/*--------------------------------timer-----------------------------------*/
+/*Credit: Mateusz Rybczonec - https://codepen.io/dalalRohit/pen/RwRzVvW*/
+
+.base-timer {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+.base-timer__svg {
+  transform: scaleX(-1);
+}
+
+.base-timer__circle {
+  fill: none;
+  stroke: none;
+}
+
+.base-timer__path-elapsed {
+  stroke-width: 7px;
+  stroke: rgb(214, 214, 214);
+}
+
+.base-timer__path-remaining {
+  stroke-width: 7px;
+  stroke-linecap: round;
+  transform: rotate(90deg);
+  transform-origin: center;
+  transition: 1s linear all;
+  fill-rule: nonzero;
+  stroke: currentColor;
+}
+
+.base-timer__path-remaining.green {
+  color: rgb(65, 184, 131);
+}
+
+.base-timer__path-remaining.orange {
+  color: orange;
+}
+
+.base-timer__path-remaining.red {
+  color: red;
+}
+
+.base-timer__label {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 16px;
+}
+
+

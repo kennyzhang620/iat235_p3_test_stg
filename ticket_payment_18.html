@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ticket Payment Page</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/ticket.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/ticket_grid.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="column_1">
+      <div class="payment_container">
+        <div class="card_information_container">
+          <h4 class="payment_title">Card Information</h4>
+          <img src="icons/icon_payments.svg" alt="Payment Icon" class="payment_icon">
+          <form id="payment_form">
+            <div class="input_group">
+              <label for="card_holder_name">Cardholder's Name</label>
+              <input type="text" id="card_holder_name">
+            </div>
+            
+            <div class="input_group">
+              <label for="card_number">Card Number</label>
+              <input type="text" id="card_number">
+            </div>
+            
+            <div class="input_row">
+              <div class="input_group">
+                <label for="expiry_date">Expiry Date</label>
+                <input type="text" id="expiry_date">
+              </div>
+              
+              <div class="input_group">
+                <label for="cvc">CVC</label>
+                <input type="text" id="cvc">
+              </div>
+            </div> <!-- End of input_row -->
+          </form>
+        </div> <!-- End of card_information_container -->
+
+        <div class="personal_information_container">
+          <h4 class="payment_title">Personal Information</h4>
+          <form id="personal_info_form">
+            <div class="input_row">
+              <div class="input_group">
+                <label for="first_name">First Name</label>
+                <input type="text" id="first_name">
+              </div>
+
+              <div class="input_group">
+                <label for="last_name">Last Name</label>
+                <input type="text" id="last_name">
+              </div>
+            </div>
+
+            <div class="input_group">
+                <label for="address">Address</label>
+                <input type="text" id="address">
+            </div> <!-- End of input_group -->
+
+            <div class="location_input_row">
+                <div class="input_group">
+                    <label for="country">Country</label>
+                    <input type="text" id="country">
+                </div>
+
+                <div class="input_group">
+                    <label for="city">City</label>
+                    <input type="text" id="city">
+                </div>
+
+                <div class="input_group">
+                    <label for="postal_code">Zip</label>
+                    <input type="text" id="postal_code">
+                </div>
+            </div> <!-- End of location_input_row -->
+          </form>
+        </div> <!-- End of personal_information_container -->
+      </div> <!-- End of payment_container -->
+    </div> <!-- End of column_1 -->
+
+    <div class="column_2">
+      <div class="ticket_information_container">
+            <!-- cart column -->
+            <div class="cart_ticket_wrapper">
+              <div class="payment_cart">
+                <img id="concertPic" src="images/main_img.png" alt="concert_image">
+                <h4 id="payment_cart_summary">Ratatouille in Concert<br>
+                                      UNDER ORPHEUM VANCOUVER,BC<br>
+                                      Show Time: 18/07/2023  - Tue 7:30 pm</h4>
+                <p id="payment_your_tickets">Seats<br></p>
+                <div class="payment_cart_container">
+                  <p id="payment_cart_empty"><span></span><br>Adult<br></p>
+                  <p id="payment_cart_section"><span>SECTION</span><br>BB<br></p>
+                  <p id="payment_cart_row"><span>ROW</span><br>D<br></p>
+                  <p id="payment_cart_seat"><span>SEAT</span><br>230<br></p>
+                  <p id="payment_cart_price"><span>PRICE</span><br>$101.43<br></p>
+                </div>
+
+                <div class="payment_price_container">
+                  <p id="payment_cart_total">Total - 1 Ticket</p>
+                  <p id="payment_cart_total_price">$101.43</p>
+                </div>
+                
+                <button class="submit_payment_btn">COMPLETE ORDER</button>
+
+                <a href="#" id="payment_cart_assistant">
+                  <img id="payment_phoneIcon" src="icons/icon_phone.svg" alt="Phone icon">
+                  Need Help? 1-604-123-1234
+                </a>
+              </div> <!-- End of cart -->
+            </div> <!-- End of cart_wrapper -->
+      </div> <!-- End of ticket_information_container-->
+    </div> <!-- End of column_2-->
+  </div> <!-- End of container-->
+</body>
+</html>
