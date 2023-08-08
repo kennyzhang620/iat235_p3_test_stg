@@ -1246,11 +1246,18 @@ footer {
 @media screen and (max-width: 60rem) {
     .wireframes-flex {
         display: inline-block;
-        justify-content: center;
+        /* justify-content: center; */
     }
     .wireframe-heading, .wireframe-inspo {
         margin-top: 10%;
         font-size: 3vw;
+    }
+    .colour{
+        /* display: inline-block; */
+    }
+    .colours.img{
+        width: 200%;
+        height: auto;
     }
     .colours-pics-flex{
         display: inline-block;
@@ -1316,6 +1323,9 @@ footer {
 @media screen and (max-width: 60rem) {
     #remy-lay, #remy-cite {
         display: none;
+    }
+    .cite-text{
+        font-size: 2vw;
     }
 }
 
