@@ -27,7 +27,6 @@ body {
 }
 
 h1 {
-    font-family: 'rale-way';
 }
 
 
@@ -77,6 +76,10 @@ footer {
 }
 
 .button_ticket {
+    font-family: 'raleway', 'sans-serif';
+    font-weight: bold;
+
+
     background-color: #A17C3F;
     color: white;
     border-radius: 10px;
@@ -96,11 +99,13 @@ footer {
     }
 
 .ticket_main h2 {
+    font-family: 'raleway', 'sans-serif';
     color: white;
     font-size: 11pt;
 }
 
 .ticket_main h1 {
+    font-family: 'playfair_display';
     color: white;
     margin: 50% 0;
     text-align: center;
@@ -182,6 +187,8 @@ footer {
 
 
 .button_nav {
+    font-family: 'raleway', 'sans-serif';
+    font-weight: bold;
     margin-bottom: 2%;
 
     background-color: #A17C3F;
@@ -192,6 +199,7 @@ footer {
     color: white;
     text-decoration: none;
     text-align: center;
+    align-items: center;
 }
 
     .button_nav:hover {
@@ -219,12 +227,14 @@ footer {
 }
 
 .img_button_nav {
-    width: 50px;
+    /* width: 50px; */
+    width: 30px;
     padding-right: .5rem;
 }
 
 .img_button_nav:hover {
-    width: 60px;
+    /* width: 60px; */
+    width: 30px;
     padding-right: .5rem;
 }
 
