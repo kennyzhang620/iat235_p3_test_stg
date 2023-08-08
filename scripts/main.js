@@ -22,6 +22,10 @@ const mobi_btn = document.getElementById('mobile_btn')
 const mobi_img = document.getElementById('img_button_nav_m')
 var btnState = true;
 
+mobile_nav.addEventListener("animationend", () => {
+    if (btnState)
+        mobile_nav.style.height = "0%";
+});
 
 function switchModesAuto(w, h) {
 	console.log(w, h, w/h)
@@ -72,12 +76,6 @@ function switchState() {
 		setTimeout(function() {		mobi_s.style.display= "block"
             btnState = true
         }, 1);
-
-        setTimeout(function () {
-            mobi_s.style.display = "block"
-            btnState = true
-            mobile_nav.style.height = "10%";
-        }, 2000);
 		
 	}
 }
