@@ -30,7 +30,7 @@ mobile_nav.addEventListener("animationend", () => {
 function switchModesAuto(w, h) {
 	console.log(w, h, w/h)
 	
-	if (w/h <= 16/10) {
+	if (w/h <= 1.4) {
 		mobile_nav.style.display = "block";
 		def_nav.style.display="none";
 	}
