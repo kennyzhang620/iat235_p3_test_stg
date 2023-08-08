@@ -43,7 +43,7 @@ function switchModesAuto(w, h) {
 function switchModesTicket(w, h) {
     console.log(w, h, w / h)
 
-    if (w / h <= 16 / 10) {
+    if (w / h <= 1.4) {
         window.location.href="ticket_seatmap_18.html"
     }
     else {
