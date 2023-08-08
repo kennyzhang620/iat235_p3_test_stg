@@ -564,14 +564,14 @@ a:visited {
 
 @media screen and (max-width: 60rem){
 
-    .site_part4{
-        margin-left: 25vw;
+    .site_part4 {
+        margin-left: 8vw;
     }
 
     .mainBackground{
         background-size: 100% 90%;
         height: 100vh;
-        width: 50vw;
+        width: 80vw;
     }
 
     .musicTrack{
