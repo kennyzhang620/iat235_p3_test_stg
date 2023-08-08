@@ -226,6 +226,12 @@ footer {
     padding-right: .5rem;
 }
 
+.img_button_nav:hover {
+    /* width: 50px; */
+    width: 60px;
+    padding-right: .5rem;
+}
+
 .selectors {
     font-family: 'raleway', sans-serif;
     display: inline-block;

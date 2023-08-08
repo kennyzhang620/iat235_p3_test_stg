@@ -34,7 +34,7 @@ mobile_nav.addEventListener("animationend", () => {
 function switchModesAuto(w, h) {
 	console.log(w, h, w/h)
 	
-	if (w/h <= 1.4) {
+	if (w < 1086) { // 16px = 1 rem
 		mobile_nav.style.display = "block";
 		def_nav.style.display="none";
 	}
@@ -47,7 +47,7 @@ function switchModesAuto(w, h) {
 function switchModesTicket(w, h) {
     console.log(w, h, w / h)
 
-    if (w / h <= 1.4) {
+    if (w < 16*60) {
         window.location.href="ticket_seatmap_18.html"
     }
     else {

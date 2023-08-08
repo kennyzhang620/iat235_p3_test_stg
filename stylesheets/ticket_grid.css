@@ -178,7 +178,7 @@
 
 /*------------------ top banner -----------------------*/
 
-@media screen and (max-width: 48rem) {
+@media screen and (max-width: 60rem) {
 
 	.base-timer__label, .base-timer{
 		font-size: 3vw;
@@ -224,7 +224,7 @@
 }
 
 /*------------------ticket section---------------------*/
-@media(max-width:48rem){
+@media(max-width:60rem){
 
 	.seat_sections{
 		top: 41%;
@@ -284,7 +284,7 @@
     display: none; 
 }
 
-@media screen and (max-width: 48rem) {
+@media screen and (max-width: 60rem) {
 /*	header{
 		overflow: auto;
 	}*/
@@ -379,7 +379,7 @@
 }
 
 	/*----------------drop down menu-------------------*/
-@media screen and (max-width: 48rem) {	
+@media screen and (max-width: 60rem) {	
   .mobile_container {
     display: block; 
     background: white;
